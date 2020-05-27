@@ -1,0 +1,75 @@
+{
+  "openapi" : "3.0.0",
+  "servers" : [ {
+    "description" : "SwaggerHub API Auto Mocking",
+    "url" : "https://virtserver.swaggerhub.com/moznobkin/CDI_IA/1.0.0"
+  } ],
+  "info" : {
+    "description" : "CDI MLK Interface Agreement",
+    "version" : "1.0.0",
+    "title" : "CDI MLK Interface Agreement",
+    "contact" : {
+      "email" : "mikhail.oznobkin@megafon.ru"
+    }
+  },
+  "tags" : [ {
+    "name" : "CDI",
+    "description" : "Calls frm MLK to CDI"
+  }, {
+    "name" : "MLK",
+    "description" : "Calls frm MLK to CDI"
+  } ],
+  "paths" : {
+    "/party-info/{msisdn}" : {
+      "get" : {
+        "summary" : "Gets PartyId and party information",
+        "operationId" : "getPartyId",
+        "description" : "You can get partyId and additional customer information by msisd\n",
+        "parameters" : [ {
+          "in" : "path",
+          "name" : "msisdn",
+          "description" : "pass the msisdn",
+          "required" : true,
+          "schema" : {
+            "type" : "string",
+            "maximum" : 10
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "search results matching criteria",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/PartyInfo"
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "bad input parameter"
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "PartyInfo" : {
+        "type" : "object",
+        "required" : [ "msisdn", "partyId" ],
+        "properties" : {
+          "msisdn" : {
+            "type" : "string",
+            "example" : 9261234567
+          },
+          "partyId" : {
+            "type" : "string",
+            "format" : "guid",
+            "example" : "b84cab10-73fc-4b2a-bd4f-56760811542d"
+          }
+        }
+      }
+    }
+  }
+}
