@@ -20,7 +20,7 @@
     "description" : "Calls frm MLK to CDI"
   } ],
   "paths" : {
-    "/party-info/{msisdn}" : {
+    "/party/{msisdn}" : {
       "get" : {
         "summary" : "Gets PartyId and party information",
         "operationId" : "getPartyId",
