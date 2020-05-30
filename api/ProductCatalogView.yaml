@@ -1,0 +1,1195 @@
+swagger: '2.0'
+info:
+  description: Product Catalog View
+  version: "0.0.1"
+  title: Product Catalog View
+
+
+tags:
+  - name: product-catalog-view
+    description: Product Catalog View
+
+paths:
+  '/api/catalog-projection/v1/productOffering/{offerId}':
+    get:
+      tags:
+        - productOffer
+      summary: Retrieves a ProductOffer by ID
+      description: This operation retrieves a ProductOffer entity by Id
+      operationId: getProductOfferById
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          in: header
+          description: JWT Token
+          required: false
+          type: string
+        - name: offerId
+          in: path
+          description: offerId
+          required: true
+          type: string
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/GetProductOfferResponse'
+        '400':
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/ApiErrorResponse'
+        '401':
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/ApiErrorResponse'
+        '403':
+          description: Forbidden
+          schema:
+            $ref: '#/definitions/ApiErrorResponse'
+        '404':
+          description: Not Found
+          schema:
+            $ref: '#/definitions/ApiErrorResponse'
+        '405':
+          description: Method Not allowed
+          schema:
+            $ref: '#/definitions/ApiErrorResponse'
+        '409':
+          description: Conflict
+          schema:
+            $ref: '#/definitions/ApiErrorResponse'
+        '500':
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/ApiErrorResponse'
+      deprecated: false
+definitions:
+  AgreementRef:
+    type: object
+    required:
+      - id
+    properties:
+      '@baseType':
+        type: string
+        description: 'When sub-classing, this defines the super-class'
+      '@referredType':
+        type: string
+        description: The actual type of the target instance when needed for disambiguation.
+      '@schemaLocation':
+        type: string
+        description: A URI to a JSON-Schema file that defines additional attributes and relationships
+      '@type':
+        type: string
+        description: 'When sub-classing, this defines the sub-class entity name'
+      href:
+        type: string
+        description: Reference of the related entity.
+      id:
+        type: string
+        description: Unique identifier of a related entity.
+      name:
+        type: string
+        description: Name of the agreement
+    title: AgreementRef
+    description: 'Agreement reference. An agreement represents a contract or arrangement, either written or verbal and sometimes enforceable by law, such as a service level agreement or a customer price agreement. An agreement involves a number of other business entities, such as products, services, and resources and/or their specifications.'
+
+  ApiErrorResponse:
+    type: object
+    properties:
+      errors:
+        type: array
+        items:
+          $ref: '#/definitions/Error'
+      message:
+        type: string
+        description: Api Exception Error
+      status:
+        type: string
+        description: HTTP Status
+      timestamp:
+        type: string
+        format: date-time
+        description: Current date timestamp
+    title: ApiErrorResponse
+  Attachment:
+    type: object
+    required:
+      - id
+    properties:
+      '@baseType':
+        type: string
+        description: 'When sub-classing, this defines the super-class'
+      '@referredType':
+        type: string
+        description: The actual type of the target instance when needed for disambiguation.
+      '@schemaLocation':
+        type: string
+        description: A URI to a JSON-Schema file that defines additional attributes and relationships
+      '@type':
+        type: string
+        description: 'When sub-classing, this defines the sub-class entity name'
+      attachmentType:
+        type: string
+        description: 'Attachment type such as video, picture'
+      content:
+        type: string
+        description: 'The actual contents of the attachment object, if embedded, encoded as base64'
+      description:
+        type: string
+        description: A narrative text describing the content of the attachment
+      href:
+        type: string
+        description: URI for this Attachment
+      id:
+        type: string
+        description: Unique identifier for this particular attachment
+      mimeType:
+        type: string
+        description: 'Attachment mime type such as extension file for video, picture and document'
+      name:
+        type: string
+        description: The name of the attachment
+      size:
+        description: The size of the attachment.
+        $ref: '#/definitions/Quantity'
+      url:
+        type: string
+        description: 'Uniform Resource Locator, is a web page address (a subset of URI)'
+      validFor:
+        description: The period of time for which the attachment is valid
+        $ref: '#/definitions/TimePeriod'
+    title: Attachment
+    description: 'Complements the description of an element (for instance a product) through video, pictures...'
+  BundledProductOffering:
+    type: object
+    required:
+      - id
+    properties:
+      '@baseType':
+        type: string
+        description: 'When sub-classing, this defines the super-class'
+      '@schemaLocation':
+        type: string
+        description: A URI to a JSON-Schema file that defines additional attributes and relationships
+      '@type':
+        type: string
+        description: 'When sub-classing, this defines the sub-class entity name'
+      bundledProductOfferingOption:
+        description: A set of numbers that specifies the lower and upper limits for a ProductOffering that can be procured as part of the related BundledProductOffering. Values can range from 0 to unbounded.
+        $ref: '#/definitions/BundledProductOfferingOption'
+      href:
+        type: string
+        description: Unique reference of the BundledProductOffering
+      id:
+        type: string
+        description: Unique identifier of the BundledProductOffering
+      lifecycleStatus:
+        type: string
+        description: Used to indicate the current lifecycle status
+      name:
+        type: string
+        description: Name of the BundledProductOffering
+    title: BundledProductOffering
+    description: A type of ProductOffering that belongs to a grouping of ProductOfferings made available to the market. It inherits of all attributes of ProductOffering.
+  BundledProductOfferingOption:
+    type: object
+    properties:
+      '@baseType':
+        type: string
+        description: 'When sub-classing, this defines the super-class'
+      '@schemaLocation':
+        type: string
+        description: A URI to a JSON-Schema file that defines additional attributes and relationships
+      '@type':
+        type: string
+        description: 'When sub-classing, this defines the sub-class entity name'
+      numberRelOfferDefault:
+        type: integer
+        format: int32
+        description: Default number of produc offereings that should be procured as part of the related BundledProductOffering
+      numberRelOfferLowerLimit:
+        type: integer
+        format: int32
+        description: lower limit for a product offering that can be procured as part of the related BundledProductOffering
+      numberRelOfferUpperLimit:
+        type: integer
+        format: int32
+        description: upper limit for a product offering that can be procured as part of the related BundledProductOffering
+    title: BundledProductOfferingOption
+    description: A set of numbers that specifies the lower and upper limits for a ProductOffering that can be procured as part of the related BundledProductOffering. Values can range from 0 to unbounded
+  BundledProductOfferingPriceRelationship:
+    type: object
+    required:
+      - id
+    properties:
+      '@baseType':
+        type: string
+        description: 'When sub-classing, this defines the super-class'
+      '@type':
+        type: string
+        description: 'When sub-classing, this defines the sub-class entity name'
+      href:
+        type: string
+        description: hyperlink reference of the bundled product offering price
+      id:
+        type: string
+        description: Unique identifier of the bundled product offering price
+      name:
+        type: string
+        description: Name of the bundled product offering price
+    title: BundledProductOfferingPriceRelationship
+    description: 'This represents a bundling pricing relationship, allowing a price to be composed of multiple other prices (e.g. a recurring charge and a onetime charge).'
+  CategoryRef:
+    type: object
+    required:
+      - id
+      - name
+    properties:
+      '@baseType':
+        type: string
+        description: Unique reference of the category.
+      '@referredType':
+        type: string
+        description: the class type of the referred category.
+      '@schemaLocation':
+        type: string
+        description: hyperlink reference to the schema describing this resource.
+      '@type':
+        type: string
+        description: Unique reference of the category.
+      href:
+        type: string
+        description: Unique reference of the category.
+      id:
+        type: string
+        description: Unique reference of the category.
+      name:
+        type: string
+        description: Name of the category.
+      version:
+        type: string
+        description: Category version.
+    title: CategoryRef
+  ChannelRef:
+    type: object
+    required:
+      - id
+    properties:
+      '@baseType':
+        type: string
+        description: 'When sub-classing, this defines the super-class'
+      '@referredType':
+        type: string
+        description: The actual type of the target instance when needed for disambiguation.
+      '@schemaLocation':
+        type: string
+        description: A URI to a JSON-Schema file that defines additional attributes and relationships
+      '@type':
+        type: string
+        description: 'When sub-classing, this defines the sub-class entity name'
+      href:
+        type: string
+        description: Reference of the related entity.
+      id:
+        type: string
+        description: Unique identifier of a related entity.
+      name:
+        type: string
+        description: Name of the related entity.
+    title: ChannelRef
+    description: 'The channel to which the resource reference to. e.g. channel for selling product offerings, channel for opening a trouble ticket etc..'
+  ConfigurableSpecificationCharacteristicValueUse:
+    type: object
+    required:
+      - name
+      - specCharacteristicValue
+    properties:
+      '@baseType':
+        type: string
+        description: 'When sub-classing, this defines the super-class'
+      '@schemaLocation':
+        type: string
+        description: ' hyperlink reference to the schema describing this resource.'
+      '@type':
+        type: string
+        description: 'When sub-classing, this defines the sub-class entity name'
+      configurationStage:
+        type: string
+        description: A String. This is used to get configurationStage at productOffering level
+      description:
+        type: string
+        description: A narrative that explains in detail what the productSpecificationCharacteristic is
+      displayName:
+        type: string
+        description: A String.  This is used to get displayName at productOffering level
+      displaySequence:
+        type: string
+        description: This defines on what order the characteristics will be exposed.
+      isVisible:
+        type: string
+        description: This defines the characteristics will be exposed or not.
+      maxCardinality:
+        type: integer
+        format: int32
+        description: 'The maximum number of instances a CharacteristicValue can take on. For example, zero to five phone numbers in a group calling plan, where five is the value for the maxCardinality.'
+      minCardinality:
+        type: integer
+        format: int32
+        description: 'The minimum number of instances a CharacteristicValue can take on. For example, zero to five phone numbers in a group calling plan, where zero is the value for the minCardinality.'
+      name:
+        type: string
+        description: Name of the associated productSpecificationCharacteristic
+      referenceId:
+        type: string
+      specCharacteristicValue:
+        type: array
+        description: A number or text that can be assigned to a SpecificationCharacteristic.
+        items:
+          $ref: '#/definitions/SpecificationCharacteristicValue'
+      specification:
+        description: A Specification is a detailed description of a tangible or intangible object made available externally in the form of a ProductOffering to customers or other parties playing a party role.
+        $ref: '#/definitions/SpecificationRef'
+      specificationType:
+        type: string
+        description: 'When sub-classing, this defines the sub-class specification type'
+      validFor:
+        description: The period for which the productSpecificationCharacteristic is valid
+        $ref: '#/definitions/TimePeriod'
+      valueType:
+        type: string
+        description: 'A kind of value that the characteristic can take on, such as numeric, text and so forth'
+    title: ConfigurableSpecificationCharacteristicValueUse
+    description: A use of the ConfigurableSpecificationCharacteristicValueUse is to provide flexibility on configuring Specification Characteristic Value.
+  ConstraintRef:
+    type: object
+    required:
+      - id
+    properties:
+      '@baseType':
+        type: string
+        description: 'When sub-classing, this defines the super-class'
+      '@type':
+        type: string
+        description: 'When sub-classing, this defines the sub-class entity name'
+      href:
+        type: string
+        description: Hyperlink reference to the target constraint
+      id:
+        type: string
+        description: reference id to the target constraint
+      name:
+        type: string
+        description: Name given to the constraint
+      referredType:
+        type: string
+        description: The (class) type of the referred constraint
+      version:
+        type: string
+        description: constraint version
+    title: ConstraintRef
+    description: Constraint reference. The Constraint resource represents a policy/rule applied to an entity or entity spec.
+
+  GetProductOfferResponse:
+    type: object
+    example:
+      jsonObject:
+        summary: A sample object
+        externalValue: 'https://github.com/moznobkin/MLK-Inteface-Agreements/blob/swaggerhub/productOfferExample1.json'
+    properties:
+      '@baseType':
+        type: string
+        description: 'When sub-classing, this defines the super-class'
+      '@schemaLocation':
+        type: string
+        description: Schema location of this resource
+      '@type':
+        type: string
+        description: 'When sub-classing, this defines the sub-class entity name'
+      agreement:
+        type: array
+        description: 'An agreement represents a contract or arrangement, either written or verbal and sometimes enforceable by law, such as a service level agreement or a customer price agreement. An agreement involves a number of other business entities, such as products, services, and resources and/or their specifications.'
+        items:
+          $ref: '#/definitions/AgreementRef'
+      attachment:
+        type: array
+        description: 'Complements the description of an element (for instance a product) through video, pictures...'
+        items:
+          $ref: '#/definitions/Attachment'
+      bundledProductOffering:
+        type: array
+        description: A type of ProductOffering that belongs to a grouping of ProductOfferings made available to the market. It inherits of all attributes of ProductOffering.
+        items:
+          $ref: '#/definitions/BundledProductOffering'
+      category:
+        type: array
+        description: 'The category resource is used to group product offerings, service and resource candidates in logical containers. Categories can contain other categories and/or product offerings, resource or service candidates.'
+        items:
+          $ref: '#/definitions/CategoryRef'
+      channel:
+        type: array
+        description: The channel defines the channel for selling product offerings.
+        items:
+          $ref: '#/definitions/ChannelRef'
+      code:
+        type: string
+        description: Unique code which is used to communicate with external systems.
+      createdBy:
+        type: string
+        description: 'User Name of the User who has created this entity '
+      createdOn:
+        type: string
+        format: date-time
+        description: 'DateTime at which user has created this entity '
+      description:
+        type: string
+        description: Description of the productOffering
+      externalID:
+        type: string
+        description: A String. This is ID/Primary key/Unique ID of the entity which is loaded/inserted/imported in BM Catalog.
+      href:
+        type: string
+        description: Href of the productOffering
+      id:
+        type: string
+        description: Unique identifier of the productOffering
+      isBundle:
+        type: boolean
+        description: 'isBundle determines whether a productOffering represents a single productOffering (false), or a bundle of productOfferings (true).'
+      isSellable:
+        type: boolean
+        description: A flag indicating if this product offer can be sold stand-alone for sale or not. If this flag is false it indicates that the offer can only be sold within a bundle.
+      lastUpdate:
+        type: string
+        format: date-time
+        description: Date and time of the last update
+      lastUpdatedBy:
+        type: string
+        description: 'User Name of the User who has last updated this entity '
+      lifecycleStatus:
+        type: string
+        description: Used to indicate the current lifecycle status
+      marketSegment:
+        type: array
+        description: 'provides references to the corresponding market segment as target of product offerings. A market segment is grouping of Parties, GeographicAreas, SalesChannels, and so forth.'
+        items:
+          $ref: '#/definitions/MarketSegmentRef'
+      name:
+        type: string
+        description: Name of the productOffering
+      offerLabels:
+        type: array
+        items:
+          $ref: '#/definitions/OfferLabels'
+      place:
+        type: array
+        description: Place defines the places where the products are sold or delivered.
+        items:
+          $ref: '#/definitions/PlaceRef'
+      productOfferingPrice:
+        type: array
+        description: 'An amount, usually of money, that is asked for or allowed when a ProductOffering is bought, rented, or leased. The price is valid for a defined period of time and may not represent the actual price paid by a customer.'
+        items:
+          $ref: '#/definitions/ProductOfferingPriceRef'
+      productOfferingTerm:
+        type: array
+        description: 'A condition under which a ProductOffering is made available to Customers. For instance, a productOffering can be offered with multiple commitment periods.'
+        items:
+          $ref: '#/definitions/ProductOfferingTerm'
+      productSpecification:
+        description: A Product Specification is a detailed description of a tangible or intangible object made available externally in the form of a ProductOffering to customers or other parties playing a party role.
+        $ref: '#/definitions/ProductSpecification'
+      resourceCandidate:
+        description: A resource candidate is an entity that makes a ResourceSpecification available to a catalog.
+        $ref: '#/definitions/ResourceCandidateRef'
+      serviceCandidate:
+        description: ServiceCandidate is an entity that makes a ServiceSpecification available to a catalog.
+        $ref: '#/definitions/ServiceCandidateRef'
+      serviceLevelAgreement:
+        description: 'A service level agreement (SLA) is a type of agreement that represents a formal negotiated agreement between two parties designed to create a common understanding about products, services, priorities, responsibilities, and so forth. The SLA is a set of appropriate procedures and targets formally or informally agreed between parties in order to achieve and maintain specified Quality of Service.'
+        $ref: '#/definitions/SLARef'
+      specCharValueUse:
+        type: array
+        description: 'A use of the SpecificationCharacteristicValue by a ProductOffering to which additional properties (attributes) apply or override the properties of similar properties contained in SpecificationCharacteristicValue. It should be noted that characteristics which their value(s) addressed by this object must exist in corresponding specification. The available characteristic values for a SpecificationCharacteristic in a specification can be modified at the ProductOffering level. For example, a characteristic ''Color'' might have values White, Blue, Green, and Red. But, the list of values can be restricted to e.g. White and Blue in an associated product offering. It should be noted that the list of values in ''SpecificationCharacteristicValueUse'' is a strict subset of the list of values as defined in the corresponding specification characteristics.'
+        items:
+          $ref: '#/definitions/ConfigurableSpecificationCharacteristicValueUse'
+      statusReason:
+        type: string
+        description: A string providing a complementary information on the value of the lifecycle status attribute.
+      validFor:
+        description: The period for which the productOffering is valid
+        $ref: '#/definitions/TimePeriod'
+      version:
+        type: string
+        description: ProductOffering version
+    title: GetProductOfferResponse
+    description: Contains Product Offer details
+  Error:
+    type: object
+    properties:
+      detail:
+        type: string
+        description: The complete details of Exception messages.
+      source:
+        $ref: '#/definitions/Source'
+    title: Error
+  MarketSegmentRef:
+    type: object
+    required:
+      - id
+    properties:
+      '@baseType':
+        type: string
+        description: 'When sub-classing, this defines the super-class'
+      '@referredType':
+        type: string
+        description: (Class) type of the referred market segment
+      '@schemaLocation':
+        type: string
+        description: A URI to a JSON-Schema file that defines additional attributes and relationships
+      '@type':
+        type: string
+        description: 'When sub-classing, this defines the sub-class entity name'
+      href:
+        type: string
+        description: Reference of the market segment
+      id:
+        type: string
+        description: Unique identifier of the market segment
+      name:
+        type: string
+        description: Name of the market segment
+    title: MarketSegmentRef
+    description: 'provides references to the corresponding market segment as target of product offerings. A market segment is grouping of Parties, GeographicAreas, SalesChannels, and so forth.'
+  Money:
+    type: object
+    properties:
+      unit:
+        type: string
+        description: Currency (ISO4217 norm uses 3 letters to define the currency)
+      value:
+        type: number
+        format: float
+        description: A positive floating point number
+    title: Money
+    description: A base / value business entity used to represent money
+  OfferLabels:
+    type: object
+    properties:
+      channel:
+        type: string
+        description: channel reference of the related entity.
+      description:
+        type: string
+        description: Description of the offer labels.
+      name:
+        type: string
+        description: Name of the related entity.
+    title: OfferLabels
+    description: 'Offer labels: offer label section where we capture details of offers with respect to channel.'
+  PlaceRef:
+    type: object
+    required:
+      - id
+    properties:
+      '@baseType':
+        type: string
+        description: 'When sub-classing, this defines the super-class'
+      '@referredType':
+        type: string
+        description: The actual type of the target instance when needed for disambiguation.
+      '@schemaLocation':
+        type: string
+        description: ' hyperlink reference to the schema describing this resource.'
+      '@type':
+        type: string
+        description: 'When sub-classing, this defines the sub-class entity name'
+      address:
+        type: string
+      href:
+        type: string
+        description: Reference of the related entity.
+      id:
+        type: string
+        description: Unique identifier of a related entity.
+      name:
+        type: string
+        description: Name of the related entity.
+      role:
+        type: string
+        description: ' Role.'
+    title: PlaceRef
+    description: Place reference. PlaceRef defines the placeRefs where the products are sold or delivered.
+  PricingLogicAlgorithm:
+    type: object
+    required:
+      - id
+    properties:
+      baseType:
+        type: string
+        description: 'When sub-classing, this defines the super-class'
+      description:
+        type: string
+        description: Description of the PricingLogicAlgorithm
+      href:
+        type: string
+        description: hyperlink reference of this PricingLogicAlgorithm
+      id:
+        type: string
+        description: unique id of the PricingLogicAlgorithm
+      name:
+        type: string
+        description: Name given to the PricingLogicAlgorithm
+      plaSpecId:
+        type: string
+        description: id of corresponding PricingLogicAlgorithm specification
+      type:
+        type: string
+        description: 'When sub-classing, this defines the sub-class entity name'
+      validFor:
+        description: The period for which the PricingLogicAlgorithm is valid
+        $ref: '#/definitions/TimePeriod'
+    title: PricingLogicAlgorithm
+    description: The PricingLogicAlgorithm entity represents an instantiation of an interface specification to external rating function (without a modeled bahavior in SID). Some of the parameters of the interface definiition may be already set (such as price per unit) and some may be gathered during the rating process from the event (such as call duration) or from ProductCharacteristicValues (such as assigned bandwidth)
+  ProductOffering:
+    type: object
+    properties:
+      href:
+        type: string
+      id:
+        type: string
+      name:
+        type: string
+      version:
+        type: string
+    title: ProductOffering
+    description: ProductOffering is made available to Customers at Offering Price level
+  ProductOfferingPrice:
+    type: object
+    properties:
+      '@baseType':
+        type: string
+        description: the immediate base class type of this product offering
+      '@type':
+        type: string
+        description: The class type of this Product offering
+      bundledPopRelationship:
+        type: array
+        description: this object represents a bundle relationship from a bundle product offering price (parent) to a simple product offering price (child). A simple product offering price may participate in more than one bundle relationship.
+        items:
+          $ref: '#/definitions/BundledProductOfferingPriceRelationship'
+      code:
+        type: string
+        description: unique Code for external use of this pricing.
+      constraint:
+        type: array
+        description: The Constraint resource represents a policy/rule applied to ProductOfferingPrice.
+        items:
+          $ref: '#/definitions/ConstraintRef'
+      createdBy:
+        type: string
+      createdOn:
+        type: string
+        format: date-time
+      description:
+        type: string
+        description: Description of the productOfferingPrice
+      externalID:
+        type: string
+        description: A String. This is ID/Primary key/Unique ID of the entity which is loaded/inserted/imported in BM Catalog.
+      href:
+        type: string
+        description: Reference of the ProductOfferingPrice
+      id:
+        type: string
+        description: unique id of this resource
+      isBundle:
+        type: boolean
+        description: A flag indicating if this ProductOfferingPrice is composite (bundle) or not
+      lastUpdate:
+        type: string
+        format: date-time
+        description: the last update time of this ProductOfferingPrice
+      lastUpdatedBy:
+        type: string
+      lifecycleStatus:
+        type: string
+        description: the lifecycle status of this ProductOfferingPrice
+      money:
+        description: A base / value business entity used to represent money
+        $ref: '#/definitions/Money'
+      name:
+        type: string
+        description: Name of the productOfferingPrice
+      percentage:
+        type: number
+        format: float
+        description: Percentage to apply for ProductOfferPriceAlteration (Discount)
+      place:
+        type: array
+        description: Place defines the places where the products are sold or delivered.
+        items:
+          $ref: '#/definitions/PlaceRef'
+      popRelationship:
+        type: array
+        description: 'Product Offering Prices related to this Product Offering Price, for example a price alteration such as allowance or discount'
+        items:
+          $ref: '#/definitions/ProductOfferingPriceRelationship'
+      price:
+        description: The amount of money that characterizes the price.
+        $ref: '#/definitions/Money'
+      priceType:
+        type: string
+        description: 'A category that describes the price, such as recurring, discount, allowance, penalty, and so forth.'
+      pricingLogicAlgorithm:
+        type: array
+        description: The PricingLogicAlgorithm entity represents an instantiation of an interface specification to external rating function (without a modeled behavior in SID). Some of the parameters of the interface definition may be already set (such as price per unit) and some may be gathered during the rating process from the event (such as call duration) or from ProductCharacteristicValues (such as assigned bandwidth).
+        items:
+          $ref: '#/definitions/PricingLogicAlgorithm'
+      productOffering:
+        description: ProductOffering Ref represent object under OfferingPrice level
+        $ref: '#/definitions/ProductOffering'
+      productOfferingTerm:
+        type: array
+        description: 'A list of conditions under which a ProductOfferingPrice is made available to Customers. For instance, a Product Offering Price can be offered with multiple commitment periods.'
+        items:
+          $ref: '#/definitions/ProductOfferingTerm'
+      recurringChargePeriodLength:
+        type: integer
+        format: int32
+        description: 'the period of the recurring charge:  1, 2, ... .It sets to zero if it is not applicable'
+      recurringChargePeriodType:
+        type: string
+        description: 'The period to repeat the application of the price Could be month, week...'
+      specCharValueUse:
+        type: array
+        description: A use of the SpecificationCharacteristicValue by a ProductOfferingPrice to which additional properties (attributes) apply or override the properties of similar properties contained in SpecificationCharacteristicValue. It should be noted that characteristics which their value(s) addressed by this object must exist in corresponding specification. The available characteristic values for a SpecificationCharacteristic in a specification can be modified at the ProductOffering and ProcuctOfferingPrice level. The list of values in SpecificationCharacteristicValueUse is a strict subset of the list of values as defined in the corresponding specification characteristics.
+        items:
+          $ref: '#/definitions/SpecificationCharacteristicValueUse'
+      tax:
+        type: array
+        description: An amount of money levied on the price of a Product by a legislative body.
+        items:
+          $ref: '#/definitions/TaxItem'
+      unitOfMeasure:
+        description: 'A number and unit representing how many (for instance 1 dozen) of an ProductOffering is available at the offered price. Its meaning depends on the priceType. It could be a price, a rate, or a discount'
+        $ref: '#/definitions/Quantity'
+      validFor:
+        description: The period for which the productOfferingPrice is valid
+        $ref: '#/definitions/TimePeriod'
+      version:
+        type: string
+        description: ProductOffering version
+    title: ProductOfferingPrice
+    description: 'Is based on both the basic cost to develop and produce products and the enterprises policy on revenue targets. This price may be further revised through discounting (productOfferPriceAlteration). The price, applied for a productOffering may also be influenced by the productOfferingTerm, the customer selected, eg: a productOffering can be offered with multiple terms, like commitment periods for the contract. The price may be influenced by this productOfferingTerm. A productOffering may be cheaper with a 24 month commitment than with a 12 month commitment.'
+  ProductOfferingPriceRef:
+    type: object
+    properties:
+      '@baseType':
+        type: string
+      '@referredType':
+        type: string
+      '@schemaLocation':
+        type: string
+      '@type':
+        type: string
+      href:
+        type: string
+      id:
+        type: string
+      name:
+        type: string
+    title: ProductOfferingPriceRef
+  ProductOfferingPriceRelationship:
+    type: object
+    required:
+      - id
+    properties:
+      '@baseType':
+        type: string
+        description: 'When sub-classing, this defines the super-class'
+      '@type':
+        type: string
+        description: 'When sub-classing, this defines the sub-class entity name'
+      href:
+        type: string
+        description: hyperlink reference of the associated product offering price
+      id:
+        type: string
+        description: Unique identifier of the associated product offering price
+      name:
+        type: string
+        description: Name of the associated product offering price
+      relationshipType:
+        type: string
+        description: 'type of the relationship, for example override, discount, etc.'
+    title: ProductOfferingPriceRelationship
+    description: Describes a non-composite relationship between product offering prices. For example one price might be an discount alteration for another price.
+  ProductOfferingTerm:
+    type: object
+    properties:
+      '@baseType':
+        type: string
+        description: 'When sub-classing, this defines the super-class'
+      '@schemaLocation':
+        type: string
+        description: ' hyperlink reference to the schema describing this resource.'
+      '@type':
+        type: string
+        description: 'When sub-classing, this defines the sub-class entity name'
+      description:
+        type: string
+        description: Description of the productOfferingTerm
+      duration:
+        description: Duration of the productOfferingTerm
+        $ref: '#/definitions/Quantity'
+      name:
+        type: string
+        description: Name of the productOfferingTerm
+      validFor:
+        description: The period for which the productOfferingTerm is valid
+        $ref: '#/definitions/TimePeriod'
+    title: ProductOfferingTerm
+    description: 'A condition under which a ProductOffering is made available to Customers. For instance, a productOffering can be offered with multiple commitment periods.'
+  ProductSpecification:
+    type: object
+    required:
+      - id
+    properties:
+      href:
+        type: string
+        description: Reference of the product specification.
+      id:
+        type: string
+        description: Unique identifier of the product specification.
+      name:
+        type: string
+        description: Name of the product specification.
+      resourceSpecification:
+        type: array
+        items:
+          $ref: '#/definitions/ResourceSpecification'
+      serviceSpecification:
+        type: array
+        items:
+          $ref: '#/definitions/ServiceSpecification'
+      version:
+        type: string
+        description: Product specification version.
+    title: ProductSpecification
+    description: 'Product specification reference: A Specification is a detailed description of a tangible or intangible object made available externally in the form of a Offering to customers or other parties playing a party role.'
+  Quantity:
+    type: object
+    properties:
+      amount:
+        type: number
+        format: float
+        description: Numeric value in a given unit
+      units:
+        type: string
+        description: Unit
+    title: Quantity
+    description: An amount in a given unit
+  ResourceCandidateRef:
+    type: object
+    required:
+      - id
+    properties:
+      '@baseType':
+        type: string
+        description: 'When sub-classing, this defines the super-class'
+      '@referredType':
+        type: string
+        description: The actual type of the target instance when needed for disambiguation.
+      '@schemaLocation':
+        type: string
+        description: A URI to a JSON-Schema file that defines additional attributes and relationships
+      '@type':
+        type: string
+        description: 'When sub-classing, this defines the sub-class entity name'
+      href:
+        type: string
+        description: Reference of the resource candidate
+      id:
+        type: string
+        description: Unique identifier of the resource candidate
+      name:
+        type: string
+        description: Name of the resource candidate
+      version:
+        type: string
+        description: Version of the resource candidate
+    title: ResourceCandidateRef
+    description: 'ResourceCandidate reference: A resource candidate is an entity that makes a ResourceSpecification available to a catalog.'
+  ResourceSpecification:
+    type: object
+    required:
+      - id
+    properties:
+      href:
+        type: string
+        description: Reference of the resource specification.
+      id:
+        type: string
+        description: Unique identifier of the resource specification.
+      name:
+        type: string
+        description: Name of the requiredResourceSpecification.
+      version:
+        type: string
+        description: Resource specification version.
+    title: ResourceSpecification
+    description: 'Resource specification reference: A Specification is a detailed description of a tangible or intangible object made available externally in the form of a Offering to customers or other parties playing a party role.'
+
+  SLARef:
+    type: object
+    required:
+      - id
+    properties:
+      '@baseType':
+        type: string
+        description: 'When sub-classing, this defines the super-class'
+      '@referredType':
+        type: string
+        description: The actual type of the target instance when needed for disambiguation.
+      '@schemaLocation':
+        type: string
+        description: A URI to a JSON-Schema file that defines additional attributes and relationships
+      '@type':
+        type: string
+        description: 'When sub-classing, this defines the sub-class entity name'
+      href:
+        type: string
+        description: Reference of the service level agreement
+      id:
+        type: string
+        description: Unique identifier of service level agreement
+      name:
+        type: string
+        description: Name of the service level agreement
+    title: SLARef
+    description: 'ServiceLevelAgreement reference: A service level agreement (SLA) is a type of agreement that represents a formal negotiated agreement between two parties designed to create a common understanding about products, services, priorities, responsibilities, and so forth. The SLA is a set of appropriate procedures and targets formally or informally agreed between parties in order to achieve and maintain specified Quality of Service.'
+  ServiceCandidateRef:
+    type: object
+    required:
+      - id
+    properties:
+      '@baseType':
+        type: string
+        description: 'When sub-classing, this defines the super-class'
+      '@referredType':
+        type: string
+        description: The actual type of the target instance when needed for disambiguation.
+      '@schemaLocation':
+        type: string
+        description: A URI to a JSON-Schema file that defines additional attributes and relationships
+      '@type':
+        type: string
+        description: 'When sub-classing, this defines the sub-class entity name'
+      href:
+        type: string
+        description: Unique reference of the service candidate
+      id:
+        type: string
+        description: Unique identifier of the service candidate
+      name:
+        type: string
+        description: Name of the service candidate
+      version:
+        type: string
+        description: Version of the service candidate
+    title: ServiceCandidateRef
+    description: ServiceCandidate reference. ServiceCandidate is an entity that makes a ServiceSpecification available to a catalog.
+  ServiceSpecification:
+    type: object
+    required:
+      - id
+    properties:
+      href:
+        type: string
+        description: Reference of the serviceSpecification.
+      id:
+        type: string
+        description: Unique identifier of the service specification.
+      name:
+        type: string
+        description: Name of the requiredServiceSpecification.
+      version:
+        type: string
+        description: version of ResourceSpecification.
+    title: ServiceSpecification
+    description: 'Service specification reference: A Specification is a detailed description of a tangible or intangible object made available externally in the form of a Offering to customers or other parties playing a party role.'
+
+  SpecificationCharacteristicValue:
+    type: object
+    required:
+      - value
+    properties:
+      '@baseType':
+        type: string
+        description: 'When sub-classing, this defines the super-class'
+      '@schemaLocation':
+        type: string
+        description: A URI to a JSON-Schema file that defines additional attributes and relationships
+      '@type':
+        type: string
+        description: 'When sub-classing, this defines the sub-class entity name'
+      isDefault:
+        type: boolean
+        description: Indicates if the value is the default value for a characteristic
+      rangeInterval:
+        type: string
+        description: 'An indicator that specifies the inclusion or exclusion of the valueFrom and valueTo attributes. If applicable, possible values are "open", "closed", "closedBottom" and "closedTop".'
+      regex:
+        type: string
+        description: Regular expression to define constraint on the allowed value
+      unitOfMeasure:
+        type: string
+        description: 'A length, surface, volume, dry measure, liquid measure, money, weight, time, and the like. In general, a determinate quantity or magnitude of the kind designated, taken as a standard of comparison for others of the same kind, in assigning to them numerical values, as 1 foot, 1 yard, 1 mile, 1 square foot.'
+      validFor:
+        description: The period of time for which a value is applicable
+        $ref: '#/definitions/TimePeriod'
+      value:
+        type: string
+        description: A discrete value that the characteristic can take on.
+      valueFrom:
+        type: string
+        description: The low range value that a characteristic can take on
+      valueReference:
+        type: string
+      valueTo:
+        type: string
+        description: The upper range value that a characteristic can take on
+      valueType:
+        type: string
+        description: 'A kind of value that the characteristic can take on, such as numeric, text, and so forth'
+    title: SpecificationCharacteristicValue
+    description: 'A SpecificationCharacteristicValue object is used to define a set of attributes, each of which can be assigned to a corresponding set of attributes in a SpecificationCharacteristic object. The values of the attributes in the SpecificationCharacteristicValue object describe the values of the attributes that a corresponding SpecificationCharacteristic object can take on.'
+  SpecificationCharacteristicValueUse:
+    type: object
+    required:
+      - name
+      - specCharacteristicValue
+    properties:
+      '@baseType':
+        type: string
+        description: 'When sub-classing, this defines the super-class'
+      '@schemaLocation':
+        type: string
+        description: ' hyperlink reference to the schema describing this resource.'
+      '@type':
+        type: string
+        description: 'When sub-classing, this defines the sub-class entity name'
+      description:
+        type: string
+        description: A narrative that explains in detail what the productSpecificationCharacteristic is
+      maxCardinality:
+        type: integer
+        format: int32
+        description: 'The maximum number of instances a CharacteristicValue can take on. For example, zero to five phone numbers in a group calling plan, where five is the value for the maxCardinality.'
+      minCardinality:
+        type: integer
+        format: int32
+        description: 'The minimum number of instances a CharacteristicValue can take on. For example, zero to five phone numbers in a group calling plan, where zero is the value for the minCardinality.'
+      name:
+        type: string
+        description: Name of the associated productSpecificationCharacteristic
+      referenceId:
+        type: string
+      specCharacteristicValue:
+        type: array
+        description: A number or text that can be assigned to a SpecificationCharacteristic.
+        items:
+          $ref: '#/definitions/SpecificationCharacteristicValue'
+      specification:
+        description: A Specification is a detailed description of a tangible or intangible object made available externally in the form of a ProductOffering to customers or other parties playing a party role.
+        $ref: '#/definitions/SpecificationRef'
+      specificationType:
+        type: string
+        description: 'When sub-classing, this defines the sub-class specification type'
+      validFor:
+        description: The period for which the productSpecificationCharacteristic is valid
+        $ref: '#/definitions/TimePeriod'
+      valueType:
+        type: string
+        description: 'A kind of value that the characteristic can take on, such as numeric, text and so forth'
+    title: SpecificationCharacteristicValueUse
+    description: 'A use of the SpecificationCharacteristicValue by a ProductOffering to which additional properties (attributes) apply or override the properties of similar properties contained in SpecificationCharacteristicValue. It should be noted that characteristics which their value(s) addressed by this object must exist in corresponding specification. The available characteristic values for a SpecificationCharacteristic in a specification can be modified at the ProductOffering level. For example, a characteristic ''Color'' might have values White, Blue, Green, and Red. But, the list of values can be restricted to e.g. White and Blue in an associated product offering. It should be noted that the list of values in ''SpecificationCharacteristicValueUse'' is a strict subset of the list of values as defined in the corresponding specification characteristics.'
+  SpecificationRef:
+    type: object
+    required:
+      - id
+    properties:
+      '@baseType':
+        type: string
+        description: 'When sub-classing, this defines the super-class'
+      '@referredType':
+        type: string
+        description: The actual type of the target instance when needed for disambiguation.
+      '@schemaLocation':
+        type: string
+        description: A URI to a JSON-Schema file that defines additional attributes and relationships
+      '@type':
+        type: string
+        description: 'When sub-classing, this defines the sub-class entity name'
+      href:
+        type: string
+        description: Reference of the related entity.
+      id:
+        type: string
+        description: Unique identifier of a related entity.
+      name:
+        type: string
+        description: Name of the related entity.
+      version:
+        type: string
+        description: Version of the  specification
+    title: SpecificationRef
+    description: 'specification reference: A Specification is a detailed description of a tangible or intangible object made available externally in the form of a Offering to customers or other parties playing a party role.'
+  Source:
+    type: object
+    properties:
+      exception:
+        type: string
+        description: Actual exception occures.
+      pointer:
+        type: string
+        description: The field for which validation fails.
+    title: Source
+  TaxItem:
+    type: object
+    required:
+      - taxCategory
+      - taxRate
+    properties:
+      '@baseType':
+        type: string
+        description: 'When sub-classing, this defines the super-class'
+      '@type':
+        type: string
+        description: 'When sub-classing, this defines the sub-class entity name'
+      taxAmount:
+        description: Amount of tax expressed in the given currency
+        $ref: '#/definitions/Money'
+      taxCategory:
+        type: string
+        description: Tax category
+      taxRate:
+        type: number
+        format: float
+        description: Applied rate of the tax
+    title: TaxItem
+    description: A tax item is created for each tax rate and tax type used in the bill.
+
+  TimePeriod:
+    type: object
+    properties:
+      endDateTime:
+        type: string
+        format: date-time
+        description: End date of the catalog
+      startDateTime:
+        type: string
+        format: date-time
+        description: Start date of the catalog
+    title: TimePeriod
