@@ -35,10 +35,13 @@ paths:
           description: Success
           schema:
             $ref: '#/definitions/GetProductOfferResponse'
+<<<<<<< HEAD
           examples:
             jsonObject:
               summary: A sample object
               externalValue: 'https://drive.google.com/file/d/1IO_JKPzza3R48joS7UhcPTXzyzFhHyuz/view'
+=======
+>>>>>>> e8243664d4c6fc6a068297e2095d4b28b9a63c0f
         '400':
           description: Bad Request
           schema:
@@ -396,6 +399,13 @@ definitions:
 
   GetProductOfferResponse:
     type: object
+<<<<<<< HEAD
+=======
+    example:
+      jsonObject:
+        summary: A sample object
+        externalValue: 'https://github.com/moznobkin/MLK-Inteface-Agreements/blob/swaggerhub/productOfferExample1.json'
+>>>>>>> e8243664d4c6fc6a068297e2095d4b28b9a63c0f
     properties:
       '@baseType':
         type: string
@@ -490,7 +500,11 @@ definitions:
         type: array
         description: 'An amount, usually of money, that is asked for or allowed when a ProductOffering is bought, rented, or leased. The price is valid for a defined period of time and may not represent the actual price paid by a customer.'
         items:
+<<<<<<< HEAD
           $ref: '#/definitions/ProductOfferingPrice'
+=======
+          $ref: '#/definitions/ProductOfferingPriceRef'
+>>>>>>> e8243664d4c6fc6a068297e2095d4b28b9a63c0f
       productOfferingTerm:
         type: array
         description: 'A condition under which a ProductOffering is made available to Customers. For instance, a productOffering can be offered with multiple commitment periods.'
@@ -1192,6 +1206,7 @@ definitions:
         type: string
         format: date-time
         description: Start date of the catalog
+<<<<<<< HEAD
     title: TimePeriod
     
 # Added by API Auto Mocking Plugin
@@ -1199,3 +1214,6 @@ host: virtserver.swaggerhub.com
 basePath: /moznobkin/Product_Catalog_View/0.0.1
 schemes:
  - https
+=======
+    title: TimePeriod
+>>>>>>> e8243664d4c6fc6a068297e2095d4b28b9a63c0f
