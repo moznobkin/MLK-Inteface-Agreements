@@ -1,0 +1,255 @@
+openapi: 3.0.0
+info:
+  
+  version: "0.0.1"
+  title: CVM Personal Offer API
+  termsOfService: 'http://....'
+  description: |
+    ### Бизнес-логика
+    В рамках проекта CVM была запущена новая функциональность "Персональные предложения"
+    Цель: увеличение прибыли за счет таргетированной рассылки предложений абонентам. Абонентам предлагаются офферы, рассчитанные по модели специалистами из BigData.
+    Все персональные предложения заводятся в системе СУМК (Система управления маркетинговыми кампаниями), так же встречается название CIM (Customer Interaction Manager).
+    Заведенные предложения отображаются в Личном кабинете, а так же доступны в других каналах (IVR, USSD и пр.).
+    Дважды в год проводится массовая inbound-кампания, которая предполагает, что не менее 90% абонентов получают ПП, в том числе и ценные призы типа 100% скидки на АП на год, смартфонов и пр. крупных призов.
+    С 2018 года в ЛК работает механика "Потряси", которая переиздавалась уже 3 раза.
+    Вся информации о поведении пользователей с этими ПП собирается в виде откликов разного типа, которые впоследствии отправляются в BigData для обучения модели и повышения релевантности ПП.
+    
+    
+tags:
+  - name: personal-offer
+    description: CVM Personal Offer API
+    
+paths:
+  /banner-api3/get:
+    get:
+      summary: Retrieves all Personal Offers.
+      description: |
+        This operation retrieves detailed personal offers
+
+      operationId: getPersonalOfferDetailed
+      parameters:
+        - name: msisdn
+          in: query
+          required: true
+          schema:
+            type: string
+            maxLength: 10
+          description: 'msisdn of the customer'
+          example: '9261234567'
+        - name: jobId
+          in: query
+          required: true
+          schema:
+            type: integer
+            format: int64
+          description: 'Id of the personal offer'
+          example: 25705723
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PersonalOfferDetailed'
+
+      deprecated: false
+  /banner-api3/get-list:
+    get:
+      summary: Retrieves all Personal Offers.
+      description: This operation retrieves all personal offers.
+      operationId: getPersonalOfferList
+      parameters:
+        - name: msisdn
+          in: query
+          required: true
+          schema:
+            type: string
+            maxLength: 10
+          description: 'msisdn of the customer'
+          example: '9261234567'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PersonalOffers'
+
+      deprecated: false
+      
+components:
+  schemas:
+    PersonalOffer: 
+      type: object
+      description: |
+        For Dyna integration the following fields addedto responce:
+        * productOfferingId
+        * @type enum element PersonalOffer
+      properties:
+        id:
+          type: integer
+          example: 25705723
+          description: 'id кампании, этот же id часто называют uc_job_id'
+        banner:
+          type: string
+          example: 'https://i.megafon.ru/b/49677995/49635815.jpg'
+          description: 'ссылка на картинку (маленький зеленый кружок, остается для совместимости со старыми фронтами)'
+        bannerBig: 
+          type: string
+          example: 'https://i.megafon.ru/b/49677995/49635813.jpg'
+          description: 'ссылка на картинку (большая старая картинка, параметр banner метода GET). Остается для поддержки старых офферов'
+        bannerPreview: 
+          type: string
+          description: 'ссылка на картинку, которая используется в ленте офферов в МЛК 2.0, начиная с версии 4.5.0'
+        partnerLogo: 
+          type: string
+          description: 'ссылка на логотип партнера'
+        partnerName: 
+          type: string  
+          example: 'Мегафон ретейл'
+          description: 'название партнера'
+        '@type': 
+          type: string 
+          enum: [ActivateServiceLandingdescription, PersonalOffer]
+          example: 'PersonalOffer'
+          description: 'тип оффера, определяет механику подключения'
+        buttonText: 
+          type: string  
+          example: 'Посмотреть подборку'
+          description: ' текст для кнопки подключения ПП. Используется для метода GAME'
+        newOffer:
+          type: boolean
+          example: false
+          description: 'признак, новый оффер или нет'
+        offerSubType: 
+          type: string  
+          example: 'VAS Приоритетные'
+          description: 'подтип оффера (к какой группе продуктов относится ПП)'
+        subTitle: 
+          type: string
+          example: 'Проводите время дома с комфортом и пользой для себя'
+          description: 'подзаголовок (выводится, начиная с версии 4.5.0)'
+        title: 
+          type: string
+          example: 'Бесплатный доступ к полезным сервисам'
+          description: 'заголовок'
+        banerSubTitle: 
+          type: string  
+          example: 'Проводите время дома с комфортом и пользой для себя'
+          description: 'по ходу, дублирует SubTitle'
+        startDate:
+          type: string
+          format: Date
+          description: 'дата запуска кампании'
+        endDate:
+          type: string
+          format: date
+          description: 'дата окончания действия оффера'
+        feedback1Url: 
+          type: string 
+          example: 'http://10.77.93.229/banner-api3/feedback?msisdn=79067648050&jobId=25705723&feedback_type=1'
+          description: 'URL для отправки отклика 1-го типа. Уже не используется. Теперь ссылка для отправки отклика формируется на стороне ЛК. Выпилим в ближайшее время'
+        priority:
+          type: integer
+          example: 74
+          description: 'приоритет (чем больше цифра, тем важнее)'
+        present:
+          type: boolean
+          example: false
+          description: 'признак "Подарок"/"Не подарок" (участвует в механике "Потряси" или нет)'
+        productOfferingId:
+          type: string
+          format: guid
+          description: 'Unique identifier of the productOffering'
+          example: '390ec115-f6fa-4d94-a693-a6cb2b765aba'
+    
+    PersonalOffers: 
+      type: array
+      items:
+        $ref: '#/components/schemas/PersonalOffer'
+        
+    PersonalOfferDetailed:
+      description: |
+        For Dyna integration the following fields addedto responce:
+        * productOfferingId
+        * @type enum element PersonalOffer
+      type: object
+      properties:
+        banner:
+          type: string
+          example: 'https://i.megafon.ru/b/49677995/49635813.jpg'    
+          description: 'ссылка на картинку, остается для совместимости со старыми фронтами'
+        bannerDetail:
+          description: 'ссылка на новую большую красивую картинку'
+        partnerLogo:
+          description: 'ссылка на логотип партнера'
+        partnerName: 
+            type: string          
+            example: ' МФР'
+            description:  'название партнера'
+        '@type':             
+          type: string     
+          enum: [ActivateServiceLanding, PersonalOffer]      
+          example: 'PersonalOffer'    
+          description:  'тип оффера, определяет механику подключения'
+        offerType:             
+          type: string             
+          example: 'Vas'    
+          description:  'тип оффера, определяет механику приоритизации офферов на стороне uc_job_id'
+        buttonText:             
+          type: string             
+          example: 'Посмотреть подборку'    
+          description: 'текст для кнопки подключения ПП.'
+        title:             
+          type: string             
+          example: 'Бесплатный доступ к полезным сервисам'
+          description: 'заголовок'
+        subTitle:             
+          type: string             
+          example: 'Проводите время дома с комфортом и пользой для себя'    
+          description:  'подзаголовок'
+        '@description':             
+          type: string             
+          example: 'За последние дни произошло много изменений — и это повод освоить что-то новое. Например, начать пользоваться онлайн-сервисами.\r\nЛовите нашу подборку бесплатных и выгодных сервисов:\r\n— заказывайте с доставкой еду, продукты и лекарства с кэшбэком;\r\n— смотрите кино и слушайте музыку бесплатно;\r\n— развивайтесь с онлайн-курсами, книгами и прессой;\r\n— отдыхайте с любимыми играми.'    
+          description:  'описание'
+        startDate:
+          type: string
+          format: Date
+          description: 'дата запуска кампании'
+        endDate:
+          type: string
+          format: date
+          description: 'дата окончания действия оффера'
+        feedback2Url:             
+          type: string             
+          example: 'http://10.77.93.229/banner-api3/feedback?msisdn=79067648050&jobId=25705723,-- URL для отправки отклика. Уже не используется. Теперь ссылка для отправки отклика формируется на стороне ЛК. Выпилим в ближайшее время'
+        feedback2Value2Url:             
+          type: string             
+          example: 'http://10.77.93.229/banner-api3/feedback?msisdn=79067648050&jobId=25705723&feedback_type=2&feedback_value=3,-- URL для отправки отклика. Уже не используется. Теперь ссылка для отправки отклика формируется на стороне ЛК. Выпилим в ближайшее время'
+        feedback2Value3Url:             
+          type: string             
+          example: 'http://10.77.93.229/banner-api3/feedback?msisdn=79067648050&jobId=25705723&feedback_type=2&feedback_value=2,-- URL для отправки отклика. Уже не используется. Теперь ссылка для отправки отклика формируется на стороне ЛК. Выпилим в ближайшее время'
+        offerSubType:             
+          type: string             
+          example: 'VAS Приоритетные'    
+          description:  'подтип оффера (к какой группе продуктов относится ПП)'
+        channelParameters: 
+          type: object             
+          properties:
+            _MLKspecialOfferUrl:             
+              type: string             
+              example: 'https://gifts.megafon.ru/sidimdoma?utm_source=lk-cvm&utm_medium=lk-cvm&utm_campaign=sidimdoma'
+            _WEBspecialOfferUrl:             
+              type: string             
+              example: 'https://gifts.megafon.ru/sidimdoma?utm_source=lk-cvm&utm_medium=lk-cvm&utm_campaign=sidimdoma'
+          description: 'состав предложения (id биллинговых продуктов, ссылки на лэндинги, сумма для пополнения счета)'
+        productOfferingId:
+          type: string
+          format: guid
+          description: 'Unique identifier of the productOffering'
+          example: '390ec115-f6fa-4d94-a693-a6cb2b765aba'
+
+# Added by API Auto Mocking Plugin
+servers:
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/moznobkin/CVM_PersonalOffers_IA/0.0.1
