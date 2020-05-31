@@ -1,0 +1,73 @@
+openapi: 3.0.0
+info:
+  version: '0.0.1'
+  title: 'MOPS Shopping cart Interface Agreement'
+  description: ''
+paths: 
+  openapi/v2/shoppingCarts:
+    get:
+      summary: finds customer shopping cart.
+      description: |
+        This operation finds customer shopping cart
+        Unlike now it should be using partyId from CDI
+
+      operationId: getShoppingCart
+      parameters:
+        - name: partyId
+          in: query
+          required: true
+          schema:
+            type: integer
+            format: int64
+          description: 'Id of the personal offer'
+          example: 25705723
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ShoppingCart'
+        '400': 
+          description: Bad request В параметрах запроса указаны некорректные данные.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/APIError'
+          
+        '500': 
+          description: Internal server error внутренняя ошибка сервера.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/APIError'
+
+      deprecated: false
+
+components:
+  schemas:
+    ShoppingCart: 
+      type: object
+      description: |
+        For Dyna integration the following fields addedto responce:
+        * productOfferingId
+        * @type enum element PersonalOffer
+      properties:
+    APIError:
+      type: object
+      properties:
+        serviceName:
+          type: string 
+          example: 'GET /shoppingCarts'
+        errorCode: 
+          type: string
+          enum: [InternalServerError, RequiredParamException, InvalidParamException]
+          example: 'InternalServerError'
+        userMessage:
+          type: string
+          description: 'Текстовое описание ошибки, понятное конечному пользователю, с указанием причины на стороне сервиса'
+
+# Added by API Auto Mocking Plugin
+servers:
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/moznobkin/MOPS_ShoppingCart_IA/0.0.1
