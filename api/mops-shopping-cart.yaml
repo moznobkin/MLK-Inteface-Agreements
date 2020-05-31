@@ -2,14 +2,16 @@ openapi: 3.0.0
 info:
   version: '0.0.1'
   title: 'MOPS Shopping cart Interface Agreement'
-  description: ''
+  description: |
+    Описание методов openapi кторые будут использоваться LK/MLK в рамках интеграции с федеральным каталогом
 paths: 
-  openapi/v2/shoppingCarts:
+  /openapi/v2/shoppingCarts:
     get:
       summary: finds customer shopping cart.
       description: |
         This operation finds customer shopping cart
         Unlike now it should be using partyId from CDI
+        Empty array means there is no shopping cart of that category for that user
 
       operationId: getShoppingCart
       parameters:
@@ -17,10 +19,10 @@ paths:
           in: query
           required: true
           schema:
-            type: integer
-            format: int64
-          description: 'Id of the personal offer'
-          example: 25705723
+            type: string 
+            format: guid
+          description: 'PartyId of the user'
+          example: '0002bf63-4587-494e-bc24-e7766b9cbc56'
       responses:
         '200':
           description: Success
@@ -43,16 +45,142 @@ paths:
                 $ref: '#/components/schemas/APIError'
 
       deprecated: false
+    post:
+      description: |
+        Cоздание новой(пустой) корзины.
+      operationId: createShoppingCart
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateShoppingCartRequest'
+            examples:
+              SalesCompletion:
+                value:
+                  category: SALES_COMPLETION
+                  tags:
+                    - tagName: subscriberId
+                      tagValue: '345'
+                    - tagName: MSISDN
+                      tagValue: '9202537192'
+              Teleport:
+                value:
+                  category: TELEPORT
+                  tags:
+                    - tagName: CAMСustomerId
+                      tagValue: '1111'
+                    - tagName: BISСustomerId
+                      tagValue: '1111'
+                    - tagName: subscriberId
+                      tagValue: '345'
+              Vas:
+                value:
+                  category: VAS
+                  tags:
+                    - tagName: subscriberId
+                      tagValue: '345'
+              PersonalOffer:
+                value:
+                  category: PERSONAL_OFFER
+                  tags:
+                    - tagName: partyId
+                      tagValue: '0002bf63-4587-494e-bc24-e7766b9cbc56'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ShoppingCart'
+                
+              examples:
+                PersonalOffer:
+                  value:
+                    shoppingCartId: '1234567890asdfghjkl'
+                    category: PERSONAL_OFFER
+                    sourceInfo:
+                      channelCode: MLK
+                      userLogin: 'jaskldfdjasl'
+                      createDateTime: '2019-08-08T01:00:01+03:00'
+                      updateDateTime: '2019-08-08T01:00:01+03:00'
+                    tags:
+                      - tagName: partyId
+                        tagValue: '0002bf63-4587-494e-bc24-e7766b9cbc56'
+                      - tagName: MSISDN
+                        tagValue: '9202537192'
+            
+        '400': 
+          description: Bad request В параметрах запроса указаны некорректные данные.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/APIError'
+          
+        '500': 
+          description: Internal server error внутренняя ошибка сервера.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/APIError'
 
+      deprecated: false
+  	
+  /openapi/v2/shoppingCarts/{shoppingCartId}/elements:
+    get:
+      summary: Gets shopping cart elements
+      description: |
+        Данная функция возвращает содержимое корзины по идентификатору (ShoppingCartId). Функция позволяет вернуть содержимое корзины либо без валидации(isNeedValidate=false) либо c учетом поэлементной валидации (isNeedValidate=true).
+        В случае, если корзина запрошена БЕЗ валидации в ответе  conflicts- пустая коллекция элементов ElementValidationConflict.
+        Валидация эелементов TELECOM_PRODUCT включает проверку на возможность подключения (в CCM).
+        Валидация элементов MNP включает проверку на возможность перехода и дообогащение необязательными параметрами (MNP).
+        Валидация элементов TELEPORT_CUSTOMER включает проверку на корректность персональных данных и в случае несоответствия - заполнение корректными данными (CRM).
+      operationId: getShoppingCartElements
+      parameters:
+        - name: shoppingCartId
+          in: path
+          required: true
+          schema:
+            type: string 
+            format: guid
+          description: 'идентификатор корзины'
+          example: '0002bf63-4587-494e-bc24-e7766b9cbc56'
+        - name: isNeedValidate 
+          in: query
+          required: false
+          schema:
+            type: boolean
+          description: |
+            необходимость производить валидацию при запросе содержимого корзины:
+            *true - запрос содержимого корзины с учетом валидации;
+            *false - запрос содержимого корзины без учета валидации.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ShoppingCartElements'
+        '400': 
+          description: Bad request В параметрах запроса указаны некорректные данные.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/APIError'
+        '404': 
+          description: Not Found - Передан некорректный shoppingCartId.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/APIError'
+        '500': 
+          description: Internal server error внутренняя ошибка сервера.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/APIError'
+      deprecated: false
 components:
   schemas:
-    ShoppingCart: 
-      type: object
-      description: |
-        For Dyna integration the following fields addedto responce:
-        * productOfferingId
-        * @type enum element PersonalOffer
-      properties:
     APIError:
       type: object
       properties:
@@ -61,11 +189,209 @@ components:
           example: 'GET /shoppingCarts'
         errorCode: 
           type: string
-          enum: [InternalServerError, RequiredParamException, InvalidParamException]
+          enum: [InternalServerError, RequiredParamException, InvalidParamException, ServerConfigurationError]
           example: 'InternalServerError'
         userMessage:
           type: string
           description: 'Текстовое описание ошибки, понятное конечному пользователю, с указанием причины на стороне сервиса'
+    CreateShoppingCartRequest:
+      type: object
+      properties:
+        category:
+          type: string 
+          description: ' категория корзины (SALES_COMPLETION, TELEPORT, VAS). Обязательный. Конфигурируемые параметры ShoppingCart - https://confluence.billing.ru/pages/viewpage.action?pageId=276564212'
+        tags: 
+          type: array
+          items:
+            $ref: '#/components/schemas/ShoppingCartTag' 
+            
+    ElementListItem:
+      type: object
+      properties:
+        elementId: 
+          type: string
+          description: идентификатор элемента;
+        sourceInfo:         
+            $ref: '#/components/schemas/SourceInfo'
+        action: 
+          type: string
+          description: действие над объектом элемента корзины (ACTIVATE, CREATE) Конфигурируемые параметры ShoppingCart;
+        status: 
+          $ref: '#/components/schemas/ShoppingCartElementStatus'
+        quantity:
+          type: integer
+          description: количество экземпляров
+        specification: 
+          $ref: '#/components/schemas/ProductOffering'
+        elementPrices: 
+          type: array
+          items:
+            $ref: '#/components/schemas/ElementPrice'
+        conflicts:
+          $ref: '#/components/schemas/ElementValidationConflict'
+          
+        source: 
+          type: string
+          enum: [SHOPPING_CART, CCM, MNP, CRM]
+          description: источник проведенной проверки ; SHOPPING_CART - возвращается в случае ошибок внутри продукта (некорректная конфигурация, падение сервиса и т.д.); CCM/MNP/CRM - конфликт непосредственно от внешней системы, в котором проводится валидация.
+        sourceConflictInfo: 
+          type: array
+          items: 
+            type: string
+          description: Дословный ответ из внешней системы (ССМ, MNP, CRM). Информация о конфликте , при вызове API CCM для проверки возможности  подключения элементов - будет описание конфликта из CCM как есть
+    ElementPrice:
+      type: object
+      properties:
+        '@type': 
+          type: string
+          enum : [CATALOG_PRICE, PRICE]
+        price : 
+          type: object
+          properties:
+            value :
+              type: number
+              example: 350.00
+            percent: 
+              type: number
+              example: 30
+        unit: 
+          type: object
+          properties:
+            id : 
+              type: string
+              description: currency code
+              example: 'RUR'
+            '@description':
+              type: string
+        charge:
+          type: object
+          properties:
+            '@type':
+              type: string
+              enum: [ONE_TIME, RECURRING]
+              
+        alterations: 
+          type: array
+          items:
+            type: object
+            properties:
+              priority :
+                type: integer
+                example: 0
+              '@type': 
+                type: string
+                example: 'PROMOTION'
+              description :
+                type: string
+                example: 'Все лучшее детям'
+              price : 
+                type: object
+                properties:
+                  value: 
+                    type: number
+                    example: -50.00
+              
+        
+    ElementValidationConflict:
+      description: результат валидации
+      type: object
+      properties:
+        '@type': 
+          type: string 
+          enum: [ERROR, WARNING]
+        message: 
+          type: string 
+          description: описание конфликта
+        code: 
+          type: string 
+          description: код конфликта
+    ProductOffering: 
+      type: object
+      properties:
+        productOfferingId: 
+          type: string
+          format: guid
+          example: '390ec115-f6fa-4d94-a693-a6cb2b765aba'
+        href: 
+          type: string
+          format: url
+          example: 'http://int-megafon-bm.k8s.dynacommercelab.com/api/catalog-projection/v1/productOffering/390ec115-f6fa-4d94-a693-a6cb2b765aba'
+          
+    ShoppingCart: 
+      type: array
+      items: 
+        $ref: '#/components/schemas/ShoppingCartListItem'
+      description: array of ShoppingCartListItem
+    ShoppingCartElements: 
+      type: array
+      items:
+        $ref: '#/components/schemas/ElementListItem'
+    ShoppingCartListItem:
+      type: object
+      description: |
+        Shopping cart
+        
+      properties:
+        shoppingCartId:
+          type: string 
+          format: guid
+          description: идентификатор корзины
+        sourceInfo: 
+          $ref: '#/components/schemas/SourceInfo'
+        category:
+          type: string 
+          description: 'категория корзины (SALES_COMPLETION, TELEPORT);'
+        tags: 
+          type: array
+          items:
+            $ref: '#/components/schemas/ShoppingCartTag' 
+          description: 'метки: коллекция содержащая минимум 1 элемент.'
+          
+    ShoppingCartElementStatus: 
+      type: object
+      properties:
+        code: 
+          type: string
+          enum: 
+            - VALID
+            - INVALID
+            - NOT_VALIDATED
+        name: 
+          type: string 
+          description: Описание состояния.
+          
+    ShoppingCartTag:
+      type: object
+      description: |
+        Shopping cart tag
+      properties:
+        tagName:
+          type: string 
+          description: Название метки
+        tagValue: 
+          type: string
+          description: значение метки.    
+          
+    SourceInfo:
+      type: object
+      description: |
+        информация об источнике
+      properties:
+        channelCode:
+          type: string
+          description: 'канал, заполняется на стороне корзины на основании данных, полученных из заголовков HTTP запрос, сформированных  SSO'
+        userLogin:
+          type: string 
+          description: пользователь (оператор), заполняется на стороне корзины на основании данных, полученных из заголовков HTTP запроса , сформированных  SSO;
+        createDateTime: 
+          type: string
+          format: date
+          description: дата создания
+        updateDateTime: 
+          type: string
+          format: date
+          description: дата обновления
+
 
 # Added by API Auto Mocking Plugin
 servers:
