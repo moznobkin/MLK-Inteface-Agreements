@@ -124,7 +124,7 @@ paths:
                 $ref: '#/components/schemas/APIError'
 
       deprecated: false
-  	
+    
   /openapi/v2/shoppingCarts/{shoppingCartId}/elements:
     get:
       summary: Gets shopping cart elements
@@ -136,23 +136,9 @@ paths:
         Валидация элементов TELEPORT_CUSTOMER включает проверку на корректность персональных данных и в случае несоответствия - заполнение корректными данными (CRM).
       operationId: getShoppingCartElements
       parameters:
-        - name: shoppingCartId
-          in: path
-          required: true
-          schema:
-            type: string 
-            format: guid
-          description: 'идентификатор корзины'
-          example: '0002bf63-4587-494e-bc24-e7766b9cbc56'
-        - name: isNeedValidate 
-          in: query
-          required: false
-          schema:
-            type: boolean
-          description: |
-            необходимость производить валидацию при запросе содержимого корзины:
-            *true - запрос содержимого корзины с учетом валидации;
-            *false - запрос содержимого корзины без учета валидации.
+        - $ref: '#/components/parameters/shoppingCartId'
+        - $ref: '#/components/parameters/isNeedValidate'
+
       responses:
         '200':
           description: Success
@@ -179,7 +165,152 @@ paths:
               schema:
                 $ref: '#/components/schemas/APIError'
       deprecated: false
+  /openapi/v2/shoppingCarts/{shoppingCartId}/elements/add/bulk:
+    post:
+      description: |
+        Добавление элементов в корзину
+      operationId: addShoppingCartElements
+      parameters:
+        - $ref: '#/components/parameters/shoppingCartId'
+        - $ref: '#/components/parameters/isNeedValidate'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/ShoppingCartElementAddRequest'
+                    
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                properties:
+                  notDeletedElements:
+                    type: array
+                    items:
+                      type: string
+                      
+  /openapi/v2/shoppingCarts/{shoppingCartId}/elements/delete/bulk:
+    post:
+      description: |
+        Удаление элементов корзины
+      operationId: deleteShoppingCartElements
+      parameters:
+        - $ref: '#/components/parameters/shoppingCartId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              properties:
+                elementIds:
+                  type: array
+                  items:
+                    type: string
+                    
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                properties:
+                  notDeletedElements:
+                    type: array
+                    items:
+                      type: string
+                      
+	
+  /openapi/2.0/shoppingCarts/{shoppingCartId}/elements/{elementId}:
+    put:
+      description: |
+        Обновление параметров элемента корзины
+      operationId: putShoppingCartsIdElementsId
+      parameters:
+        - $ref: '#/components/parameters/shoppingCartId'
+        - $ref: '#/components/parameters/elementId'
+        - $ref: '#/components/parameters/isNeedValidate'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/UpdateShoppingCartElementRequest'
+                    
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                properties:
+                  notDeletedElements:
+                    type: array
+                    items:
+                      type: string
+  /openapi/v2/shoppingCarts/{shoppingCartId}/checkout:
+    post:
+      description: |
+        Удаление элементов корзины
+      operationId: postShoppingCartsIdCheckout
+      parameters:
+        - $ref: '#/components/parameters/shoppingCartId'
+        - $ref: '#/components/parameters/isNeedToSubmit'
+                    
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                properties:
+                  orderId: 
+                    type: string
+                    example: '1234567890'
+
+                      
 components:
+  parameters:
+    isNeedToSubmit:
+      name: isNeedToSubmit 
+      in: query
+      required: false
+      schema:
+        type: boolean
+      description: |
+        * false - создание заказа без запуска на исполнение
+        * isNeedToSubmit = true - создание заказа и запуск на исполнение заказа
+    isNeedValidate:
+      name: isNeedValidate 
+      in: query
+      required: false
+      schema:
+        type: boolean
+      description: |
+        необходимость производить валидацию при запросе содержимого корзины:
+        *true - запрос содержимого корзины с учетом валидации;
+        *false - запрос содержимого корзины без учета валидации.
+    shoppingCartId:
+      name: shoppingCartId
+      in: path
+      required: true
+      schema:
+        type: string 
+        format: guid
+      description: 'идентификатор корзины'
+      example: '0002bf63-4587-494e-bc24-e7766b9cbc56'
+    elementId:
+      name: elementId
+      in: path
+      required: true
+      schema:
+        type: string 
+      description: 'идентификатор элемента корзины'
+      example: '1'
+      
   schemas:
     APIError:
       type: object
@@ -213,6 +344,9 @@ components:
           description: идентификатор элемента;
         sourceInfo:         
             $ref: '#/components/schemas/SourceInfo'
+        '@type':
+          type: string
+          enum: [FPC_TELECOM_PRODUCT, FPC_GOODS, FPC_BUNDLE]
         action: 
           type: string
           description: действие над объектом элемента корзины (ACTIVATE, CREATE) Конфигурируемые параметры ShoppingCart;
@@ -330,7 +464,6 @@ components:
       type: object
       description: |
         Shopping cart
-        
       properties:
         shoppingCartId:
           type: string 
@@ -346,7 +479,28 @@ components:
           items:
             $ref: '#/components/schemas/ShoppingCartTag' 
           description: 'метки: коллекция содержащая минимум 1 элемент.'
-          
+    ShoppingCartElementAddRequest:
+      type: object
+      description: |
+        Shopping cart element
+      properties:
+        '@type':
+          type: string
+          enum: [FPC_TELECOM_PRODUCT, FPC_GOODS, FPC_BUNDLE]
+        action: 
+          type: string
+          description: действие над объектом элемента корзины (ACTIVATE, CREATE) Конфигурируемые параметры ShoppingCart;
+        sourceInfo:         
+            $ref: '#/components/schemas/SourceInfo'
+        specification: 
+          $ref: '#/components/schemas/ProductOffering'
+    UpdateShoppingCartElementRequest:
+      type: object
+      description: |
+        Shopping cart element
+      properties:
+        specification: 
+          $ref: '#/components/schemas/ProductOffering'
     ShoppingCartElementStatus: 
       type: object
       properties:
