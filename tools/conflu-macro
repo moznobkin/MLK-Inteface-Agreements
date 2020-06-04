@@ -1,0 +1,27 @@
+## Macro title: Swagger
+## Macro has a body: Y 
+## Body processing: Selected body processing option
+## Output: Selected output option
+##
+## Developed by: Noname
+## Date created: dd/mm/yyyy
+## Installed by: My Name
+
+## This is a simple swagger macro
+## @Param SpecURL:title=Spec URL|type=string|required=true|desc=The URL to render
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/3.24.2/swagger-ui.css" />
+
+
+<div id="swagger-ui">&nbsp;</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/3.24.2/swagger-ui-bundle.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+const ui = SwaggerUIBundle({
+url: "$paramSpecURL",
+dom_id: "#swagger-ui",
+presets: [
+SwaggerUIBundle.presets.apis,
+]
+})
+</script>
