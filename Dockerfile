@@ -1,6 +1,6 @@
 FROM golang:1.12.7-alpine3.10 AS builder
 RUN mkdir -p /go/src/github.com/moznobkin/go-product-catalog-view
-COPY . /go/src/github.com/moznobkin/go-product-catalog-view
+COPY ./go-product-catalog-view /go/src/github.com/moznobkin/go-product-catalog-view
 WORKDIR /go/src/github.com/moznobkin/go-product-catalog-view
 RUN go build -v -o /go/bin/go-product-catalog-view
 
