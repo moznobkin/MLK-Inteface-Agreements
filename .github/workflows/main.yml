@@ -5,9 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
+      with:
+        fetch-depth: 0
+
     - name: Publish to Registry
-      uses: moznobkin/MLK-Inteface-Agreements@master/go-product-catalog-view/
-      
+      uses: elgohr/Publish-Docker-Github-Action@master
+
       with:
         name: mikhailoznobkin/mlk-ia-dyna
         username: ${{ secrets.DOCKER_USERNAME }}
