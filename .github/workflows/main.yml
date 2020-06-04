@@ -6,7 +6,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Publish to Registry
-      uses: oznobkin/MLK-Inteface-Agreements@master
+      uses: moznobkin/MLK-Inteface-Agreements@master/go-product-catalog-view/
       with:
         name: mikhailoznobkin/mlk-ia-dyna
         username: ${{ secrets.DOCKER_USERNAME }}
