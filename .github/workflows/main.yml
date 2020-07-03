@@ -13,3 +13,4 @@ jobs:
         name: mikhailoznobkin/mlk-ia-dyna
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
+        workdir: go-product-catalog-view
