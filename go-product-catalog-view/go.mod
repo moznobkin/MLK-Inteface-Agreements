@@ -1,4 +1,4 @@
-module github.com/moznobkin/product-catalog-view
+module github.com/moznobkin/MLK-Inteface-Agreements
 
 go 1.14
 

@@ -51,20 +51,20 @@ var routes = Routes{
 	Route{
 		"Index",
 		"GET",
-		"/moznobkin/Product_Catalog_View/0.0.1/",
+		"/api",
 		Index,
 	},
 
 	Route{
 		"GetProductOfferById",
 		strings.ToUpper("Get"),
-		"/moznobkin/Product_Catalog_View/0.0.1/api/catalog-projection/v1/productOffering/{offerId}/{placeId}",
+		"/api/v1/productOffering/{offerId}/{placeId}",
 		GetProductOfferById,
 	},
 	Route{
 		"CreateProductOffer",
 		strings.ToUpper("Post"),
-		"/moznobkin/Product_Catalog_View/0.0.1/api/catalog-projection/v1/productOffering/{offerId}",
+		"api/v1/productOffering/{offerId}",
 		CreateProductOffer,
 	},
 }
