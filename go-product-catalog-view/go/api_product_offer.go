@@ -10,10 +10,93 @@
 package swagger
 
 import (
+	"bytes"
+	"encoding/json"
+	"fmt"
+	"io"
+	"io/ioutil"
 	"net/http"
+	"os"
+	"strings"
 )
 
 func GetProductOfferById(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+
+	path := strings.Split(r.URL.Path, "/")
+	id := path[len(path)-2]
+
+	filename := fmt.Sprintf("../examples/json/%s.json", id)
+	fi, err := os.Open(filename)
+	if err != nil {
+		fmt.Fprintf(w, "Product with id %s not found", id)
+		return
+	}
+	// close fi on exit and check for its returned error
+	defer func() {
+		if err := fi.Close(); err != nil {
+			panic(err)
+		}
+	}()
+
+	io.Copy(w, fi)
 	w.WriteHeader(http.StatusOK)
+}
+
+/* CreateProductOffer
+Creates Product offer
+*/
+
+func CreateProductOffer(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+
+	path := strings.Split(r.URL.Path, "/")
+	id := path[len(path)-1]
+
+	data, err := ioutil.ReadAll(r.Body)
+	if err != nil {
+		panic(err)
+	}
+	reader := bytes.NewReader(data)
+
+	p, perr := checkProductOfferJson(reader)
+	if perr != nil {
+		fmt.Fprintf(w, "Product offer JSON does not conform to definition")
+		return
+	}
+	fmt.Printf("Product checked. Id = %s", p.Id)
+	if p.Id != id {
+		fmt.Fprintf(w, "Product offer has different id than specified in path param")
+		return
+	}
+
+	filename := fmt.Sprintf("../examples/json/%s.json", id)
+	fi, err := os.Create(filename)
+	if err != nil {
+		fmt.Fprintf(w, "Product with id %s allready exists", id)
+		return
+	}
+
+	// close fi on exit and check for its returned error
+	defer func() {
+		if err := fi.Close(); err != nil {
+			panic(err)
+		}
+	}()
+
+	reader2 := bytes.NewReader(data)
+
+	io.Copy(fi, reader2)
+	w.WriteHeader(http.StatusOK)
+}
+
+func checkProductOfferJson(r io.Reader) (*GetProductOfferResponse, error) {
+	var p GetProductOfferResponse
+	// Try to decode the request body into the struct. If there is an error,
+	// respond to the client with the error message and a 400 status code.
+	err := json.NewDecoder(r).Decode(&p)
+	if err != nil {
+		return nil, err
+	}
+	return &p, nil
 }

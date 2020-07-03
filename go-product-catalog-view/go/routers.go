@@ -61,4 +61,10 @@ var routes = Routes{
 		"/moznobkin/Product_Catalog_View/0.0.1/api/catalog-projection/v1/productOffering/{offerId}/{placeId}",
 		GetProductOfferById,
 	},
+	Route{
+		"CreateProductOffer",
+		strings.ToUpper("Post"),
+		"/moznobkin/Product_Catalog_View/0.0.1/api/catalog-projection/v1/productOffering/{offerId}",
+		CreateProductOffer,
+	},
 }

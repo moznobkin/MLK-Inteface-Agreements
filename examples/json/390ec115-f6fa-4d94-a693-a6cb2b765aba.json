@@ -1,0 +1,415 @@
+{
+    "id": "390ec115-f6fa-4d94-a693-a6cb2b765aba",
+    "code": "OF32",
+    "href": "http://int-megafon-bm.k8s.dynacommercelab.com/api/catalog-projection/v1/productOffering/390ec115-f6fa-4d94-a693-a6cb2b765aba",
+    "externalID": "126762",
+    "isBundle": false,
+    "isSellable": true,
+    "lifecycleStatus": "Active",
+    "name": "Часы-телефон ELARI детские KidPhone 4G с Алисой и GPS (красные)",
+    "description": "Детские водонепроницаемые 4g часы-телефон с трекингом, mp3-плеером, Алисой от Яндекса и видеозвонками.Самые быстрые детские часы-телефон с поддержкой видеозвонков, ELARI KidPhone 4G дарят родителем спокойствие с помощью GPS/LBS/WiFi трекинга, позволяющего отслеживать местоположение ребенка на карте. Совершайте видео- и аудиозвонки, активируйте функцию аудиомониторинга, чтобы слышать обстановку вокруг часов. Или загрузите на часы музыку, чтобы ребёнок слушал её, подключив к ним Bluetooth-наушники или колонку. Все фотографии, сделанные с помощью часов, доступны на смартфонах родителей. Благодаря защите от воды и пыли, дети могут не снимать часы при мытье рук или игре в песочнице. А если часы снять, родители получат соответствующее уведомление. В ELARI KidPhone 4G встроен голосовой помощник Алиса от Яндекса, специально доработанный для всестороннего развития и развлечений детской аудитории. У Алисы множество навыков в сфере образования и интеллектуальных игр, а когда надо расслабиться, она поиграет с детьми в 'Города', 'Угадай животное', 'Найди лишнее' и массу других. А в приложении родителей есть возможность выбирать контент от лучших детских студий и устанавливать его прямо в часы. Время работы в режиме звонка значительно увеличилось в сравнении с предыдущими моделями.",
+    "statusReason": "New Product Offer",
+    "version": "1.0",
+    "offerLabels": [
+        {
+            "channel": "CVM",
+            "name": "pers_tag_01",
+            "description": "значение 1"
+        },
+        {
+            "channel": "CVM",
+            "name": "pers_tag_02",
+            "description": "значение 2"
+        }
+    ],
+    "attachment": [
+        {
+            "id": "126758_p_12",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1267/126758_p_12.png"
+        },
+        {
+            "id": "126758_p_27",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1267/126758_p_27.png"
+        },
+        {
+            "id": "126758_p_21",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1267/126758_p_21.png"
+        },
+        {
+            "id": "126758_p_24_1",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1267/126758_p_24_1.png"
+        },
+        {
+            "id": "126758_p_24_2",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1267/126758_p_24_2.png"
+        },
+        {
+            "id": "126758_p_24_3",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1267/126758_p_24_3.png"
+        }
+    ],
+    "category": [
+        {
+            "id": "68fbc9d1-0aa1-4012-aaf5-d4f8c3e4b0d9",
+            "name": "Goods"
+        }
+    ],
+    "channel": [
+        {
+            "id": "35334",
+            "name": "LK"
+        },
+        {
+            "id": "35339",
+            "name": "MLK"
+        }
+    ],
+    "specCharValueUse": [
+        {
+            "specificationType": "ProductSpecification",
+            "description": "Торговая марка",
+            "name": "Traidmark",
+            "valueType": "String",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "ELARI",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Торговая марка"
+        },
+        {
+            "specificationType": "ProductSpecification",
+            "description": "Тип",
+            "name": "Type",
+            "valueType": "String",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Часы-телефон",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Тип"
+        },
+        {
+            "specificationType": "ProductSpecification",
+            "description": "Стандарты 2G",
+            "name": "Standards 2G",
+            "valueType": "String",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "GSM 900/GSM 1800",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Стандарты 2G"
+        },
+        {
+            "specificationType": "ProductSpecification",
+            "description": "Стандарты 3G",
+            "name": "Standards 3G",
+            "valueType": "String",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "UMTS 900/UMTS 2100",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Стандарты 3G"
+        },
+        {
+            "specificationType": "ProductSpecification",
+            "description": "Стандарты 4G(LTE)",
+            "name": "Standards 4G(LTE)",
+            "valueType": "String",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "TDD LTE 2600 / LTE 900 / LTE 1800 / LTE 2100 / LTE 800 / LTE 2600",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Стандарты 4G(LTE)"
+        },
+        {
+            "specificationType": "ProductSpecification",
+            "description": "Поколение SIM-карты",
+            "name": "SIM-card generation",
+            "valueType": "String",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "NanoSIM",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Поколение SIM-карты"
+        },
+        {
+            "specificationType": "ProductSpecification",
+            "description": "Комплектация",
+            "name": "Picking",
+            "valueType": "String",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Часы, USB-кабель, коробка, инструкция, гарантийный талон",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Комплектация"
+        },
+        {
+            "specificationType": "ProductSpecification",
+            "description": "Гарантийный срок",
+            "name": "Warranty Period",
+            "valueType": "String",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "Мес",
+                    "value": "12",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Гарантийный срок"
+        },
+        {
+            "specificationType": "ProductSpecification",
+            "description": "Цвет",
+            "name": "Color",
+            "valueType": "String",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Red",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Black",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Цвет"
+        },
+        {
+            "specificationType": "ProductSpecification",
+            "description": "Wi-Fi",
+            "name": "Wi-Fi",
+            "valueType": "Boolean",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Да",
+                    "valueType": "Boolean"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Wi-Fi"
+        },
+        {
+            "specificationType": "ProductSpecification",
+            "description": "Модуль Bluetooth",
+            "name": "Bluetooth",
+            "valueType": "Boolean",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Да",
+                    "valueType": "Boolean"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Модуль Bluetooth"
+        },
+        {
+            "specificationType": "ProductSpecification",
+            "description": "Наличие динамика",
+            "name": "Presence of speakers",
+            "valueType": "Boolean",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Да",
+                    "valueType": "Boolean"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Наличие динамика"
+        },
+        {
+            "specificationType": "ProductSpecification",
+            "description": "Наличие микрофона",
+            "name": "Presence of microphone",
+            "valueType": "Boolean",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Да",
+                    "valueType": "Boolean"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Наличие микрофона"
+        },
+        {
+            "specificationType": "ProductSpecification",
+            "description": "Количество динамиков",
+            "name": "No. of speakers",
+            "valueType": "String",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "1",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Количество динамиков"
+        }
+    ],
+    "productOfferingPrice": [
+        {
+            "id": "11c2ff3c-30d0-4a15-8112-5a08e7a87b6c",
+            "code": "OP21",
+            "href": "http://int-megafon-bm.k8s.dynacommercelab.com/api/catalog-projection/v1/productOfferingPrice/11c2ff3c-30d0-4a15-8112-5a08e7a87b6c",
+            "description": "POP ELARI Watch Phone Kid’s KidPhone 4G with Alice and GPS (Red)",
+            "isBundle": false,
+            "lifecycleStatus": "Active",
+            "name": "POP_ELARI_red",
+            "percentage": 0.0,
+            "priceType": "One Time Charge",
+            "version": "1.0",
+            "price": {
+                "unit": "RUB",
+                "value": 5690.0
+            },
+            "tax": [
+                {
+                    "taxCategory": "VAT",
+                    "taxRate": 20.0,
+                    "taxAmount": {
+                        "unit": "%",
+                        "value": 20.0
+                    }
+                }
+            ],
+            "specCharValueUse": [
+                {
+                    "specificationType": "ProductSpecification",
+                    "description": "Цвет",
+                    "name": "Color",
+                    "valueType": "String",
+                    "specCharacteristicValue": [
+                        {
+                            "isDefault": true,
+                            "unitOfMeasure": "NA",
+                            "value": "Red",
+                            "valueType": "String"
+                        }
+                    ],
+                    "@baseType": "ProductOffer",
+                    "@type": "ProductOffer",
+                    "displayName": "Цвет"
+                }
+            ],
+            "@baseType": "ProductOfferingPrice",
+            "@type": "ProductOfferingPrice"
+        },
+        {
+            "id": "11c2ff3c-30d0-4a15-8112-5a08e7a87b6c",
+            "code": "OP21",
+            "href": "http://int-megafon-bm.k8s.dynacommercelab.com/api/catalog-projection/v1/productOfferingPrice/11c2ff3c-30d0-4a15-8112-5a08e7a87b6c",
+            "description": "POP ELARI Watch Phone Kid’s KidPhone 4G with Alice and GPS (Red)",
+            "isBundle": false,
+            "lifecycleStatus": "Active",
+            "name": "POP_ELARI_red",
+            "percentage": 0.0,
+            "priceType": "One Time Charge",
+            "version": "1.0",
+            "price": {
+                "unit": "RUB",
+                "value": 5990.0
+            },
+            "tax": [
+                {
+                    "taxCategory": "VAT",
+                    "taxRate": 20.0,
+                    "taxAmount": {
+                        "unit": "%",
+                        "value": 20.0
+                    }
+                }
+            ],
+            "specCharValueUse": [
+                {
+                    "specificationType": "ProductSpecification",
+                    "description": "Цвет",
+                    "name": "Color",
+                    "valueType": "String",
+                    "specCharacteristicValue": [
+                        {
+                            "isDefault": true,
+                            "unitOfMeasure": "NA",
+                            "value": "Black",
+                            "valueType": "String"
+                        }
+                    ],
+                    "@baseType": "ProductOffer",
+                    "@type": "ProductOffer",
+                    "displayName": "Цвет"
+                }
+            ],
+            "@baseType": "ProductOfferingPrice",
+            "@type": "ProductOfferingPrice"
+        }
+    ],
+    "productSpecification": {
+        "id": "f2a8f441-3efe-4578-b4e6-0cb800552318",
+        "name": "Smart Watch"
+    },
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer"
+}
