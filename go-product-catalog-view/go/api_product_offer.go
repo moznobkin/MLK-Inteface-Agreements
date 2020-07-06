@@ -67,14 +67,20 @@ func CreateProductOffer(w http.ResponseWriter, r *http.Request) {
 	fmt.Printf("Product checked. Id = %s", p.Id)
 	if p.Id != id {
 		fmt.Fprintf(w, "Product offer has different id than specified in path param")
+
 		return
 	}
 
 	filename := fmt.Sprintf("../examples/json/%s.json", id)
+
 	fi, err := os.Create(filename)
 	if err != nil {
-		fmt.Fprintf(w, "Product with id %s allready exists", id)
-		return
+		if os.IsExist(err) {
+			fmt.Fprintf(w, "Product with id %s allready exists", id)
+			return
+		}
+		panic(err)
+
 	}
 
 	// close fi on exit and check for its returned error
