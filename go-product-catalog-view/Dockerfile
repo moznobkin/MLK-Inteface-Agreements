@@ -9,7 +9,7 @@ RUN go build -v -o /go/bin/product-catalog-view
 
 FROM alpine:3.10
 LABEL maintainer="Michael Oznobkin <oznobkin@gmail.com>"
-COPY ../examples/json  /usr/bin/examples/json
+
 COPY --from=builder /go/bin/product-catalog-view /usr/bin/product-catalog-view
 
 EXPOSE 8080 8080
