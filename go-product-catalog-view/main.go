@@ -10,8 +10,10 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
+	"os"
 
 	// WARNING!
 	// Change this to a fully-qualified import path
@@ -25,7 +27,11 @@ import (
 
 func main() {
 	log.Printf("Server started")
-
+	path, err := os.Executable()
+	if err != nil {
+		log.Println(err)
+	}
+	fmt.Println(path)
 	router := sw.NewRouter()
 
 	log.Fatal(http.ListenAndServe(":8080", router))
