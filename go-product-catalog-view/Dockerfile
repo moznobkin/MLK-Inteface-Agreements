@@ -11,8 +11,7 @@ FROM alpine:3.10
 LABEL maintainer="Michael Oznobkin <oznobkin@gmail.com>"
 
 COPY --from=builder /go/bin/product-catalog-view /usr/bin/product-catalog-view
-
-COPY ./examples/json/ /usr/examples/json/
+COPY --from=builder /go/src/github.com/moznobkin/product-catalog-view/examples/json/  /usr/examples/json/
 
 EXPOSE 8080 8080
 ENTRYPOINT ["/usr/bin/product-catalog-view"]
