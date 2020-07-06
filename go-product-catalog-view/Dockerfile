@@ -12,7 +12,7 @@ LABEL maintainer="Michael Oznobkin <oznobkin@gmail.com>"
 
 COPY --from=builder /go/bin/product-catalog-view /usr/bin/product-catalog-view
 
-COPY ./examples/json/ /usr/bin/examples/json/
+COPY ./examples/json/ /usr/examples/json/
 
 EXPOSE 8080 8080
 ENTRYPOINT ["/usr/bin/product-catalog-view"]
