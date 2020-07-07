@@ -14,14 +14,8 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"path/filepath"
 
-	// WARNING!
-	// Change this to a fully-qualified import path
-	// once you place this file into your project.
-	// For example,
-	//
-	//    sw "github.com/myname/myrepo/go"
-	//
 	sw "github.com/moznobkin/MLK-Inteface-Agreements/go"
 )
 
@@ -32,7 +26,22 @@ func main() {
 		log.Println(err)
 	}
 	fmt.Println(path)
+	walk()
 	router := sw.NewRouter()
 
 	log.Fatal(http.ListenAndServe(":8080", router))
+}
+
+func walk() {
+	err := filepath.Walk(".",
+		func(path string, info os.FileInfo, err error) error {
+			if err != nil {
+				return err
+			}
+			fmt.Println(path, info.Size())
+			return nil
+		})
+	if err != nil {
+		log.Println(err)
+	}
 }

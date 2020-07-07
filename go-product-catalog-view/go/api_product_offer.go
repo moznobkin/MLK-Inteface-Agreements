@@ -20,13 +20,15 @@ import (
 	"strings"
 )
 
+const fileTmpl = "../data/json/%s.json"
+
 func GetProductOfferById(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 
 	path := strings.Split(r.URL.Path, "/")
 	id := path[len(path)-2]
 
-	filename := fmt.Sprintf("../../examples/json/%s.json", id)
+	filename := fmt.Sprintf(fileTmpl, id)
 	fi, err := os.Open(filename)
 	if err != nil {
 		fmt.Fprintf(w, "Product with id %s not found", id)
@@ -52,7 +54,7 @@ func CreateProductOffer(w http.ResponseWriter, r *http.Request) {
 
 	path := strings.Split(r.URL.Path, "/")
 	id := path[len(path)-1]
-	filename := fmt.Sprintf("../../examples/json/%s.json", id)
+	filename := fmt.Sprintf(fileTmpl, id)
 
 	data, err := ioutil.ReadAll(r.Body)
 	if err != nil {

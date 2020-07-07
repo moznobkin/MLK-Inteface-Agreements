@@ -5,15 +5,15 @@ RUN mkdir -p /go/src/github.com/moznobkin/product-catalog-view
 COPY . /go/src/github.com/moznobkin/product-catalog-view
 WORKDIR /go/src/github.com/moznobkin/product-catalog-view
 ENV GO111MODULE=on
-RUN go build -v -o /go/bin/product-catalog-view
+RUN go build -v -o /go/bin/product-catalog-view.exe
 
 FROM alpine:3.10
 LABEL maintainer="Michael Oznobkin <oznobkin@gmail.com>"
 
-COPY --from=builder /go/bin/product-catalog-view /usr/bin/product-catalog-view
-COPY --from=builder /go/src/github.com/moznobkin/product-catalog-view/examples/json/  /usr/examples/json/
+COPY --from=builder /go/bin/product-catalog-view.exe /usr/bin/product-catalog-view.exe
+COPY --from=builder /go/src/github.com/moznobkin/product-catalog-view/data/json/  /usr/data/json/
+
+WORKDIR /usr/bin
 
 EXPOSE 8080 8080
-ENTRYPOINT ["/usr/bin/product-catalog-view"]
-
-
+ENTRYPOINT ["/usr/bin/product-catalog-view.exe"]
