@@ -67,4 +67,10 @@ var routes = Routes{
 		"/api/v1/productOffering/{offerId}",
 		CreateProductOffer,
 	},
+	Route{
+		"GetProductOffers",
+		strings.ToUpper("Get"),
+		"/api/v1/productOffering/",
+		GetProductOffers,
+	},
 }

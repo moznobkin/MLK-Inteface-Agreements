@@ -22,6 +22,29 @@ import (
 
 const fileTmpl = "../data/json/%s.json"
 
+func GetProductOffers(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+	files, err := ioutil.ReadDir("../data/json/")
+	if err != nil {
+		panic(err)
+	}
+
+	fmt.Fprintln(w, "[")
+	for i, f := range files {
+		fs, err := os.Open(fmt.Sprintf("../data/json/%s", f.Name()))
+		if err != nil {
+			panic(err)
+		}
+		io.Copy(w, fs)
+		if i != len(files)-1 {
+			fmt.Fprintln(w, ",")
+		}
+
+	}
+	fmt.Fprint(w, "]")
+	w.WriteHeader(http.StatusOK)
+}
+
 func GetProductOfferById(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 
