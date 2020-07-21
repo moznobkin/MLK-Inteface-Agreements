@@ -20,18 +20,18 @@ import (
 	"strings"
 )
 
-const fileTmpl = "../data/json/%s.json"
+const fileTmpl = "./data/json/%s.json"
 
 func GetProductOffers(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
-	files, err := ioutil.ReadDir("../data/json/")
+	files, err := ioutil.ReadDir("./data/json/")
 	if err != nil {
 		panic(err)
 	}
 
 	fmt.Fprintln(w, "[")
 	for i, f := range files {
-		fs, err := os.Open(fmt.Sprintf("../data/json/%s", f.Name()))
+		fs, err := os.Open(fmt.Sprintf("./data/json/%s", f.Name()))
 		if err != nil {
 			panic(err)
 		}

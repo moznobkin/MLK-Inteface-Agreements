@@ -11,7 +11,7 @@ FROM alpine:3.10
 LABEL maintainer="Michael Oznobkin <oznobkin@gmail.com>"
 
 COPY --from=builder /go/bin/product-catalog-view.exe /usr/bin/product-catalog-view.exe
-COPY --from=builder /go/src/github.com/moznobkin/product-catalog-view/data/json/  /usr/data/json/
+COPY --from=builder /go/src/github.com/moznobkin/product-catalog-view/data/json/  /usr/bin/data/json/
 
 WORKDIR /usr/bin
 
