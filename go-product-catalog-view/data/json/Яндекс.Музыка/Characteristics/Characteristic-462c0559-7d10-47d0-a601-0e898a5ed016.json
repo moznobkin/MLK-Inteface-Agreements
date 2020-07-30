@@ -1,0 +1,53 @@
+{
+    "id": "462c0559-7d10-47d0-a601-0e898a5ed016",
+    "createdBy": "eshamani",
+    "code": "CH45",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/462c0559-7d10-47d0-a601-0e898a5ed016",
+    "isVisible": true,
+    "displayName": "Период бесплатного действия",
+    "characteristicType": "Master",
+    "description": "Период бесплатного действия",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Период бесплатного действия",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "Дней",
+            "valueType": "Integer",
+            "value": "3",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "Дней",
+            "valueType": "Integer",
+            "value": "7",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "Дней",
+            "valueType": "Integer",
+            "value": "14",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "Дней",
+            "valueType": "Integer",
+            "value": "30",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": ""
+}

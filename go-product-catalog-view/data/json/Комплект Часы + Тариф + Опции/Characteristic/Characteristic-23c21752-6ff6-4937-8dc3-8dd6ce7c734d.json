@@ -1,0 +1,38 @@
+{
+    "id": "23c21752-6ff6-4937-8dc3-8dd6ce7c734d",
+    "code": "CH31",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/23c21752-6ff6-4937-8dc3-8dd6ce7c734d",
+    "isVisible": true,
+    "displayName": "Вес",
+    "displaySequence": 7,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Вес",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Вес",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "г",
+            "valueType": "Integer",
+            "value": "54",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "г",
+            "valueType": "Integer",
+            "value": "163",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": "8566"
+}

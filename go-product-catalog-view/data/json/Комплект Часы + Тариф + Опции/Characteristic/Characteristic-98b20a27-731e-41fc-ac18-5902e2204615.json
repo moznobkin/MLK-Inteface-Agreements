@@ -1,0 +1,38 @@
+{
+    "id": "98b20a27-731e-41fc-ac18-5902e2204615",
+    "code": "CH21",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/98b20a27-731e-41fc-ac18-5902e2204615",
+    "isVisible": true,
+    "displayName": "Наличие динамика",
+    "displaySequence": 19,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Наличие динамика",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Наличие динамика",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "Да",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "Нет",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": "7640"
+}

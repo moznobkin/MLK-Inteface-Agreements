@@ -1,0 +1,38 @@
+{
+    "id": "1bd744c7-3002-4849-a42d-04ca9aa6345d",
+    "code": "CH19",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/1bd744c7-3002-4849-a42d-04ca9aa6345d",
+    "isVisible": true,
+    "displayName": "Поколение SIM-карты",
+    "displaySequence": 14,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Поколение SIM-карты",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Поколение SIM-карты",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "MicroSIM",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "NanoSIM",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": "5617"
+}

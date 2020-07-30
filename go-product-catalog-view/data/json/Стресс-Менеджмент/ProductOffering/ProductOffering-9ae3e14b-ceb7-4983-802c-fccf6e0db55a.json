@@ -1,0 +1,232 @@
+{
+    "id": "9ae3e14b-ceb7-4983-802c-fccf6e0db55a",
+    "code": "OF843",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/9ae3e14b-ceb7-4983-802c-fccf6e0db55a",
+    "externalID": "",
+    "isBundle": false,
+    "isSellable": true,
+    "lifecycleStatus": "Active",
+    "name": "Стресс-менеджмент",
+    "description": "Стресс-менеджмент",
+    "statusReason": "New Product Offer",
+    "version": "1.0",
+    "offerLabels": [
+        {
+            "channel": "CVM",
+            "name": "pers_tag_01",
+            "description": "значение 1"
+        },
+        {
+            "channel": "CVM",
+            "name": "pers_tag_02",
+            "description": "значение 2"
+        }
+    ],
+    "category": [
+        {
+            "id": "6ba56625-c917-48d1-bd58-2e28184237d4",
+            "name": "Полезное"
+        }
+    ],
+    "channel": [
+        {
+            "id": "8abd35d9-1115-41ae-800c-975ad4a1515e",
+            "name": "B2C-LK"
+        },
+        {
+            "id": "95146999-fb0d-4c63-bb5c-24f9e97d2c3d",
+            "name": "MLK"
+        }
+    ],
+    "marketSegment": [
+        {
+            "id": "10edee2f-8277-4d77-8dc8-8e1edc97274c",
+            "name": "B2C"
+        }
+    ],
+    "place": [
+        {
+            "id": "8a4ff9dc-8fb1-47d6-b958-25ce9239ce66",
+            "name": "Санкт-Петербург и Ленинградская область"
+        },
+        {
+            "id": "bb4b5a20-88d1-4c05-8f45-26d68459d758",
+            "name": "Московский регион"
+        }
+    ],
+    "specCharValueUse": [
+        {
+            "referenceId": "a79de901-c193-4d19-a374-75c8fb68c52f",
+            "description": "Короткое описание",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Короткое описание",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Как перестать нервничать и обернуть стресс себе в плюс",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer"
+        },
+        {
+            "referenceId": "9b071214-6642-40cb-ab1d-fa7056027d84",
+            "description": "Полное описание",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Полное описание",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "О курсе, Чем опасен стресс и как его переиграть",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer"
+        },
+        {
+            "referenceId": "de868e51-3009-42ae-b791-fc2a70929fd6",
+            "description": "Преподаватели",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Преподаватели",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Анненкова Надежда Михайловна",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Преподаватели"
+        },
+        {
+            "referenceId": "9cc4c94c-5b75-456f-aad6-be6d9764ba16",
+            "description": "Сертификат",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Сертификат",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "После прохождения курса вы получите сертификат",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Сертификат"
+        },
+        {
+            "referenceId": "db19fc9f-3c0f-452e-813c-8c3349e9e117",
+            "description": "Преимущества",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Преимущества",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Дистанционный, Интерактивный, Понятный, Дружелюбный",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer"
+        },
+        {
+            "referenceId": "5ecdd99c-4ecd-4c31-a20e-cf254e61d227",
+            "description": "Период покупки",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Период покупки",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "день",
+                    "value": "1",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "дней",
+                    "value": "30",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer"
+        },
+        {
+            "referenceId": "2f8d1863-2269-450a-9423-64887cecab6b",
+            "description": "Service Code",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Service Code",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "stress-management_d",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "stress-management_d2",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "stress-management_m",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer"
+        }
+    ],
+    "productOfferingPrice": [
+        {
+            "id": "5b57860a-5d19-452e-87fb-ccf22f7fb783",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/5b57860a-5d19-452e-87fb-ccf22f7fb783",
+            "name": "Стресс-менеджмент Day",
+            "@baseType": "ProductOfferingPrice",
+            "@type": "ProductOfferingPrice"
+        },
+        {
+            "id": "7c1e72f6-ecbc-41b9-9e00-a271d3b23328",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/7c1e72f6-ecbc-41b9-9e00-a271d3b23328",
+            "name": "Стресс-менеджмент Day2",
+            "@baseType": "ProductOfferingPrice",
+            "@type": "ProductOfferingPrice"
+        },
+        {
+            "id": "63b02b5f-c18e-48a6-a2df-624a3bd000b4",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/63b02b5f-c18e-48a6-a2df-624a3bd000b4",
+            "name": "Стресс-менеджмент Month",
+            "@baseType": "ProductOfferingPrice",
+            "@type": "ProductOfferingPrice"
+        }
+    ],
+    "productSpecification": {
+        "id": "e3356872-4f2e-4d90-a871-e4781de4c90b9",
+        "name": "Полезное"
+    },
+    "validFor": {
+        "endDateTime": "9999-12-31T23:59:59.999Z",
+        "startDateTime": "2020-07-20T14:01:40.250Z"
+    },
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "createdBy": "eshamani"
+}

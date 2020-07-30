@@ -1,0 +1,19 @@
+{
+    "id": "3d78426c-3775-42e2-9551-72be6f30581b",
+    "createdBy": "eshamani",
+    "code": "CH60",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/3d78426c-3775-42e2-9551-72be6f30581b",
+    "isVisible": true,
+    "displayName": "Полное имя",
+    "displaySequence": 1,
+    "characteristicType": "ProductSpecification",
+    "configurable": true,
+    "description": "Полное имя",
+    "extensible": true,
+    "isUnique": false,
+    "maxCardinality": 1,
+    "minCardinality": 0,
+    "name": "Полное имя",
+    "valueType": "String",
+    "specCharacteristicValue": []
+}

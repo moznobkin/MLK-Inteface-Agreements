@@ -1,0 +1,31 @@
+{
+    "id": "d3067571-1051-43fb-8255-b71e4ecbd461",
+    "code": "CAT85",
+    "name": "Goods",
+    "description": "ProductOffer category for Hardware Goods",
+    "@type": "productoffercategory",
+    "@baseType": "category",
+    "parentId": "b1a7325c-00a5-427e-a2a5-2655f4703928",
+    "lifecycleStatus": "Active",
+    "validFor": {
+        "startDateTime": "2020-07-20T11:11:33.240Z",
+        "endDateTime": "9999-12-31T23:59:59.999Z"
+    },
+    "lastUpdate": "2020-07-20T11:11:33.245Z",
+    "isRoot": false,
+    "version": "1.0",
+    "productOffers": [
+        {
+            "id": "055eeb84-84df-4696-81dd-a6f9402ca58c",
+            "name": "Часы-телефон JET Kid Vision 4G детские",
+            "@type": "ProductOffer",
+            "@baseType": "ProductOffer"
+        }
+    ],
+    "isOfferContainer": false,
+    "isAnchor": false,
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/category-projection/v1/category/d3067571-1051-43fb-8255-b71e4ecbd461",
+    "nodeCardinality": "0-4",
+    "createdBy": "eshamani",
+    "createdOn": "2020-07-20T08:04:03.835Z"
+}

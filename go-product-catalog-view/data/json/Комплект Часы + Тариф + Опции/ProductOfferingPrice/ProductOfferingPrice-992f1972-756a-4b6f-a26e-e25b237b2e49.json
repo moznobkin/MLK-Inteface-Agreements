@@ -1,0 +1,62 @@
+{
+    "id": "992f1972-756a-4b6f-a26e-e25b237b2e49",
+    "code": "OP29",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/992f1972-756a-4b6f-a26e-e25b237b2e49",
+    "description": "BPOP Часы + тариф",
+    "isBundle": false,
+    "lifecycleStatus": "Active",
+    "name": "BPOP Часы + тариф",
+    "priceType": "One Time Charge",
+    "version": "1.0",
+    "price": {
+        "unit": "RUB",
+        "value": 4990.0
+    },
+    "specCharValueUse": [
+        {
+            "referenceId": "8205ade0-4cbd-494c-8638-1f6b586d7de2",
+            "specificationType": "ProductSpecification",
+            "description": "Цвет",
+            "name": "Цвет",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Голубой",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "Розовый",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer"
+        }
+    ],
+    "tax": [
+        {
+            "taxCategory": "VAT",
+            "taxRate": 20.0,
+            "taxAmount": {
+                "unit": "%",
+                "value": 20.0
+            }
+        }
+    ],
+    "validFor": {
+        "endDateTime": "9999-12-31T23:59:59.999Z",
+        "startDateTime": "2020-07-20T12:47:29.870Z"
+    },
+    "@baseType": "ProductOfferingPrice",
+    "@type": "ProductOfferingPrice",
+    "productOffering": {
+        "id": "2a1365f0-4a44-466c-9f36-3a6bd313a4a1",
+        "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/2a1365f0-4a44-466c-9f36-3a6bd313a4a1",
+        "name": "Часы-телефон JET + Тариф Умные вещи",
+        "version": "1.0"
+    }
+}

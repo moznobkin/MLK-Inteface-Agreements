@@ -1,0 +1,152 @@
+{
+    "id": "3f613f5a-c09e-4186-be2d-a3327263a789",
+    "code": "OF840",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/3f613f5a-c09e-4186-be2d-a3327263a789",
+    "externalID": "",
+    "isBundle": false,
+    "isSellable": false,
+    "lifecycleStatus": "Active",
+    "name": "Гигатека",
+    "description": "Опция Гигатека",
+    "statusReason": "New Product Offer",
+    "version": "1.0",
+    "offerLabels": [
+        {
+            "channel": "CVM",
+            "name": "pers_tag_01",
+            "description": "значение 1"
+        },
+        {
+            "channel": "CVM",
+            "name": "pers_tag_02",
+            "description": "значение 2"
+        }
+    ],
+    "category": [
+        {
+            "id": "eb1feac5-4d82-4c9d-908a-5659544d3596",
+            "name": "Add-On"
+        }
+    ],
+    "channel": [
+        {
+            "id": "8abd35d9-1115-41ae-800c-975ad4a1515e",
+            "name": "B2C-LK"
+        },
+        {
+            "id": "95146999-fb0d-4c63-bb5c-24f9e97d2c3d",
+            "name": "MLK"
+        }
+    ],
+    "marketSegment": [
+        {
+            "id": "10edee2f-8277-4d77-8dc8-8e1edc97274c",
+            "name": "B2C"
+        }
+    ],
+    "place": [
+        {
+            "id": "8a4ff9dc-8fb1-47d6-b958-25ce9239ce66",
+            "name": "Санкт-Петербург и Ленинградская область"
+        },
+        {
+            "id": "bb4b5a20-88d1-4c05-8f45-26d68459d758",
+            "name": "Московский регион"
+        }
+    ],
+    "specCharValueUse": [
+        {
+            "referenceId": "1c857950-23d6-4100-8579-be6441aed2b1",
+            "description": "Мобильный интернет",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Мобильный интернет",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "ГБ",
+                    "value": "200",
+                    "valueType": "Integer"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Объем трафика"
+        },
+        {
+            "referenceId": "7edcfcd4-87e2-4317-9f03-fb2ec49e8842",
+            "description": "Срок действия опции",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Срок действия опции",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "дней",
+                    "value": "60",
+                    "valueType": "Integer",
+                    "@baseType": "ProductSpecification",
+                    "@type": "ProductSpecification"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Срок действия опции"
+        },
+        {
+            "referenceId": "0f2203ff-56ea-43ef-be8c-76de4b0e7a58",
+            "description": "Устройства, на которых работает опция",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Устройства, на которых работает опция",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Смартфон",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Устройства, на которых работает опция"
+        },
+        {
+            "referenceId": "c4544f0d-b7f7-4245-bb7d-12357d85d4b9",
+            "description": "Территория действия",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Территория действия",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Russia",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Территория действия"
+        }
+    ],
+    "productOfferingPrice": [
+        {
+            "id": "d53fdaa7-8342-409a-aa2d-9a1a31e12757",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/d53fdaa7-8342-409a-aa2d-9a1a31e12757",
+            "name": "POP_Гигатека",
+            "@baseType": "ProductOfferingPrice",
+            "@type": "ProductOfferingPrice"
+        }
+    ],
+    "productSpecification": {
+        "id": "716e8a88-16d1-4e8e-882a-71fedb6dd382",
+        "name": "Интернет опции"
+    },
+    "validFor": {
+        "endDateTime": "9999-12-31T23:59:59.999Z",
+        "startDateTime": "2020-07-20T13:51:41.452Z"
+    },
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer"
+}

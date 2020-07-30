@@ -1,0 +1,49 @@
+{
+    "id": "d53fdaa7-8342-409a-aa2d-9a1a31e12757",
+    "code": "OP27",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/d53fdaa7-8342-409a-aa2d-9a1a31e12757",
+    "description": "POP Гигатека",
+    "isBundle": false,
+    "lifecycleStatus": "Active",
+    "name": "POP_Гигатека",
+    "priceType": "One Time Charge",
+    "version": "1.0",
+    "place": [
+        {
+            "id": "8a4ff9dc-8fb1-47d6-b958-25ce9239ce66",
+            "name": "Санкт-Петербург и Ленинградская область"
+        },
+        {
+            "id": "bb4b5a20-88d1-4c05-8f45-26d68459d758",
+            "name": "Московский регион"
+        }
+    ],
+    "price": {
+        "unit": "RUB",
+        "value": 10000.0
+    },
+    "specCharValueUse": [],
+    "tax": [
+        {
+            "taxCategory": "VAT",
+            "taxRate": 20.0,
+            "taxAmount": {
+                "unit": "%",
+                "value": 20.0
+            }
+        }
+    ],
+    "validFor": {
+        "endDateTime": "9999-12-31T23:59:59.999Z",
+        "startDateTime": "2020-07-20T12:45:19.335Z"
+    },
+    "@baseType": "ProductOfferingPrice",
+    "@type": "ProductOfferingPrice",
+    "createdBy": "eshamani",
+    "productOffering": {
+        "id": "3f613f5a-c09e-4186-be2d-a3327263a789",
+        "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/3f613f5a-c09e-4186-be2d-a3327263a789",
+        "name": "Гигатека",
+        "version": "1.0"
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "id": "57067f0d-a1e3-41e3-bb10-6b5cb1a74024",
+    "createdBy": "eshamani",
+    "code": "CH48",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/57067f0d-a1e3-41e3-bb10-6b5cb1a74024",
+    "isVisible": true,
+    "displayName": "Тип оплаты",
+    "displaySequence": 1,
+    "characteristicType": "ProductSpecification",
+    "configurable": true,
+    "description": "Тип оплаты",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Type Payment",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "При получении",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "Предоплата",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer"
+}

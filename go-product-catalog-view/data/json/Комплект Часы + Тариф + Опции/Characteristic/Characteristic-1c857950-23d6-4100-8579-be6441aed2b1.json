@@ -1,0 +1,38 @@
+{
+    "id": "1c857950-23d6-4100-8579-be6441aed2b1",
+    "createdBy": "eshamani",
+    "code": "CH8",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/1c857950-23d6-4100-8579-be6441aed2b1",
+    "isVisible": true,
+    "displayName": "Мобильный интернет",
+    "characteristicType": "Master",
+    "description": "Мобильный интернет",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Мобильный интернет",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "Безлимитно",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "valueFrom": 1,
+            "isDefault": false,
+            "unitOfMeasure": "ГБ",
+            "valueTo": 50,
+            "valueType": "Integer",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": ""
+}

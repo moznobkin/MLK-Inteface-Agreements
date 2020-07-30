@@ -1,0 +1,20 @@
+{
+    "id": "db19fc9f-3c0f-452e-813c-8c3349e9e117",
+    "code": "CH52",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/db19fc9f-3c0f-452e-813c-8c3349e9e117",
+    "isVisible": true,
+    "displayName": "Преимущества",
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Преимущества",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Преимущества",
+    "valueType": "String",
+    "specCharacteristicValue": [],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": ""
+}

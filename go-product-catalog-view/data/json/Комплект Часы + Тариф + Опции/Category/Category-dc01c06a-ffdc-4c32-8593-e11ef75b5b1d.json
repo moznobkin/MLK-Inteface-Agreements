@@ -1,0 +1,31 @@
+{
+    "id": "dc01c06a-ffdc-4c32-8593-e11ef75b5b1d",
+    "code": "CAT89",
+    "name": "Payment",
+    "description": "ProductOfferContainer for Checkout Payment",
+    "@type": "productoffercategory",
+    "@baseType": "category",
+    "parentId": "05531145-146d-4f02-a4d2-ac963fc27b51",
+    "lifecycleStatus": "Active",
+    "validFor": {
+        "startDateTime": "2020-07-20T11:19:27.552Z",
+        "endDateTime": "9999-12-31T23:59:59.999Z"
+    },
+    "lastUpdate": "2020-07-20T11:19:27.558Z",
+    "isRoot": false,
+    "version": "1.0",
+    "productOffers": [
+        {
+            "id": "77407a5a-d89d-4971-92c9-6ac3c5ee5b8c",
+            "name": "Оплата",
+            "@type": "ProductOffer",
+            "@baseType": "ProductOffer"
+        }
+    ],
+    "isOfferContainer": false,
+    "isAnchor": false,
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/category-projection/v1/category/dc01c06a-ffdc-4c32-8593-e11ef75b5b1d",
+    "nodeCardinality": "0-10",
+    "createdBy": "eshamani",
+    "createdOn": "2020-07-20T08:04:03.835Z"
+}

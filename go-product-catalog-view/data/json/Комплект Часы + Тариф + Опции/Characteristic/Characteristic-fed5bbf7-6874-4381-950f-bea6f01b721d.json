@@ -1,0 +1,54 @@
+{
+    "id": "fed5bbf7-6874-4381-950f-bea6f01b721d",
+    "code": "CH24",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/fed5bbf7-6874-4381-950f-bea6f01b721d",
+    "isVisible": true,
+    "displayName": "Гарантийный срок",
+    "displaySequence": 3,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Гарантийный срок",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Гарантийный срок",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "мес",
+            "valueType": "Integer",
+            "value": "6",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "мес",
+            "valueType": "Integer",
+            "value": "12",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "мес",
+            "valueType": "Integer",
+            "value": "18",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "мес",
+            "valueType": "Integer",
+            "value": "24",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": "2462"
+}

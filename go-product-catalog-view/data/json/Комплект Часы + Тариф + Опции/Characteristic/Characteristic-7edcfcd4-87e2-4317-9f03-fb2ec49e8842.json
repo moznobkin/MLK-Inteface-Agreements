@@ -1,0 +1,53 @@
+{
+    "id": "7edcfcd4-87e2-4317-9f03-fb2ec49e8842",
+    "createdBy": "eshamani",
+    "code": "CH44",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/7edcfcd4-87e2-4317-9f03-fb2ec49e8842",
+    "isVisible": true,
+    "displayName": "Срок действия опции",
+    "characteristicType": "Master",
+    "description": "Срок действия опции",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Срок действия опции",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "Дней",
+            "valueType": "Integer",
+            "value": "7",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "Дней",
+            "valueType": "Integer",
+            "value": "14",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "Дней",
+            "valueType": "Integer",
+            "value": "30",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "Дней",
+            "valueType": "Integer",
+            "value": "60",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": ""
+}

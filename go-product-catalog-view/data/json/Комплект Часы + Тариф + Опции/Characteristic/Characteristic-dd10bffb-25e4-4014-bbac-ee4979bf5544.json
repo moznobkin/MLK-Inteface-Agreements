@@ -1,0 +1,54 @@
+{
+    "id": "dd10bffb-25e4-4014-bbac-ee4979bf5544",
+    "code": "CH40",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/dd10bffb-25e4-4014-bbac-ee4979bf5544",
+    "isVisible": true,
+    "displayName": "Объем встроенной памяти",
+    "displaySequence": 12,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Объем встроенной памяти",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Объем встроенной памяти",
+    "valueType": "Numbers",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "МБ",
+            "valueType": "Integer",
+            "value": "512",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "МБ",
+            "valueType": "Integer",
+            "value": "1024",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "МБ",
+            "valueType": "Integer",
+            "value": "2048",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "МБ",
+            "valueType": "Integer",
+            "value": "4096",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": "5837"
+}

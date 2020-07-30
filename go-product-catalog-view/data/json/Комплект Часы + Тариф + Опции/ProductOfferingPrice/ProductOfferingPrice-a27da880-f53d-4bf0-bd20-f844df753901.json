@@ -1,0 +1,62 @@
+{
+    "id": "a27da880-f53d-4bf0-bd20-f844df753901",
+    "code": "OP46",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/a27da880-f53d-4bf0-bd20-f844df753901",
+    "description": "POP Доставка Санкт-Петербург бесплатно",
+    "isBundle": false,
+    "lifecycleStatus": "Active",
+    "name": "POP Доставка Санкт-Петербург бесплатно",
+    "priceType": "One Time Charge",
+    "version": "1.0",
+    "place": [
+        {
+            "id": "8a4ff9dc-8fb1-47d6-b958-25ce9239ce66",
+            "name": "Санкт-Петербург и Ленинградская область"
+        }
+    ],
+    "price": {
+        "unit": "RUB",
+        "value": 0.0
+    },
+    "specCharValueUse": [
+        {
+            "specificationType": "ProductSpecification",
+            "description": "Зона доставки",
+            "name": "Зона доставки",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Санкт-Петербург",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer"
+        }
+    ],
+    "tax": [
+        {
+            "taxCategory": "VAT",
+            "taxRate": 20.0,
+            "taxAmount": {
+                "unit": "%",
+                "value": 20.0
+            }
+        }
+    ],
+    "validFor": {
+        "endDateTime": "9999-12-31T23:59:59.999Z",
+        "startDateTime": "2020-07-20T13:15:18.269Z"
+    },
+    "@baseType": "ProductOfferingPrice",
+    "@type": "ProductOfferingPrice",
+    "createdBy": "eshamani",
+    "productOffering": {
+        "id": "0c8795ad-21b6-4fd8-b5c6-b2f037b009a8",
+        "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/0c8795ad-21b6-4fd8-b5c6-b2f037b009a8",
+        "name": "Доставка Санкт-Петербург",
+        "version": "1.0"
+    }
+}

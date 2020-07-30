@@ -1,0 +1,19 @@
+{
+    "id": "a79de901-c193-4d19-a374-75c8fb68c52f",
+    "code": "CH53",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/a79de901-c193-4d19-a374-75c8fb68c52f",
+    "isVisible": true,
+    "displayName": "Короткое описание",
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Короткое описание",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Короткое описание",
+    "specCharacteristicValue": [],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": ""
+}

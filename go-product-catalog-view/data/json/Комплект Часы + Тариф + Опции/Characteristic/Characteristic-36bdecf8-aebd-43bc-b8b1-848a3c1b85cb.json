@@ -1,0 +1,46 @@
+{
+    "id": "36bdecf8-aebd-43bc-b8b1-848a3c1b85cb",
+    "code": "CH27",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/36bdecf8-aebd-43bc-b8b1-848a3c1b85cb",
+    "isVisible": true,
+    "displayName": "Количество динамиков",
+    "displaySequence": 21,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Количество динамиков",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Количество динамиков",
+    "valueType": "Numbers",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "NA",
+            "valueType": "Integer",
+            "value": "2",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "Integer",
+            "value": "4",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "Integer",
+            "value": "6",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": ""
+}

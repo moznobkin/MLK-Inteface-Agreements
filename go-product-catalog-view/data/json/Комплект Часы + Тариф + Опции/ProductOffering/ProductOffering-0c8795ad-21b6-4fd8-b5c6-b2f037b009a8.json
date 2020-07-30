@@ -1,0 +1,157 @@
+{
+    "id": "0c8795ad-21b6-4fd8-b5c6-b2f037b009a8",
+    "code": "OF848",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/0c8795ad-21b6-4fd8-b5c6-b2f037b009a8",
+    "isBundle": false,
+    "isSellable": false,
+    "lifecycleStatus": "Active",
+    "name": "Доставка Санкт-Петербург",
+    "description": "Доставка курьером интернет-магазина",
+    "statusReason": "test",
+    "version": "1.0",
+    "category": [
+        {
+            "id": "bcf86493-a59e-4c03-ab1f-e7adb6ecab69",
+            "name": "Доставка"
+        }
+    ],
+    "channel": [
+        {
+            "id": "8abd35d9-1115-41ae-800c-975ad4a1515e",
+            "name": "B2C-LK"
+        },
+        {
+            "id": "95146999-fb0d-4c63-bb5c-24f9e97d2c3d",
+            "name": "MLK"
+        }
+    ],
+    "place": [
+        {
+            "id": "8a4ff9dc-8fb1-47d6-b958-25ce9239ce66",
+            "name": "Санкт-Петербург и Ленинградская область"
+        }
+    ],
+    "specCharValueUse": [
+        {
+            "referenceId": "7a1f3bec-9944-429f-baf9-2a5cb8cea8ec",
+            "specificationType": "ProductSpecification",
+            "description": "Зона доставки",
+            "name": "Зона доставки",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Санкт-Петербург",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "Александровская",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "Всеволожск",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "Гатчина",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "Горелово",
+                    "valueType": "String"
+                }
+            ]
+        },
+        {
+            "referenceId": "61165ebe-65d5-4ea4-92f6-e82fb4379b11",
+            "specificationType": "ProductSpecification",
+            "description": "Адрес доставки",
+            "name": "Адрес доставки",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Адрес доставки",
+                    "valueType": "String"
+                }
+            ]
+        },
+        {
+            "referenceId": "6ddf8c0b-c928-4707-bd95-b37f38a7e2cd",
+            "specificationType": "ProductSpecification",
+            "description": "e-Mail",
+            "name": "e-Mail",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "e-Mail",
+                    "valueType": "String"
+                }
+            ]
+        },
+        {
+            "referenceId": "28c0ad82-03d5-430c-bc66-fe535ab0eab6",
+            "specificationType": "ProductSpecification",
+            "description": "Номер телефона",
+            "name": "Номер телефона",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Номер телефона",
+                    "valueType": "String"
+                }
+            ]
+        },
+        {
+            "referenceId": "3d78426c-3775-42e2-9551-72be6f30581b",
+            "specificationType": "ProductSpecification",
+            "description": "Полное имя",
+            "name": "Полное имя",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Полное имя",
+                    "valueType": "String"
+                }
+            ]
+        }
+    ],
+    "productOfferingPrice": [
+        {
+            "id": "6fe5cc07-b885-4ebd-95d1-d85dfbd169cf",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/6fe5cc07-b885-4ebd-95d1-d85dfbd169cf",
+            "name": "POP Доставка Санкт-Петербург платно",
+            "@baseType": "ProductOfferingPrice",
+            "@type": "ProductOfferingPrice"
+        },
+        {
+            "id": "a27da880-f53d-4bf0-bd20-f844df753901",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/a27da880-f53d-4bf0-bd20-f844df753901",
+            "name": "POP Доставка Санкт-Петербург бесплатно",
+            "@baseType": "ProductOfferingPrice",
+            "@type": "ProductOfferingPrice"
+        }
+    ],
+    "productSpecification": {
+        "id": "8d0438bb-cce1-47e5-8f41-ba10ccfea63f",
+        "name": "Доставка"
+    },
+    "validFor": {
+        "endDateTime": "9999-12-31T23:59:59.999Z",
+        "startDateTime": "2020-07-20T14:26:28.943Z"
+    },
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "createdBy": "eshamani"
+}

@@ -1,0 +1,50 @@
+{
+    "id": "df04bc02-aa6b-4053-b1ae-4cccd10d3fd7",
+    "code": "OP47",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/df04bc02-aa6b-4053-b1ae-4cccd10d3fd7",
+    "description": "POP Умные часы RC",
+    "isBundle": false,
+    "lifecycleStatus": "Active",
+    "name": "POP Умные часы RC",
+    "priceType": "Recurring Charge",
+    "recurringChargePeriodLength": 30,
+    "recurringChargePeriodType": "Day",
+    "version": "1.0",
+    "place": [
+        {
+            "id": "8a4ff9dc-8fb1-47d6-b958-25ce9239ce66",
+            "name": "Санкт-Петербург и Ленинградская область"
+        },
+        {
+            "id": "bb4b5a20-88d1-4c05-8f45-26d68459d758",
+            "name": "Московский регион"
+        }
+    ],
+    "price": {
+        "unit": "RUB",
+        "value": 200.0
+    },
+    "specCharValueUse": [],
+    "tax": [
+        {
+            "taxCategory": "VAT",
+            "taxRate": 20.0,
+            "taxAmount": {
+                "unit": "%",
+                "value": 20.0
+            }
+        }
+    ],
+    "validFor": {
+        "endDateTime": "9999-12-31T23:59:59.999Z",
+        "startDateTime": "2020-07-21T05:43:29.763Z"
+    },
+    "@baseType": "ProductOfferingPrice",
+    "@type": "ProductOfferingPrice",
+    "productOffering": {
+        "id": "79fd29d4-1ae4-4703-af40-f79a08f6549f",
+        "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/79fd29d4-1ae4-4703-af40-f79a08f6549f",
+        "name": "Тариф 'Умные часы'",
+        "version": "1.0"
+    }
+}

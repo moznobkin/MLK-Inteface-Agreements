@@ -1,0 +1,92 @@
+{
+    "id": "77407a5a-d89d-4971-92c9-6ac3c5ee5b8c",
+    "code": "OF849",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/77407a5a-d89d-4971-92c9-6ac3c5ee5b8c",
+    "isBundle": false,
+    "isSellable": false,
+    "lifecycleStatus": "Active",
+    "name": "Оплата",
+    "description": "Вариант оплаты",
+    "statusReason": "New Product Offer",
+    "version": "1.0",
+    "category": [
+        {
+            "id": "dc01c06a-ffdc-4c32-8593-e11ef75b5b1d",
+            "name": "Оплата"
+        }
+    ],
+    "channel": [
+        {
+            "id": "8abd35d9-1115-41ae-800c-975ad4a1515e",
+            "name": "B2C-LK"
+        },
+        {
+            "id": "95146999-fb0d-4c63-bb5c-24f9e97d2c3d",
+            "name": "MLK"
+        }
+    ],
+    "marketSegment": [
+        {
+            "id": "10edee2f-8277-4d77-8dc8-8e1edc97274c",
+            "name": "B2C"
+        }
+    ],
+    "place": [
+        {
+            "id": "8a4ff9dc-8fb1-47d6-b958-25ce9239ce66",
+            "name": "Санкт-Петербург и Ленинградская область"
+        },
+        {
+            "id": "bb4b5a20-88d1-4c05-8f45-26d68459d758",
+            "name": "Московский регион"
+        }
+    ],
+    "specCharValueUse": [
+        {
+            "referenceId": "57067f0d-a1e3-41e3-bb10-6b5cb1a74024",
+            "specificationType": "ProductSpecification",
+            "description": "Тип оплаты",
+            "name": "Тип оплаты",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "При получении",
+                    "valueType": "String"
+                }
+            ]
+        },
+        {
+            "referenceId": "37136e9d-1507-4138-9b40-054433644a71",
+            "specificationType": "ProductSpecification",
+            "description": "Метод оплаты",
+            "name": "Метод оплаты",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Наличными",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "Карта",
+                    "valueType": "String"
+                }
+            ]
+        }
+    ],
+    "productOfferingPrice": [],
+    "productSpecification": {
+        "id": "1068e87a-3f9d-44ec-bce4-5033fc49b26b",
+        "name": "Способы оплаты"
+    },
+    "validFor": {
+        "endDateTime": "9999-12-31T23:59:59.999Z",
+        "startDateTime": "2020-07-20T14:28:49.095Z"
+    },
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "createdBy": "eshamani"
+}

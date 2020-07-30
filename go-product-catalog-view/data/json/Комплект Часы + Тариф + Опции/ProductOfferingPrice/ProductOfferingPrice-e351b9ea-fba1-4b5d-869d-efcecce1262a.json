@@ -1,0 +1,80 @@
+{
+    "id": "e351b9ea-fba1-4b5d-869d-efcecce1262a",
+    "code": "OP43",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/e351b9ea-fba1-4b5d-869d-efcecce1262a",
+    "description": "POP Доставка Москва платно",
+    "isBundle": false,
+    "lifecycleStatus": "Active",
+    "name": "POP Доставка Москва платно",
+    "priceType": "One Time Charge",
+    "version": "1.0",
+    "place": [
+        {
+            "id": "bb4b5a20-88d1-4c05-8f45-26d68459d758",
+            "name": "Московский регион"
+        }
+    ],
+    "price": {
+        "unit": "RUB",
+        "value": 200.0
+    },
+    "specCharValueUse": [
+        {
+            "specificationType": "ProductSpecification",
+            "description": "Зона доставки",
+            "name": "Зона доставки",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Архангельское",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "Балашиха",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "Видное",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "Внуково",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer"
+        }
+    ],
+    "tax": [
+        {
+            "taxCategory": "VAT",
+            "taxRate": 20.0,
+            "taxAmount": {
+                "unit": "%",
+                "value": 20.0
+            }
+        }
+    ],
+    "validFor": {
+        "endDateTime": "9999-12-31T23:59:59.999Z",
+        "startDateTime": "2020-07-20T13:13:37.400Z"
+    },
+    "@baseType": "ProductOfferingPrice",
+    "@type": "ProductOfferingPrice",
+    "createdBy": "eshamani",
+    "productOffering": {
+        "id": "74a075af-b04a-406c-b095-3ef65a7b6b7e",
+        "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/74a075af-b04a-406c-b095-3ef65a7b6b7e",
+        "name": "Доставка Москва",
+        "version": "1.0"
+    }
+}

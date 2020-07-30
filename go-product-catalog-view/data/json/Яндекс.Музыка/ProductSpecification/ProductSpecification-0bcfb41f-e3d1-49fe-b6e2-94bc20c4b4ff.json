@@ -1,0 +1,59 @@
+{
+    "id": "0bcfb41f-e3d1-49fe-b6e2-94bc20c4b4ff",
+    "createdBy": "eshamani",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/productSpecification/0bcfb41f-e3d1-49fe-b6e2-94bc20c4b4ff",
+    "name": "МФ Музыка",
+    "code": "PS8",
+    "brand": "string",
+    "description": "МФ Музыка",
+    "isBundle": false,
+    "lifecycleStatus": "Active",
+    "version": "1.0",
+    "productSpecCharacteristic": [
+        {
+            "id": "a79de901-c193-4d19-a374-75c8fb68c52f",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/a79de901-c193-4d19-a374-75c8fb68c52f",
+            "name": "Короткое описание",
+            "version": "1.0"
+        },
+        {
+            "id": "9b071214-6642-40cb-ab1d-fa7056027d84",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/9b071214-6642-40cb-ab1d-fa7056027d84",
+            "name": "Полное описание",
+            "version": "1.0"
+        },
+        {
+            "id": "5ecdd99c-4ecd-4c31-a20e-cf254e61d227",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/5ecdd99c-4ecd-4c31-a20e-cf254e61d227",
+            "name": "Период покупки",
+            "version": "1.0"
+        },
+        {
+            "id": "462c0559-7d10-47d0-a601-0e898a5ed016",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/462c0559-7d10-47d0-a601-0e898a5ed016",
+            "name": "Период бесплатного действия",
+            "version": "1.0"
+        },
+        {
+            "id": "2f8d1863-2269-450a-9423-64887cecab6b",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/2f8d1863-2269-450a-9423-64887cecab6b",
+            "name": "Service code",
+            "version": "1.0"
+        },
+        {
+            "id": "0f2203ff-56ea-43ef-be8c-76de4b0e7a58",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/0f2203ff-56ea-43ef-be8c-76de4b0e7a58",
+            "name": "Устройства на которых работает опция",
+            "version": "1.0"
+        },
+        {
+            "id": "0d7e7c32-8ba3-4332-9011-f41e98320bdc",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/0d7e7c32-8ba3-4332-9011-f41e98320bdc",
+            "name": "Операционная система",
+            "version": "1.0"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductSpecification",
+    "externalID": ""
+}

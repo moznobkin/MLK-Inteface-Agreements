@@ -1,0 +1,46 @@
+{
+    "id": "6a351949-4a03-4f91-b982-a775e6c078d0",
+    "code": "CH14",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/6a351949-4a03-4f91-b982-a775e6c078d0",
+    "isVisible": true,
+    "displayName": "Торговая марка",
+    "displaySequence": 2,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Торговая марка",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Торговая марка",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "JET",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "ELARI",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "TCL",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": "2"
+}

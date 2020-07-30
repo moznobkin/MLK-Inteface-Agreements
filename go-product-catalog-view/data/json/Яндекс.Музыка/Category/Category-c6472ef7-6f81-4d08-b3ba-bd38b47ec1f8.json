@@ -1,0 +1,46 @@
+{
+    "id": "c6472ef7-6f81-4d08-b3ba-bd38b47ec1f8",
+    "code": "CAT102",
+    "name": "МФ Музыка",
+    "description": "ProductOfferContainer for VAS MF Music",
+    "@type": "productoffercategory",
+    "@baseType": "category",
+    "parentId": "f3604656-303d-4506-a0cd-db21c79ffb27",
+    "lifecycleStatus": "Active",
+    "validFor": {
+        "startDateTime": "2020-07-20T12:10:09.251Z",
+        "endDateTime": "9999-12-31T23:59:59.999Z"
+    },
+    "lastUpdate": "2020-07-20T12:10:09.256Z",
+    "isRoot": false,
+    "version": "1.0",
+    "productOffers": [
+        {
+            "id": "c1608814-df7a-42a8-aded-73c55ffee273",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/c1608814-df7a-42a8-aded-73c55ffee273",
+            "name": "Яндекс.Музыка",
+            "@type": "ProductOffer",
+            "@baseType": "ProductOffer"
+        },
+        {
+            "id": "93d83364-966d-4ad4-8051-ac2c04d32891",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/93d83364-966d-4ad4-8051-ac2c04d32891",
+            "name": "Яндекс.Музыка",
+            "@type": "ProductOffer",
+            "@baseType": "ProductOffer"
+        },
+        {
+            "id": "5f5a037e-091f-4b03-9483-3c490317dfed",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/5f5a037e-091f-4b03-9483-3c490317dfed",
+            "name": "Яндекс.Музыка",
+            "@type": "ProductOffer",
+            "@baseType": "ProductOffer"
+        }
+    ],
+    "isOfferContainer": false,
+    "isAnchor": false,
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/category-projection/v1/category/c6472ef7-6f81-4d08-b3ba-bd38b47ec1f8",
+    "nodeCardinality": "0-10",
+    "createdBy": "eshamani",
+    "createdOn": "2020-07-20T08:04:03.835Z"
+}

@@ -1,0 +1,19 @@
+{
+    "id": "9b071214-6642-40cb-ab1d-fa7056027d84",
+    "code": "CH54",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/9b071214-6642-40cb-ab1d-fa7056027d84",
+    "isVisible": true,
+    "displayName": "Полное описание",
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Полное описание",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Полное описание",
+    "specCharacteristicValue": [],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": ""
+}

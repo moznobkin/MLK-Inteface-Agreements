@@ -1,0 +1,53 @@
+{
+    "id": "5ecdd99c-4ecd-4c31-a20e-cf254e61d227",
+    "code": "CH55",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/5ecdd99c-4ecd-4c31-a20e-cf254e61d227",
+    "isVisible": true,
+    "displayName": "Период покупки",
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Период покупки",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Период покупки",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "день",
+            "valueType": "String",
+            "value": "1",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "дней",
+            "valueType": "String",
+            "value": "30",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "дней",
+            "valueType": "String",
+            "value": "60",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "дней",
+            "valueType": "String",
+            "value": "90",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": ""
+}

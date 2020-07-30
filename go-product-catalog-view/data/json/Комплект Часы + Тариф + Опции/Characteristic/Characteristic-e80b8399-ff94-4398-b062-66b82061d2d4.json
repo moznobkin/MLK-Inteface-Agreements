@@ -1,0 +1,38 @@
+{
+    "id": "e80b8399-ff94-4398-b062-66b82061d2d4",
+    "code": "CH37",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/e80b8399-ff94-4398-b062-66b82061d2d4",
+    "isVisible": true,
+    "displayName": "Аккумуляторная батарея",
+    "displaySequence": 9,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Аккумуляторная батарея",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Аккумуляторная батарея",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "мАч",
+            "valueType": "String",
+            "value": "700",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "мАч",
+            "valueType": "String",
+            "value": "480",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": "78"
+}

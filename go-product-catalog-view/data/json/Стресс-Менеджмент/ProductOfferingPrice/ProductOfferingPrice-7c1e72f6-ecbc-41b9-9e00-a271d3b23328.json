@@ -1,0 +1,85 @@
+{
+    "id": "7c1e72f6-ecbc-41b9-9e00-a271d3b23328",
+    "code": "OP31",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/7c1e72f6-ecbc-41b9-9e00-a271d3b23328",
+    "description": "Стресс-менеджмент Day2",
+    "isBundle": false,
+    "lifecycleStatus": "Active",
+    "name": "Стресс-менеджмент Day2",
+    "priceType": "Recurring Charge",
+    "recurringChargePeriodType": "Day",
+    "version": "1.0",
+    "price": {
+        "unit": "RUB",
+        "value": 16.0
+    },
+    "specCharValueUse": [
+        {
+            "referenceId": "2f8d1863-2269-450a-9423-64887cecab6b",
+            "specificationType": "ProductSpecification",
+            "description": "Service Code",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Service Code",
+            "valueType": "String",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "stress_management_d2",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "e3356872-4f2e-4d90-a871-e4781de4c90b",
+                "name": "Полезное",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "5ecdd99c-4ecd-4c31-a20e-cf254e61d227",
+            "specificationType": "ProductSpecification",
+            "description": "Период покупки",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Период покупки",
+            "valueType": "String",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "1",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "e3356872-4f2e-4d90-a871-e4781de4c90b",
+                "name": "Полезное",
+                "version": "1.0"
+            }
+        }
+    ],
+    "tax": [
+        {
+            "taxCategory": "VAT",
+            "taxRate": 20.0,
+            "taxAmount": {
+                "unit": "%",
+                "value": 20.0
+            }
+        }
+    ],
+    "validFor": {
+        "endDateTime": "9999-12-31T23:59:59.999Z",
+        "startDateTime": "2020-07-20T12:52:21.210Z"
+    },
+    "@baseType": "ProductOfferingPrice",
+    "@type": "ProductOfferingPrice",
+    "createdBy": "eshamani",
+    "productOffering": {
+        "id": "9ae3e14b-ceb7-4983-802c-fccf6e0db55a",
+        "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/9ae3e14b-ceb7-4983-802c-fccf6e0db55a",
+        "name": "Стресс-менеджмент",
+        "version": "1.0"
+    }
+}

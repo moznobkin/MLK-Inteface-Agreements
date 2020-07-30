@@ -1,0 +1,38 @@
+{
+    "id": "d39393ea-19bc-418b-989d-29eb63c33ab0",
+    "code": "CH35",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/d39393ea-19bc-418b-989d-29eb63c33ab0",
+    "isVisible": true,
+    "displayName": "Поддержка Android от",
+    "displaySequence": 27,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Поддержка Android",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Поддержка Android",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": " 5.1 Lollipop",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "4.4 KitKat",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": "7822"
+}

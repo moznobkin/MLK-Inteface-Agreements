@@ -1,0 +1,38 @@
+{
+    "id": "013f82f9-b20f-4949-9e8b-685d29da7196",
+    "code": "CH32",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/013f82f9-b20f-4949-9e8b-685d29da7196",
+    "isVisible": true,
+    "displayName": "Наличие дисплея",
+    "displaySequence": 23,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Наличие дисплея",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Наличие дисплея",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "Да",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "Нет",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": "7784"
+}

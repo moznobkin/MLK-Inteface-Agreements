@@ -1,0 +1,753 @@
+{
+    "id": "055eeb84-84df-4696-81dd-a6f9402ca58c",
+    "code": "OF839",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/055eeb84-84df-4696-81dd-a6f9402ca58c",
+    "externalID": "128300",
+    "isBundle": false,
+    "isSellable": true,
+    "lifecycleStatus": "Active",
+    "name": "Часы-телефон JET Kid Vision 4G детские",
+    "description": "Часы-телефон JET Kid Vision 4G детские",
+    "statusReason": "New Product Offer",
+    "version": "1.0",
+    "offerLabels": [
+        {
+            "channel": "CVM",
+            "name": "pers_tag_01",
+            "description": "значение 1"
+        },
+        {
+            "channel": "CVM",
+            "name": "pers_tag_02",
+            "description": "значение 2"
+        }
+    ],
+    "attachment": [
+        {
+            "id": "b.0",
+            "attachmentType": "picture",
+            "name": "Blue",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1283/128300_p_27.png"
+        },
+        {
+            "id": "b.1",
+            "attachmentType": "picture",
+            "name": "Blue",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1283/128300_p_21.png"
+        },
+        {
+            "id": "b.2",
+            "attachmentType": "picture",
+            "name": "Blue",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1283/128300_p_24_1.png"
+        },
+        {
+            "id": "b.3",
+            "attachmentType": "picture",
+            "name": "Blue",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1283/128300_p_24_2.png"
+        },
+        {
+            "id": "b.4",
+            "attachmentType": "picture",
+            "name": "Blue",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1283/128300_p_24_3.png"
+        },
+        {
+            "id": "b.5",
+            "attachmentType": "picture",
+            "name": "Blue",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1283/128300_p_24_4.png"
+        },
+        {
+            "id": "p.0",
+            "attachmentType": "picture",
+            "name": "Pink",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1283/128302_p_27.png"
+        },
+        {
+            "id": "p.1",
+            "attachmentType": "picture",
+            "name": "Pink",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1283/128302_p_21.png"
+        },
+        {
+            "id": "p.2",
+            "attachmentType": "picture",
+            "name": "Pink",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1283/128302_p_24_1.png"
+        },
+        {
+            "id": "p.3",
+            "attachmentType": "picture",
+            "name": "Pink",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1283/128302_p_24_2.png"
+        },
+        {
+            "id": "p.4",
+            "attachmentType": "picture",
+            "name": "Pink",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1283/128302_p_24_3.png"
+        },
+        {
+            "id": "p.5",
+            "attachmentType": "picture",
+            "name": "Pink",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1283/128302_p_24_4.png"
+        }
+    ],
+    "category": [
+        {
+            "id": "d3067571-1051-43fb-8255-b71e4ecbd461",
+            "name": "Goods"
+        }
+    ],
+    "channel": [
+        {
+            "id": "8abd35d9-1115-41ae-800c-975ad4a1515e",
+            "name": "B2C-LK"
+        },
+        {
+            "id": "95146999-fb0d-4c63-bb5c-24f9e97d2c3d",
+            "name": "MLK"
+        }
+    ],
+    "marketSegment": [
+        {
+            "id": "10edee2f-8277-4d77-8dc8-8e1edc97274c",
+            "name": "B2C"
+        }
+    ],
+    "place": [
+        {
+            "id": "8a4ff9dc-8fb1-47d6-b958-25ce9239ce66",
+            "name": "Санкт-Петербург и Ленинградская область"
+        },
+        {
+            "id": "bb4b5a20-88d1-4c05-8f45-26d68459d758",
+            "name": "Московский регион"
+        }
+    ],
+    "specCharValueUse": [
+        {
+            "referenceId": "6a351949-4a03-4f91-b982-a775e6c078d0",
+            "specificationType": "ProductSpecification",
+            "description": "Торговая марка",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Торговая марка",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "JET",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "9978ca41-8fce-4a1e-ae9d-e12a117f3707",
+            "specificationType": "ProductSpecification",
+            "description": "Тип",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Тип",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Часы-телефон",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "8205ade0-4cbd-494c-8638-1f6b586d7de2",
+            "specificationType": "ProductSpecification",
+            "description": "Цвет",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Цвет",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Розовый",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "Голубой",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "7190e805-2b96-4389-8cd3-3885833cf2ff",
+            "specificationType": "ProductSpecification",
+            "description": "Стандарты 2G",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Стандарты 2G",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "GSM 900 / GSM 1800 / GSM 850 / GSM 1900",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "552df06d-31da-40cb-8993-79c5c6f7c335",
+            "specificationType": "ProductSpecification",
+            "description": "Стандарты 3G",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Стандарты 3G",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "UMTS 1900 / UMTS 900 / UMTS 2100 / UMTS 850",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "67af10d9-021b-41a0-914f-7882b1676523",
+            "specificationType": "ProductSpecification",
+            "description": "Стандарты 4G (LTE)",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Стандарты 4G (LTE)",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "LTE 900 / LTE 1900 / LTE 1700 / LTE 1800 / LTE 2100 / LTE 850 / LTE 2600 / LTE 800",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "1bd744c7-3002-4849-a42d-04ca9aa6345d",
+            "specificationType": "ProductSpecification",
+            "description": "Поколение SIM-карты",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Поколение SIM-карты",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "MicroSIM",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "fef53b40-c212-45ab-b4b2-465a95cd0586",
+            "specificationType": "ProductSpecification",
+            "description": "Камера",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Камера",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Да",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "98b20a27-731e-41fc-ac18-5902e2204615",
+            "specificationType": "ProductSpecification",
+            "description": "Наличие динамика",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Наличие динамика",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Да",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "dd536411-1aee-4ca6-bc7b-72c5a0f047e5",
+            "specificationType": "ProductSpecification",
+            "description": "Наличие микрофона",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Наличие микрофона",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Да",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "f7434792-5af0-45d0-aaf3-d40286a67b85",
+            "specificationType": "ProductSpecification",
+            "description": "Комплектация",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Комплектация",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Часы, USB-кабель, инструкция, упаковка",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "fed5bbf7-6874-4381-950f-bea6f01b721d",
+            "specificationType": "ProductSpecification",
+            "description": "Гарантийный срок",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Гарантийный срок",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "мес",
+                    "value": "6",
+                    "valueType": "Integer"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "96803c94-c0ff-4b6b-8052-2a91f0df2df8",
+            "specificationType": "ProductSpecification",
+            "description": "Wi-Fi",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Wi-Fi",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Да",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "9d29df63-64c2-4486-8791-babe5a70e571",
+            "specificationType": "ProductSpecification",
+            "description": "Размеры корпуса",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Размеры корпуса",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "мм",
+                    "value": "47x42x16",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "36658353-695b-42df-aa06-0e54b446715a",
+            "specificationType": "ProductSpecification",
+            "description": "Материал корпуса",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Материал корпуса",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Пластик",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "039b3f10-fe1f-43ae-979b-a19ba44dfc59",
+            "specificationType": "ProductSpecification",
+            "description": "Функции",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Функции",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Мониторинг физической активности / Рассчет потребленных калорий / Счетчик шагов",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "23c21752-6ff6-4937-8dc3-8dd6ce7c734d",
+            "specificationType": "ProductSpecification",
+            "description": "Вес",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Вес",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "г",
+                    "value": "54",
+                    "valueType": "Integer"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "013f82f9-b20f-4949-9e8b-685d29da7196",
+            "specificationType": "ProductSpecification",
+            "description": "Наличие дисплея",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Наличие дисплея",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Да",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "7055adea-7ad7-4b0f-a5cd-a135e6effd6b",
+            "specificationType": "ProductSpecification",
+            "description": "Диагональ дисплея",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Диагональ дисплея",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "1.44",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "062cac34-e515-4387-aaed-f3d8017c34a2",
+            "specificationType": "ProductSpecification",
+            "description": "GPS-модуль",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "GPS-модуль",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Да",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "d39393ea-19bc-418b-989d-29eb63c33ab0",
+            "specificationType": "ProductSpecification",
+            "description": "Поддержка андроид",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Поддержка андроид",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "5.1 Lollipop",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "4dc070fa-65e1-499b-b88d-adee5a3d9867",
+            "specificationType": "ProductSpecification",
+            "description": "Поддержка iOS",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Поддержка iOS",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "7",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "e80b8399-ff94-4398-b062-66b82061d2d4",
+            "specificationType": "ProductSpecification",
+            "description": "Аккумуляторная батарея",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Аккумуляторная батарея",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "мАч",
+                    "value": "700",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "d37544cd-7653-410e-94b7-c749d5869702",
+            "specificationType": "ProductSpecification",
+            "description": "Время работы в активном режиме",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Время работы в активном режиме",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "ч",
+                    "value": "7.5",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "7b8bba2d-6ff9-4e52-9d97-b990ab18132c",
+            "specificationType": "ProductSpecification",
+            "description": "Время работы в режиме ожидания",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Время работы в режиме ожидания",
+            "valueType": "Numbers",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "ч",
+                    "value": "72",
+                    "valueType": "Integer"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "dd10bffb-25e4-4014-bbac-ee4979bf5544",
+            "specificationType": "ProductSpecification",
+            "description": "Объем встроенной памяти",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Объем встроенной памяти",
+            "valueType": "Numbers",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "МБ",
+                    "value": "512",
+                    "valueType": "Integer"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "f9395d99-b6b9-48c5-a809-d618a3f2d29c",
+            "specificationType": "ProductSpecification",
+            "description": "Объем оперативной памяти",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Объем оперативной памяти",
+            "valueType": "Numbers",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "ГБ",
+                    "value": "4",
+                    "valueType": "Integer"
+                }
+            ],
+            "specification": {
+                "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+                "name": "Smart Watch",
+                "version": "1.0"
+            }
+        }
+    ],
+    "productOfferingPrice": [
+        {
+            "id": "7284ac04-4f38-4cb5-bcf0-272a003faccd",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/7284ac04-4f38-4cb5-bcf0-272a003faccd",
+            "name": "POP Smart Watch JET",
+            "@baseType": "ProductOfferingPrice",
+            "@type": "ProductOfferingPrice"
+        }
+    ],
+    "productSpecification": {
+        "id": "731176af-8f1b-4a2b-8c50-c09edecb0a8d",
+        "name": "Smart Watch"
+    },
+    "validFor": {
+        "endDateTime": "9999-12-31T23:59:59.999Z",
+        "startDateTime": "2020-07-20T13:49:20.849Z"
+    },
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "createdBy": "eshamani"
+}

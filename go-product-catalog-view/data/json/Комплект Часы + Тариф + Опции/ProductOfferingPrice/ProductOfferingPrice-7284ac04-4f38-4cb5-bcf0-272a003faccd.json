@@ -1,0 +1,72 @@
+{
+    "id": "7284ac04-4f38-4cb5-bcf0-272a003faccd",
+    "code": "OP26",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/7284ac04-4f38-4cb5-bcf0-272a003faccd",
+    "description": "POP Smart Watch JET",
+    "isBundle": false,
+    "lifecycleStatus": "Active",
+    "name": "POP_Smart_Watch_JET",
+    "priceType": "One Time Charge",
+    "version": "1.0",
+    "place": [
+        {
+            "id": "8a4ff9dc-8fb1-47d6-b958-25ce9239ce66",
+            "name": "Санкт-Петербург и Ленинградская область"
+        },
+        {
+            "id": "bb4b5a20-88d1-4c05-8f45-26d68459d758",
+            "name": "Московский регион"
+        }
+    ],
+    "price": {
+        "unit": "RUB",
+        "value": 4990.0
+    },
+    "specCharValueUse": [
+        {
+            "specificationType": "ProductSpecification",
+            "description": "Цвет",
+            "name": "Цвет",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Розовый",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "Голубой",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer"
+        }
+    ],
+    "tax": [
+        {
+            "taxCategory": "VAT",
+            "taxRate": 20.0,
+            "taxAmount": {
+                "unit": "%",
+                "value": 20.0
+            }
+        }
+    ],
+    "validFor": {
+        "endDateTime": "9999-12-31T23:59:59.999Z",
+        "startDateTime": "2020-07-20T12:44:21.894Z"
+    },
+    "@baseType": "ProductOfferingPrice",
+    "@type": "ProductOfferingPrice",
+    "createdBy": "eshamani",
+    "productOffering": {
+        "id": "055eeb84-84df-4696-81dd-a6f9402ca58c",
+        "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/055eeb84-84df-4696-81dd-a6f9402ca58c",
+        "name": "Часы-телефон JET Kid Vision 4G детские",
+        "version": "1.0"
+    }
+}

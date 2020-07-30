@@ -1,0 +1,38 @@
+{
+    "id": "dd536411-1aee-4ca6-bc7b-72c5a0f047e5",
+    "code": "CH22",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/dd536411-1aee-4ca6-bc7b-72c5a0f047e5",
+    "isVisible": true,
+    "displayName": "Наличие микрофона",
+    "displaySequence": 20,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Наличие микрофона",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Наличие микрофона",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "Да",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "Нет",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": "7720"
+}

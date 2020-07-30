@@ -1,0 +1,333 @@
+{
+    "id": "5f5a037e-091f-4b03-9483-3c490317dfed",
+    "code": "OF846",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/5f5a037e-091f-4b03-9483-3c490317dfed",
+    "externalID": "",
+    "isBundle": false,
+    "isSellable": true,
+    "lifecycleStatus": "Active",
+    "name": "Яндекс.Музыка",
+    "description": "Яндекс.Музыка",
+    "statusReason": "New Product Offer",
+    "version": "1.0",
+    "offerLabels": [
+        {
+            "channel": "CVM",
+            "name": "pers_tag_01",
+            "description": "значение 1"
+        },
+        {
+            "channel": "CVM",
+            "name": "pers_tag_02",
+            "description": "значение 2"
+        }
+    ],
+    "category": [
+        {
+            "id": "c6472ef7-6f81-4d08-b3ba-bd38b47ec1f8",
+            "name": "МФ Музыка"
+        }
+    ],
+    "marketSegment": [
+        {
+            "id": "10edee2f-8277-4d77-8dc8-8e1edc97274c",
+            "name": "B2C"
+        }
+    ],
+    "place": [
+        {
+            "id": "8a4ff9dc-8fb1-47d6-b958-25ce9239ce66",
+            "name": "Санкт-Петербург и Ленинградская область"
+        },
+        {
+            "id": "bb4b5a20-88d1-4c05-8f45-26d68459d758",
+            "name": "Московский регион"
+        }
+    ],
+    "specCharValueUse": [
+        {
+            "referenceId": "a79de901-c193-4d19-a374-75c8fb68c52f",
+            "description": "Короткое описание",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Короткое описание",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Описание",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer"
+        },
+        {
+            "referenceId": "9b071214-6642-40cb-ab1d-fa7056027d84",
+            "description": "Полное описание",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Полное описание",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Описание",
+                    "valueType": "String",
+                    "@baseType": "ProductSpecification",
+                    "@type": "ProductSpecification"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer"
+        },
+        {
+            "referenceId": "5ecdd99c-4ecd-4c31-a20e-cf254e61d227",
+            "description": "Период покупки",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Период покупки",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "дней",
+                    "value": "30",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "день",
+                    "value": "1",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Период покупки"
+        },
+        {
+            "referenceId": "462c0559-7d10-47d0-a601-0e898a5ed016",
+            "description": "Период бесплатного действия",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Период бесплатного действия",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "дней",
+                    "value": "30",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "дней",
+                    "value": "60",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "дней",
+                    "value": "90",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Период бесплатного дествия"
+        },
+        {
+            "referenceId": "2f8d1863-2269-450a-9423-64887cecab6b",
+            "description": "Service Code",
+            "maxCardinality": 2,
+            "minCardinality": 1,
+            "name": "Service Code",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "yandex.all.listen159",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "yandex.all169",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "yandex.all.listen159_60",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "yandex.all.listen159_90",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "yandex.all169_60",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "yandex.all169_90",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "yandex.ios",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "yandex.ios_d",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "yandex.android",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "yandex.android_d",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer"
+        },
+        {
+            "referenceId": "0f2203ff-56ea-43ef-be8c-76de4b0e7a58",
+            "description": "Устройства на которых работает опция",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Устройства на которых работает опция",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Смартфон",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "ПК",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "Планшет",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Тип оборудования"
+        },
+        {
+            "referenceId": "0d7e7c32-8ba3-4332-9011-f41e98320bdc",
+            "description": "Операционная система",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Операционная система",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Android",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "iOS",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Операционная система"
+        }
+    ],
+    "productOfferingPrice": [
+        {
+            "id": "0912f806-e9f6-4339-91e3-c84a2fd5e523",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/0912f806-e9f6-4339-91e3-c84a2fd5e523",
+            "name": "POP МФ Музыка yandex.all.listen159_60",
+            "@baseType": "ProductOfferingPrice",
+            "@type": "ProductOfferingPrice"
+        },
+        {
+            "id": "640e2c42-22c4-4349-9cb6-f0c1657f9859",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/640e2c42-22c4-4349-9cb6-f0c1657f9859",
+            "name": "POP МФ Музыка yandex.all.listen159_90",
+            "@baseType": "ProductOfferingPrice",
+            "@type": "ProductOfferingPrice"
+        },
+        {
+            "id": "db03d32b-f74f-4f67-ba28-dd9a1cba2177",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/db03d32b-f74f-4f67-ba28-dd9a1cba2177",
+            "name": "POP МФ Музыка yandex.all169_60",
+            "@baseType": "ProductOfferingPrice",
+            "@type": "ProductOfferingPrice"
+        },
+        {
+            "id": "3b56336d-97f7-4035-9a60-1dd81f260edd",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/3b56336d-97f7-4035-9a60-1dd81f260edd",
+            "name": "POP МФ Музыка yandex.all169_90",
+            "@baseType": "ProductOfferingPrice",
+            "@type": "ProductOfferingPrice"
+        },
+        {
+            "id": "69b731fa-9415-4390-8989-70cb99d9e6e9",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/69b731fa-9415-4390-8989-70cb99d9e6e9",
+            "name": "POP МФ Музыка yandex.ios",
+            "@baseType": "ProductOfferingPrice",
+            "@type": "ProductOfferingPrice"
+        },
+        {
+            "id": "96da3288-8330-4fad-acc5-0c2b2588b007",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/96da3288-8330-4fad-acc5-0c2b2588b007",
+            "name": "МФ Музыка yandex.ios_d",
+            "@baseType": "ProductOfferingPrice",
+            "@type": "ProductOfferingPrice"
+        },
+        {
+            "id": "ad490562-7b80-4d2a-83b5-b59af0e94d9f",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/ad490562-7b80-4d2a-83b5-b59af0e94d9f",
+            "name": "МФ Музыка yandex.android",
+            "@baseType": "ProductOfferingPrice",
+            "@type": "ProductOfferingPrice"
+        },
+        {
+            "id": "0530d722-2233-40f9-aaa2-da605ab224cc",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/0530d722-2233-40f9-aaa2-da605ab224cc",
+            "name": "МФ Музыка yandex.android_d",
+            "@baseType": "ProductOfferingPrice",
+            "@type": "ProductOfferingPrice"
+        }
+    ],
+    "productSpecification": {
+        "id": "0bcfb41f-e3d1-49fe-b6e2-94bc20c4b4ff",
+        "name": "МФ Музыка"
+    },
+    "validFor": {
+        "endDateTime": "9999-12-31T23:59:59.999Z",
+        "startDateTime": "2020-07-20T14:17:18.404Z"
+    },
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "createdBy": "eshamani"
+}

@@ -1,0 +1,49 @@
+{
+    "id": "cbca1169-7a0a-4b77-8992-dbabeee12ecd",
+    "code": "OP28",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/cbca1169-7a0a-4b77-8992-dbabeee12ecd",
+    "description": "POP Плюс 5ГБ",
+    "isBundle": false,
+    "lifecycleStatus": "Active",
+    "name": "POP_Плюс_5ГБ",
+    "priceType": "One Time Charge",
+    "version": "1.0",
+    "place": [
+        {
+            "id": "8a4ff9dc-8fb1-47d6-b958-25ce9239ce66",
+            "name": "Санкт-Петербург и Ленинградская область"
+        },
+        {
+            "id": "bb4b5a20-88d1-4c05-8f45-26d68459d758",
+            "name": "Московский регион"
+        }
+    ],
+    "price": {
+        "unit": "RUB",
+        "value": 0.0
+    },
+    "specCharValueUse": [],
+    "tax": [
+        {
+            "taxCategory": "VAT",
+            "taxRate": 20.0,
+            "taxAmount": {
+                "unit": "%",
+                "value": 20.0
+            }
+        }
+    ],
+    "validFor": {
+        "endDateTime": "9999-12-31T23:59:59.999Z",
+        "startDateTime": "2020-07-20T12:46:21.076Z"
+    },
+    "@baseType": "ProductOfferingPrice",
+    "@type": "ProductOfferingPrice",
+    "createdBy": "eshamani",
+    "productOffering": {
+        "id": "7daf64a1-b084-4047-a3b6-1bebf61bacad",
+        "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/7daf64a1-b084-4047-a3b6-1bebf61bacad",
+        "name": "Плюс 5ГБ",
+        "version": "1.0"
+    }
+}

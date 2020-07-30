@@ -1,0 +1,38 @@
+{
+    "id": "0d7e7c32-8ba3-4332-9011-f41e98320bdc",
+    "createdBy": "eshamani",
+    "code": "CH57",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/0d7e7c32-8ba3-4332-9011-f41e98320bdc",
+    "isVisible": true,
+    "displayName": "Операционная система",
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Операционная система",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Операционная система",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "Android",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "iOS",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": ""
+}

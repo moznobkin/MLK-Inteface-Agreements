@@ -1,0 +1,46 @@
+{
+    "id": "d37544cd-7653-410e-94b7-c749d5869702",
+    "code": "CH38",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/d37544cd-7653-410e-94b7-c749d5869702",
+    "isVisible": true,
+    "displayName": "Время работы в активном режиме",
+    "displaySequence": 10,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Время работы в активном режиме",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Время работы в активном режиме",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "ч",
+            "valueType": "String",
+            "value": "7.5",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "ч",
+            "valueType": "String",
+            "value": "8.5",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "ч",
+            "valueType": "String",
+            "value": "9",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": "8605"
+}

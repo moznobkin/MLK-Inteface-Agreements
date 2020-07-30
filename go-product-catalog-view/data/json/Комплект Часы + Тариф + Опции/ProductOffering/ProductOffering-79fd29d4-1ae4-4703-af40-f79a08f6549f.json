@@ -1,0 +1,142 @@
+{
+    "id": "79fd29d4-1ae4-4703-af40-f79a08f6549f",
+    "code": "OF852",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/79fd29d4-1ae4-4703-af40-f79a08f6549f",
+    "externalID": "9911",
+    "isBundle": false,
+    "isSellable": true,
+    "lifecycleStatus": "Active",
+    "name": "Тариф 'Умные часы'",
+    "description": "Тариф 'Умные часы'",
+    "statusReason": "New Product Offer",
+    "version": "1.0",
+    "offerLabels": [
+        {
+            "channel": "CVM",
+            "name": "pers_tag_01",
+            "description": "значение 1"
+        },
+        {
+            "channel": "CVM",
+            "name": "pers_tag_02",
+            "description": "значение 2"
+        }
+    ],
+    "category": [
+        {
+            "id": "f0093eec-63a6-47b6-b2c2-48ddee792236",
+            "name": "Tariff"
+        }
+    ],
+    "channel": [
+        {
+            "id": "8abd35d9-1115-41ae-800c-975ad4a1515e",
+            "name": "B2C-LK"
+        },
+        {
+            "id": "95146999-fb0d-4c63-bb5c-24f9e97d2c3d",
+            "name": "MLK"
+        }
+    ],
+    "marketSegment": [
+        {
+            "id": "10edee2f-8277-4d77-8dc8-8e1edc97274c",
+            "name": "B2C"
+        }
+    ],
+    "place": [
+        {
+            "id": "8a4ff9dc-8fb1-47d6-b958-25ce9239ce66",
+            "name": "Санкт-Петербург и Ленинградская область"
+        },
+        {
+            "id": "bb4b5a20-88d1-4c05-8f45-26d68459d758",
+            "name": "Московский регион"
+        }
+    ],
+    "specCharValueUse": [
+        {
+            "referenceId": "869395b4-e398-42e0-81ca-374282d77baf",
+            "specificationType": "ProductSpecification",
+            "description": "Звонки на все мобильные номера по России",
+            "name": "Звонки на все мобильные номера по России",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "Мин./мес.",
+                    "value": "100",
+                    "valueType": "Integer"
+                }
+            ]
+        },
+        {
+            "referenceId": "1c857950-23d6-4100-8579-be6441aed2b1",
+            "specificationType": "ProductSpecification",
+            "description": "Мобильный интернет",
+            "name": "Мобильный интернет",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "ГБ/мес.",
+                    "value": "1",
+                    "valueType": "Integer"
+                }
+            ]
+        },
+        {
+            "referenceId": "5739b6ba-aac8-41d6-90bc-73ba610fcdfc",
+            "specificationType": "ProductSpecification",
+            "description": "SMS на все номера России",
+            "name": "SMS на все номера России",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "Шт./мес.",
+                    "value": "100",
+                    "valueType": "Integer"
+                }
+            ]
+        },
+        {
+            "referenceId": "c4544f0d-b7f7-4245-bb7d-12357d85d4b9",
+            "specificationType": "ProductSpecification",
+            "description": "Территория действия",
+            "name": "Территория действия",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "Россия",
+                    "valueType": "String"
+                }
+            ]
+        }
+    ],
+    "productOfferingPrice": [
+        {
+            "id": "df04bc02-aa6b-4053-b1ae-4cccd10d3fd7",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/df04bc02-aa6b-4053-b1ae-4cccd10d3fd7",
+            "name": "POP Тариф Умные часы RC",
+            "@baseType": "ProductOfferingPrice",
+            "@type": "ProductOfferingPrice"
+        },
+        {
+            "id": "f025ec6f-0085-4e1c-96d1-2e7d3148f359",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/f025ec6f-0085-4e1c-96d1-2e7d3148f359",
+            "name": "POP Тариф Умные часы OTC",
+            "@baseType": "ProductOfferingPrice",
+            "@type": "ProductOfferingPrice"
+        }
+    ],
+    "productSpecification": {
+        "id": "6642ade9-a51d-45be-b743-c1ec61d970af",
+        "name": "Тарифный план"
+    },
+    "validFor": {
+        "endDateTime": "9999-12-31T23:59:59.999Z",
+        "startDateTime": "2020-07-21T11:26:50.927Z"
+    },
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "createdBy": "eshamani"
+}

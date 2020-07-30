@@ -1,0 +1,38 @@
+{
+    "id": "9d29df63-64c2-4486-8791-babe5a70e571",
+    "code": "CH28",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/9d29df63-64c2-4486-8791-babe5a70e571",
+    "isVisible": true,
+    "displayName": "Размеры корпуса",
+    "displaySequence": 6,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Размеры корпуса",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Размеры корпуса",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "мм",
+            "valueType": "String",
+            "value": "47x42x16",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "мм",
+            "valueType": "String",
+            "value": " 152x69x8",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": "75"
+}

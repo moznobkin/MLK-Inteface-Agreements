@@ -1,0 +1,29 @@
+{
+    "id": "c4544f0d-b7f7-4245-bb7d-12357d85d4b9",
+    "createdBy": "eshamani",
+    "code": "CH12",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/c4544f0d-b7f7-4245-bb7d-12357d85d4b9",
+    "isVisible": true,
+    "displayName": "Территория действия",
+    "characteristicType": "Master",
+    "description": "Территория действия",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Территория действия",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "Россия",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": ""
+}

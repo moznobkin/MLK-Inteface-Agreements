@@ -1,0 +1,19 @@
+{
+    "id": "de868e51-3009-42ae-b791-fc2a70929fd6",
+    "code": "CH50",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/de868e51-3009-42ae-b791-fc2a70929fd6",
+    "isVisible": true,
+    "displayName": "Преподаватели",
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Преподаватели",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Преподаватели",
+    "valueType": "String",
+    "specCharacteristicValue": [],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer"
+}

@@ -1,0 +1,25 @@
+{
+    "id": "8d0438bb-cce1-47e5-8f41-ba10ccfea63f",
+    "createdBy": "eshamani",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/productSpecification/8d0438bb-cce1-47e5-8f41-ba10ccfea63f",
+    "name": "Доставка",
+    "code": "PS6",
+    "description": "Доставка",
+    "isBundle": false,
+    "lifecycleStatus": "Active",
+    "version": "1.0",
+    "productSpecCharacteristic": [
+        {
+            "id": "7a1f3bec-9944-429f-baf9-2a5cb8cea8ec",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/7a1f3bec-9944-429f-baf9-2a5cb8cea8ec",
+            "name": "Зона доставки",
+            "version": "1.0"
+        },
+        {
+            "id": "61165ebe-65d5-4ea4-92f6-e82fb4379b11",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/61165ebe-65d5-4ea4-92f6-e82fb4379b11",
+            "name": "Адрес доставки",
+            "version": "1.0"
+        }
+    ]
+}

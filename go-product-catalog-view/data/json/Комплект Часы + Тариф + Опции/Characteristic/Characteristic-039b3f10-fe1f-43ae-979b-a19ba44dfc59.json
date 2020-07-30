@@ -1,0 +1,30 @@
+{
+    "id": "039b3f10-fe1f-43ae-979b-a19ba44dfc59",
+    "code": "CH30",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/039b3f10-fe1f-43ae-979b-a19ba44dfc59",
+    "isVisible": true,
+    "displayName": "Функции",
+    "displaySequence": 29,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Функции",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Функции",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": " Мониторинг физической активности / Рассчет потребленных калорий / Счетчик шагов",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": ""
+}

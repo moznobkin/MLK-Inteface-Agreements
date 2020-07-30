@@ -1,0 +1,37 @@
+{
+    "id": "eb1feac5-4d82-4c9d-908a-5659544d3596",
+    "code": "CAT81",
+    "name": "Add-On",
+    "description": "ProductOffer category for Options Add-On",
+    "@type": "productoffercategory",
+    "@baseType": "category",
+    "parentId": "e8398236-3db4-4157-b48f-ce3c41f9aed0",
+    "lifecycleStatus": "Active",
+    "validFor": {
+        "startDateTime": "2020-07-20T11:08:50.549Z",
+        "endDateTime": "9999-12-31T23:59:59.999Z"
+    },
+    "lastUpdate": "2020-07-20T11:08:50.554Z",
+    "isRoot": false,
+    "version": "1.0",
+    "productOffers": [
+        {
+            "id": "3f613f5a-c09e-4186-be2d-a3327263a789",
+            "name": "Гигатека",
+            "@type": "ProductOffer",
+            "@baseType": "ProductOffer"
+        },
+        {
+            "id": "7daf64a1-b084-4047-a3b6-1bebf61bacad",
+            "name": "Плюс 5ГБ",
+            "@type": "ProductOffer",
+            "@baseType": "ProductOffer"
+        }
+    ],
+    "isOfferContainer": false,
+    "isAnchor": false,
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/category-projection/v1/category/eb1feac5-4d82-4c9d-908a-5659544d3596",
+    "nodeCardinality": "0-10",
+    "createdBy": "eshamani",
+    "createdOn": "2020-07-20T08:04:03.835Z"
+}

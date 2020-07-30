@@ -1,0 +1,38 @@
+{
+    "id": "96803c94-c0ff-4b6b-8052-2a91f0df2df8",
+    "code": "CH25",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/96803c94-c0ff-4b6b-8052-2a91f0df2df8",
+    "isVisible": true,
+    "displayName": "Wi-Fi",
+    "displaySequence": 18,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Wi-Fi",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Wi-Fi",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "Да",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "Нет",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": "307"
+}

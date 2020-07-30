@@ -1,0 +1,19 @@
+{
+    "id": "6ddf8c0b-c928-4707-bd95-b37f38a7e2cd",
+    "createdBy": "eshamani",
+    "code": "CH58",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/6ddf8c0b-c928-4707-bd95-b37f38a7e2cd",
+    "isVisible": true,
+    "displayName": "e-Mail",
+    "displaySequence": 1,
+    "characteristicType": "ProductSpecification",
+    "configurable": true,
+    "description": "e-Mail",
+    "extensible": true,
+    "isUnique": false,
+    "maxCardinality": 1,
+    "minCardinality": 0,
+    "name": "e-Mail",
+    "valueType": "String",
+    "specCharacteristicValue": []
+}

@@ -1,0 +1,54 @@
+{
+    "id": "f9395d99-b6b9-48c5-a809-d618a3f2d29c",
+    "code": "CH41",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/f9395d99-b6b9-48c5-a809-d618a3f2d29c",
+    "isVisible": true,
+    "displayName": "Объем оперативной памяти",
+    "displaySequence": 13,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Объем оперативной памяти",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Объем оперативной памяти",
+    "valueType": "Numbers",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "ГБ",
+            "valueType": "Integer",
+            "value": "2",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "ГБ",
+            "valueType": "Integer",
+            "value": "4",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "ГБ",
+            "valueType": "Integer",
+            "value": "6",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "ГБ",
+            "valueType": "Integer",
+            "value": "8",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": "5857"
+}

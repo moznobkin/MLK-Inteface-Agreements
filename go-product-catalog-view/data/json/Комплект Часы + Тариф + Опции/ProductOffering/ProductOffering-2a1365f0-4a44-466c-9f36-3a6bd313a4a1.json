@@ -1,0 +1,188 @@
+{
+    "id": "2a1365f0-4a44-466c-9f36-3a6bd313a4a1",
+    "code": "OF842",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/2a1365f0-4a44-466c-9f36-3a6bd313a4a1",
+    "isBundle": true,
+    "isSellable": true,
+    "lifecycleStatus": "Active",
+    "name": "Часы-телефон JET + Тариф Умные вещи",
+    "description": "В офисах продаж и интернет-магазине МегаФона — cвязь в подарок при покупке детских часов 4G. В комплекте предоставляются: Детские часы 4G из списка. Тариф «Умные часы» на 3 месяца. В абонентскую плату включено: 100 минут и 100 SMS на все номера России, 1 ГБ интернета ежемесячно. Опция «Гигатека Акция». Опция 'Плюс 5ГБ'.",
+    "statusReason": "New Product Offer",
+    "version": "1.0",
+    "offerLabels": [
+        {
+            "channel": "CVM",
+            "name": "pers_tag_01",
+            "description": "значение 1"
+        },
+        {
+            "channel": "CVM",
+            "name": "pers_tag_02",
+            "description": "значение 2"
+        }
+    ],
+    "attachment": [
+        {
+            "id": "b.0",
+            "attachmentType": "picture",
+            "name": "Blue",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1283/128300_p_27.png"
+        },
+        {
+            "id": "b.1",
+            "attachmentType": "picture",
+            "name": "Blue",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1283/128300_p_21.png"
+        },
+        {
+            "id": "b.2",
+            "attachmentType": "picture",
+            "name": "Blue",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1283/128300_p_24_1.png"
+        },
+        {
+            "id": "b.3",
+            "attachmentType": "picture",
+            "name": "Blue",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1283/128300_p_24_2.png"
+        },
+        {
+            "id": "b.4",
+            "attachmentType": "picture",
+            "name": "Blue",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1283/128300_p_24_3.png"
+        },
+        {
+            "id": "b.5",
+            "attachmentType": "picture",
+            "name": "Blue",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1283/128300_p_24_4.png"
+        },
+        {
+            "id": "p.0",
+            "attachmentType": "picture",
+            "name": "Pink",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1283/128302_p_27.png"
+        },
+        {
+            "id": "p.1",
+            "attachmentType": "picture",
+            "name": "Pink",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1283/128302_p_21.png"
+        },
+        {
+            "id": "p.2",
+            "attachmentType": "picture",
+            "name": "Pink",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1283/128302_p_24_1.png"
+        },
+        {
+            "id": "p.3",
+            "attachmentType": "picture",
+            "name": "Pink",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1283/128302_p_24_2.png"
+        },
+        {
+            "id": "p.4",
+            "attachmentType": "picture",
+            "name": "Pink",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1283/128302_p_24_3.png"
+        },
+        {
+            "id": "p.5",
+            "attachmentType": "picture",
+            "name": "Pink",
+            "url": "https://moscow.tst-shop.megafon-retail.ru/images/goods/1283/128302_p_24_4.png"
+        }
+    ],
+    "bundledProductOffering": [
+        {
+            "id": "79fd29d4-1ae4-4703-af40-f79a08f6549f",
+            "lifecycleStatus": "Active",
+            "name": "Тариф Умные часы",
+            "bundledProductOfferingOption": {
+                "numberRelOfferDefault": 1,
+                "numberRelOfferLowerLimit": 1,
+                "numberRelOfferUpperLimit": 1
+            }
+        },
+        {
+            "id": "7daf64a1-b084-4047-a3b6-1bebf61bacad",
+            "lifecycleStatus": "Active",
+            "name": "+ 5 Гб к тарифу Умные часы",
+            "bundledProductOfferingOption": {
+                "numberRelOfferDefault": 1,
+                "numberRelOfferLowerLimit": 1,
+                "numberRelOfferUpperLimit": 1
+            }
+        },
+        {
+            "id": "3f613f5a-c09e-4186-be2d-a3327263a789",
+            "lifecycleStatus": "Active",
+            "name": "Гигатека",
+            "bundledProductOfferingOption": {
+                "numberRelOfferDefault": 1,
+                "numberRelOfferLowerLimit": 1,
+                "numberRelOfferUpperLimit": 1
+            }
+        },
+        {
+            "id": "055eeb84-84df-4696-81dd-a6f9402ca58c",
+            "lifecycleStatus": "Active",
+            "name": "Часы-телефон JET Kid Vision 4G детские",
+            "bundledProductOfferingOption": {
+                "numberRelOfferDefault": 1,
+                "numberRelOfferLowerLimit": 1,
+                "numberRelOfferUpperLimit": 1
+            }
+        }
+    ],
+    "category": [
+        {
+            "id": "037808be-9f3e-417c-bba3-8e99fea43178",
+            "name": "Комплекты"
+        }
+    ],
+    "channel": [
+        {
+            "id": "8abd35d9-1115-41ae-800c-975ad4a1515e",
+            "name": "B2C-LK"
+        },
+        {
+            "id": "95146999-fb0d-4c63-bb5c-24f9e97d2c3d",
+            "name": "MLK"
+        }
+    ],
+    "marketSegment": [
+        {
+            "id": "10edee2f-8277-4d77-8dc8-8e1edc97274c",
+            "name": "B2C"
+        }
+    ],
+    "place": [
+        {
+            "id": "8a4ff9dc-8fb1-47d6-b958-25ce9239ce66",
+            "name": "Санкт-Петербург и Ленинградская область"
+        },
+        {
+            "id": "bb4b5a20-88d1-4c05-8f45-26d68459d758",
+            "name": "Московский регион"
+        }
+    ],
+    "specCharValueUse": [],
+    "productOfferingPrice": [
+        {
+            "id": "992f1972-756a-4b6f-a26e-e25b237b2e49",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/992f1972-756a-4b6f-a26e-e25b237b2e49",
+            "name": "BPOP Часы + Тариф",
+            "@baseType": "ProductOfferingPrice",
+            "@type": "ProductOfferingPrice"
+        }
+    ],
+    "validFor": {
+        "endDateTime": "9999-12-31T23:59:59.999Z",
+        "startDateTime": "2020-07-20T13:56:55.333Z"
+    },
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer"
+}

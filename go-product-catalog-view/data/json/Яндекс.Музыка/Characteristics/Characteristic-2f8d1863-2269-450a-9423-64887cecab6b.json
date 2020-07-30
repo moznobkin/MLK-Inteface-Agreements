@@ -1,0 +1,20 @@
+{
+    "id": "2f8d1863-2269-450a-9423-64887cecab6b",
+    "code": "CH56",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/2f8d1863-2269-450a-9423-64887cecab6b",
+    "isVisible": true,
+    "displayName": "Service Code",
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Service Code",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Service Code",
+    "valueType": "List",
+    "specCharacteristicValue": [],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": ""
+}

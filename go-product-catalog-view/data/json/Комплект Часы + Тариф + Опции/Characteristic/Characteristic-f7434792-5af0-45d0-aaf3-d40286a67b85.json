@@ -1,0 +1,30 @@
+{
+    "id": "f7434792-5af0-45d0-aaf3-d40286a67b85",
+    "code": "CH23",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/f7434792-5af0-45d0-aaf3-d40286a67b85",
+    "isVisible": true,
+    "displayName": "Комплектация",
+    "displaySequence": 4,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Комплектация",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Комплектация",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "Часы, USB-кабель, инструкция, упаковка",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": "206"
+}

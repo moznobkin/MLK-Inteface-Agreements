@@ -1,0 +1,38 @@
+{
+    "id": "4dc070fa-65e1-499b-b88d-adee5a3d9867",
+    "code": "CH36",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/4dc070fa-65e1-499b-b88d-adee5a3d9867",
+    "isVisible": true,
+    "displayName": "Поддержка iOS от",
+    "displaySequence": 28,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Поддержка iOS",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Поддержка iOS",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "7",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "8",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": "7823"
+}

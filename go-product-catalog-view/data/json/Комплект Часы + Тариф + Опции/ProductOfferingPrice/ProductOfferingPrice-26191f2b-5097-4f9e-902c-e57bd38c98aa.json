@@ -1,0 +1,62 @@
+{
+    "id": "26191f2b-5097-4f9e-902c-e57bd38c98aa",
+    "code": "OP44",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/26191f2b-5097-4f9e-902c-e57bd38c98aa",
+    "description": "POP Доставка Москва бесплатно",
+    "isBundle": false,
+    "lifecycleStatus": "Active",
+    "name": "POP Доставка Москва бесплатно",
+    "priceType": "One Time Charge",
+    "version": "1.0",
+    "place": [
+        {
+            "id": "bb4b5a20-88d1-4c05-8f45-26d68459d758",
+            "name": "Московский регион"
+        }
+    ],
+    "price": {
+        "unit": "RUB",
+        "value": 0.0
+    },
+    "specCharValueUse": [
+        {
+            "specificationType": "ProductSpecification",
+            "description": "Зона доставки",
+            "name": "Зона доставки",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Москва",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer"
+        }
+    ],
+    "tax": [
+        {
+            "taxCategory": "VAT",
+            "taxRate": 20.0,
+            "taxAmount": {
+                "unit": "%",
+                "value": 20.0
+            }
+        }
+    ],
+    "validFor": {
+        "endDateTime": "9999-12-31T23:59:59.999Z",
+        "startDateTime": "2020-07-20T13:14:14.684Z"
+    },
+    "@baseType": "ProductOfferingPrice",
+    "@type": "ProductOfferingPrice",
+    "createdBy": "eshamani",
+    "productOffering": {
+        "id": "74a075af-b04a-406c-b095-3ef65a7b6b7e",
+        "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/74a075af-b04a-406c-b095-3ef65a7b6b7e",
+        "name": "Доставка Москва",
+        "version": "1.0"
+    }
+}

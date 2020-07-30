@@ -13,35 +13,36 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"os"
-	"path/filepath"
 
 	sw "github.com/moznobkin/MLK-Inteface-Agreements/go"
 )
 
 func main() {
 	log.Printf("Server started")
-	path, err := os.Executable()
-	if err != nil {
-		log.Println(err)
+
+	offers, errors := sw.LoadDir("./data/json/")
+	for _, offer := range offers {
+		sw.ProductOfferings[offer.Id] = offer
 	}
-	fmt.Println(path)
-	walk()
+	fmt.Printf("Load results: ProductOfferings Loaded - %d, Errors - %d\n", len(offers), len(errors))
+	fmt.Print(errors)
+
 	router := sw.NewRouter()
 
 	log.Fatal(http.ListenAndServe(":8080", router))
+
 }
 
-func walk() {
-	err := filepath.Walk(".",
-		func(path string, info os.FileInfo, err error) error {
-			if err != nil {
-				return err
-			}
-			fmt.Println(path, info.Size())
-			return nil
-		})
-	if err != nil {
-		log.Println(err)
-	}
-}
+// func walk() {
+// 	err := filepath.Walk(".",
+// 		func(path string, info os.FileInfo, err error) error {
+// 			if err != nil {
+// 				return err
+// 			}
+// 			fmt.Println(path, info.Size())
+// 			return nil
+// 		})
+// 	if err != nil {
+// 		log.Println(err)
+// 	}
+// }

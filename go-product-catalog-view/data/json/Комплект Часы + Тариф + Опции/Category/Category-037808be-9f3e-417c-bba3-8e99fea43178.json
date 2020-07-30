@@ -1,0 +1,31 @@
+{
+    "id": "037808be-9f3e-417c-bba3-8e99fea43178",
+    "code": "CAT90",
+    "name": "Комплекты",
+    "description": "ProductOfferContainer for Bundled products",
+    "@type": "productoffercategory",
+    "@baseType": "category",
+    "lifecycleStatus": "Active",
+    "validFor": {
+        "startDateTime": "2020-07-20T11:46:06.550Z",
+        "endDateTime": "9999-12-31T23:59:59.999Z"
+    },
+    "lastUpdate": "2020-07-20T11:46:06.639Z",
+    "isRoot": true,
+    "version": "1.0",
+    "productOffers": [
+        {
+            "id": "2a1365f0-4a44-466c-9f36-3a6bd313a4a1",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/2a1365f0-4a44-466c-9f36-3a6bd313a4a1",
+            "name": "Часы-телефон JET + Тариф Умные вещи",
+            "@type": "ProductOffer",
+            "@baseType": "ProductOffer"
+        }
+    ],
+    "isOfferContainer": true,
+    "isAnchor": false,
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/category-projection/v1/category/037808be-9f3e-417c-bba3-8e99fea43178",
+    "nodeCardinality": "0-10",
+    "createdBy": "eshamani",
+    "createdOn": "2020-07-20T08:04:03.835Z"
+}

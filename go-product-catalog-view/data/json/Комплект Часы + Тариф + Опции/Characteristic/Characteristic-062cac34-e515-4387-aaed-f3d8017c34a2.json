@@ -1,0 +1,38 @@
+{
+    "id": "062cac34-e515-4387-aaed-f3d8017c34a2",
+    "code": "CH34",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/062cac34-e515-4387-aaed-f3d8017c34a2",
+    "isVisible": true,
+    "displayName": "GPS-модуль",
+    "displaySequence": 25,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "GPS-модуль",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "GPS-модуль",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "Да",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "Нет",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": "7803"
+}

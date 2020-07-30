@@ -1,0 +1,53 @@
+{
+    "id": "44ab7a95-1584-4b46-b104-d96f43573514",
+    "createdBy": "eshamani",
+    "code": "CH42",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/44ab7a95-1584-4b46-b104-d96f43573514",
+    "isVisible": true,
+    "displayName": "Максимальная скорость",
+    "characteristicType": "Master",
+    "description": "Максимальная скорость",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Максимальная скорость",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "Безлимитно",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "Kbs",
+            "valueType": "Integer",
+            "value": "64",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "Mbs",
+            "valueType": "Integer",
+            "value": "6",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "Mbs",
+            "valueType": "Integer",
+            "value": "30",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": ""
+}

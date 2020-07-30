@@ -1,0 +1,19 @@
+{
+    "id": "61165ebe-65d5-4ea4-92f6-e82fb4379b11",
+    "createdBy": "eshamani",
+    "code": "CH47",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/61165ebe-65d5-4ea4-92f6-e82fb4379b11",
+    "isVisible": true,
+    "displayName": "Адрес доставки",
+    "displaySequence": 1,
+    "characteristicType": "ProductSpecification",
+    "configurable": true,
+    "description": "Адрес доставки",
+    "extensible": true,
+    "isUnique": false,
+    "maxCardinality": 1,
+    "minCardinality": 0,
+    "name": "Адрес доставки",
+    "valueType": "String",
+    "specCharacteristicValue": []
+}

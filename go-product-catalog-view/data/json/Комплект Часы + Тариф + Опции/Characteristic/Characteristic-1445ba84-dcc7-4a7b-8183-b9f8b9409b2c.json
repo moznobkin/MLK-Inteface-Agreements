@@ -1,0 +1,38 @@
+{
+    "id": "1445ba84-dcc7-4a7b-8183-b9f8b9409b2c",
+    "code": "CH26",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/1445ba84-dcc7-4a7b-8183-b9f8b9409b2c",
+    "isVisible": true,
+    "displayName": "Bluetooth",
+    "displaySequence": 19,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Bluetooth",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Bluetooth",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "Да",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "Нет",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": ""
+}

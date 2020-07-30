@@ -1,0 +1,80 @@
+{
+    "id": "7a1f3bec-9944-429f-baf9-2a5cb8cea8ec",
+    "createdBy": "eshamani",
+    "code": "CH46",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/7a1f3bec-9944-429f-baf9-2a5cb8cea8ec",
+    "isVisible": true,
+    "displayName": "Зона доставки",
+    "displaySequence": 1,
+    "characteristicType": "ProductSpecification",
+    "configurable": true,
+    "description": "Зона доставки",
+    "extensible": true,
+    "isUnique": false,
+    "maxCardinality": 1,
+    "minCardinality": 0,
+    "name": "Зона доставки",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "NA",
+            "valueType": "string",
+            "value": "Александровская"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "string",
+            "value": "Всеволожск"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "string",
+            "value": "Гатчина"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "string",
+            "value": "Горелово"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "string",
+            "value": "Санкт-Петербург"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "string",
+            "value": "Архангельское"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "string",
+            "value": "Балашиха"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "string",
+            "value": "Видное"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "string",
+            "value": "Внуково"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "string",
+            "value": "Москва"
+        }
+    ]
+}

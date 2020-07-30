@@ -1,0 +1,30 @@
+{
+    "id": "7190e805-2b96-4389-8cd3-3885833cf2ff",
+    "code": "CH16",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/7190e805-2b96-4389-8cd3-3885833cf2ff",
+    "isVisible": true,
+    "displayName": "Стандарты 2G",
+    "displaySequence": 15,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Стандарты 2G",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Стандарты 2G",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "GSM 900 / GSM 1800 / GSM 850 / GSM 1900",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": "4"
+}

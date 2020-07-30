@@ -1,0 +1,26 @@
+{
+    "id": "1068e87a-3f9d-44ec-bce4-5033fc49b26b",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/productSpecification/1068e87a-3f9d-44ec-bce4-5033fc49b26b",
+    "name": "Payment Options",
+    "code": "PS5",
+    "description": "Способы оплаты",
+    "isBundle": false,
+    "lifecycleStatus": "Active",
+    "version": "1.0",
+    "productSpecCharacteristic": [
+        {
+            "id": "57067f0d-a1e3-41e3-bb10-6b5cb1a74024",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/57067f0d-a1e3-41e3-bb10-6b5cb1a74024",
+            "name": "Тип оплаты",
+            "version": "1.0"
+        },
+        {
+            "id": "37136e9d-1507-4138-9b40-054433644a71",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/37136e9d-1507-4138-9b40-054433644a71",
+            "name": "Метод оплаты",
+            "version": "1.0"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductSpecification"
+}

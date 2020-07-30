@@ -1,0 +1,39 @@
+{
+    "id": "bcf86493-a59e-4c03-ab1f-e7adb6ecab69",
+    "code": "CAT88",
+    "name": "Delivery",
+    "description": "ProductOfferContainer for Checkout Delivery",
+    "@type": "productoffercategory",
+    "@baseType": "category",
+    "parentId": "05531145-146d-4f02-a4d2-ac963fc27b51",
+    "lifecycleStatus": "Active",
+    "validFor": {
+        "startDateTime": "2020-07-20T11:19:15.407Z",
+        "endDateTime": "9999-12-31T23:59:59.999Z"
+    },
+    "lastUpdate": "2020-07-20T11:19:15.414Z",
+    "isRoot": false,
+    "version": "1.0",
+    "productOffers": [
+        {
+            "id": "74a075af-b04a-406c-b095-3ef65a7b6b7e",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/74a075af-b04a-406c-b095-3ef65a7b6b7e",
+            "name": "Доставка Москва",
+            "@type": "ProductOffer",
+            "@baseType": "ProductOffer"
+        },
+        {
+            "id": "0c8795ad-21b6-4fd8-b5c6-b2f037b009a8",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/0c8795ad-21b6-4fd8-b5c6-b2f037b009a8",
+            "name": "Доставка Санкт-Петербург",
+            "@type": "ProductOffer",
+            "@baseType": "ProductOffer"
+        }
+    ],
+    "isOfferContainer": false,
+    "isAnchor": false,
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/category-projection/v1/category/bcf86493-a59e-4c03-ab1f-e7adb6ecab69",
+    "nodeCardinality": "0-10",
+    "createdBy": "eshamani",
+    "createdOn": "2020-07-20T08:04:03.835Z"
+}

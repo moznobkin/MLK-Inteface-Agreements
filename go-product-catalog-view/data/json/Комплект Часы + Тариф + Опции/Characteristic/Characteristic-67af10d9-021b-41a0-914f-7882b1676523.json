@@ -1,0 +1,30 @@
+{
+    "id": "67af10d9-021b-41a0-914f-7882b1676523",
+    "code": "CH18",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/67af10d9-021b-41a0-914f-7882b1676523",
+    "isVisible": true,
+    "displayName": "Стандарты 4G (LTE)",
+    "displaySequence": 17,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Стандарты 4G (LTE)",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Стандарты 4G (LTE)",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "LTE 900 / LTE 1900 / LTE 1700 / LTE 1800 / LTE 2100 / LTE 850 / LTE 2600 / LTE 800",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": "6197"
+}

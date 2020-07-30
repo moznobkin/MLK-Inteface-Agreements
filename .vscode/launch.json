@@ -9,7 +9,7 @@
             "type": "go",
             "request": "launch",
             "mode": "auto",
-            "program": "${fileDirname}/go-product-catalog-view/main.go",
+            "program": "${cwd}/go-product-catalog-view/main.go",
             "env": {},
             "args": []
         }

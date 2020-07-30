@@ -1,0 +1,168 @@
+{
+    "id": "c1608814-df7a-42a8-aded-73c55ffee273",
+    "code": "OF844",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/c1608814-df7a-42a8-aded-73c55ffee273",
+    "externalID": "",
+    "isBundle": false,
+    "isSellable": true,
+    "lifecycleStatus": "Active",
+    "name": "Яндекс.Музыка",
+    "description": "Яндекс.Музыка для ЛК/МЛК без скидки",
+    "statusReason": "New Product Offer",
+    "version": "1.0",
+    "offerLabels": [
+        {
+            "channel": "CVM",
+            "name": "pers_tag_01",
+            "description": "значение 1"
+        },
+        {
+            "channel": "CVM",
+            "name": "pers_tag_02",
+            "description": "значение 2"
+        }
+    ],
+    "category": [
+        {
+            "id": "c6472ef7-6f81-4d08-b3ba-bd38b47ec1f8",
+            "name": "МФ Музыка"
+        }
+    ],
+    "channel": [
+        {
+            "id": "8abd35d9-1115-41ae-800c-975ad4a1515e",
+            "name": "B2C-LK"
+        },
+        {
+            "id": "95146999-fb0d-4c63-bb5c-24f9e97d2c3d",
+            "name": "MLK"
+        }
+    ],
+    "marketSegment": [
+        {
+            "id": "10edee2f-8277-4d77-8dc8-8e1edc97274c",
+            "name": "B2C"
+        }
+    ],
+    "place": [
+        {
+            "id": "8a4ff9dc-8fb1-47d6-b958-25ce9239ce66",
+            "name": "Санкт-Петербург и Ленинградская область"
+        },
+        {
+            "id": "bb4b5a20-88d1-4c05-8f45-26d68459d758",
+            "name": "Московский регион"
+        }
+    ],
+    "specCharValueUse": [
+        {
+            "referenceId": "a79de901-c193-4d19-a374-75c8fb68c52f",
+            "description": "Короткое описание",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Короткое описание",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Описание",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer"
+        },
+        {
+            "referenceId": "9b071214-6642-40cb-ab1d-fa7056027d84",
+            "description": "Полное описание",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Полное описание",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Описание",
+                    "valueType": "String",
+                    "@baseType": "ProductSpecification",
+                    "@type": "ProductSpecification"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer"
+        },
+        {
+            "referenceId": "5ecdd99c-4ecd-4c31-a20e-cf254e61d227",
+            "description": "Период покупки",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Период покупки",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "дней",
+                    "value": "30",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Период покупки"
+        },
+        {
+            "referenceId": "462c0559-7d10-47d0-a601-0e898a5ed016",
+            "description": "Период бесплатного действия",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Период бесплатного действия",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "дней",
+                    "value": "30",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer",
+            "displayName": "Период бесплатного действия"
+        },
+        {
+            "referenceId": "2f8d1863-2269-450a-9423-64887cecab6b",
+            "description": "Service Code",
+            "maxCardinality": 2,
+            "minCardinality": 1,
+            "name": "Service Code",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "yandex.all169",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer"
+        }
+    ],
+    "productOfferingPrice": [
+        {
+            "id": "f0438fbc-d576-43c8-a04f-0cb4ae1b7fd7",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/f0438fbc-d576-43c8-a04f-0cb4ae1b7fd7",
+            "name": "МФ Музыка yandex.all169",
+            "@baseType": "ProductOfferingPrice",
+            "@type": "ProductOfferingPrice"
+        }
+    ],
+    "productSpecification": {
+        "id": "0bcfb41f-e3d1-49fe-b6e2-94bc20c4b4ff",
+        "name": "МФ Музыка"
+    },
+    "validFor": {
+        "endDateTime": "9999-12-31T23:59:59.999Z",
+        "startDateTime": "2020-07-20T14:06:07.095Z"
+    },
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "createdBy": "eshamani"
+}

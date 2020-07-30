@@ -1,0 +1,46 @@
+{
+    "id": "7b8bba2d-6ff9-4e52-9d97-b990ab18132c",
+    "code": "CH39",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/7b8bba2d-6ff9-4e52-9d97-b990ab18132c",
+    "isVisible": true,
+    "displayName": "Время работы в режиме ожидания",
+    "displaySequence": 11,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Время работы в режиме ожидания",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Время работы в режиме ожидания",
+    "valueType": "Numbers",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "ч",
+            "valueType": "Integer",
+            "value": "72",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "ч",
+            "valueType": "Integer",
+            "value": "75",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "ч",
+            "valueType": "Integer",
+            "value": "80",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": "8604"
+}

@@ -1,0 +1,45 @@
+{
+    "id": "0f2203ff-56ea-43ef-be8c-76de4b0e7a58",
+    "createdBy": "eshamani",
+    "code": "CH43",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/0f2203ff-56ea-43ef-be8c-76de4b0e7a58",
+    "isVisible": true,
+    "displayName": "Устройства, на которых работает опция",
+    "characteristicType": "Master",
+    "description": "Устройства, на которых работает опция",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Устройства, на которых работает опция",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "Смартфон",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "Планшет",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "Модем/роутер",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": ""
+}

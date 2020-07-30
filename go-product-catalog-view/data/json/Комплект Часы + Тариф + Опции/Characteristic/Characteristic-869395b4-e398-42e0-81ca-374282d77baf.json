@@ -1,0 +1,77 @@
+{
+    "id": "869395b4-e398-42e0-81ca-374282d77baf",
+    "createdBy": "eshamani",
+    "code": "CH10",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/869395b4-e398-42e0-81ca-374282d77baf",
+    "isVisible": true,
+    "displayName": "Звонки на все мобильные номера по России",
+    "characteristicType": "Master",
+    "description": "Звонки на все мобильные номера по России",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Звонки на все мобильные номера по России",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "Минуты",
+            "valueType": "String",
+            "value": "Безлимитно",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "Минуты",
+            "valueType": "String",
+            "value": "10",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "Минуты",
+            "valueType": "String",
+            "value": "20",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "Минуты",
+            "valueType": "String",
+            "value": "30",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "Минуты",
+            "valueType": "String",
+            "value": "100",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "Минуты",
+            "valueType": "String",
+            "value": "200",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "Минуты",
+            "valueType": "String",
+            "value": "300",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": ""
+}

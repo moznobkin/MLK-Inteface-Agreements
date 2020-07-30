@@ -1,0 +1,39 @@
+{
+    "id": "6642ade9-a51d-45be-b743-c1ec61d970af",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/productSpecification/6642ade9-a51d-45be-b743-c1ec61d970af",
+    "name": "Тарифный план",
+    "code": "PS2",
+    "description": "Тарифный план",
+    "isBundle": false,
+    "lifecycleStatus": "Active",
+    "version": "1.0",
+    "productSpecCharacteristic": [
+        {
+            "id": "1c857950-23d6-4100-8579-be6441aed2b1",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/1c857950-23d6-4100-8579-be6441aed2b1",
+            "name": "Мобильный интернет"
+        },
+        {
+            "id": "e18a15bc-b5d2-49de-b959-9e88e5f5edeb",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/e18a15bc-b5d2-49de-b959-9e88e5f5edeb",
+            "name": "SMS на МегаФон по России"
+        },
+        {
+            "id": "869395b4-e398-42e0-81ca-374282d77baf",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/869395b4-e398-42e0-81ca-374282d77baf",
+            "name": "Звонки на все мобильные номера по России"
+        },
+        {
+            "id": "b9e9c67f-9701-4c7e-a923-9806d69e2a14",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/b9e9c67f-9701-4c7e-a923-9806d69e2a14",
+            "name": "Безлимитные звонки внутри сети"
+        },
+        {
+            "id": "c4544f0d-b7f7-4245-bb7d-12357d85d4b9",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/c4544f0d-b7f7-4245-bb7d-12357d85d4b9",
+            "name": "Территория действия"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductSpecification"
+}

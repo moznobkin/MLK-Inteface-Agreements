@@ -1,0 +1,38 @@
+{
+    "id": "fef53b40-c212-45ab-b4b2-465a95cd0586",
+    "code": "CH20",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/fef53b40-c212-45ab-b4b2-465a95cd0586",
+    "isVisible": true,
+    "displayName": "Камера",
+    "displaySequence": 24,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Камера",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Камера",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "Да",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "Нет",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": "300"
+}

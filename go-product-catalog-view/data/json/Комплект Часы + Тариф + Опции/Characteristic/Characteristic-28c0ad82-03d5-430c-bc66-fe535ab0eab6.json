@@ -1,0 +1,19 @@
+{
+    "id": "28c0ad82-03d5-430c-bc66-fe535ab0eab6",
+    "createdBy": "eshamani",
+    "code": "CH59",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/28c0ad82-03d5-430c-bc66-fe535ab0eab6",
+    "isVisible": true,
+    "displayName": "Номер телефона",
+    "displaySequence": 1,
+    "characteristicType": "ProductSpecification",
+    "configurable": true,
+    "description": "Номер телефона",
+    "extensible": true,
+    "isUnique": false,
+    "maxCardinality": 1,
+    "minCardinality": 0,
+    "name": "Номер телефона",
+    "valueType": "String",
+    "specCharacteristicValue": []
+}

@@ -1,0 +1,30 @@
+{
+    "id": "552df06d-31da-40cb-8993-79c5c6f7c335",
+    "code": "CH17",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/552df06d-31da-40cb-8993-79c5c6f7c335",
+    "isVisible": true,
+    "displayName": "Стандарты 3G",
+    "displaySequence": 16,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Стандарты 3G",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Стандарты 3G",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "NA",
+            "valueType": "String",
+            "value": "UMTS 1900 / UMTS 900 / UMTS 2100 / UMTS 850",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": "5023"
+}

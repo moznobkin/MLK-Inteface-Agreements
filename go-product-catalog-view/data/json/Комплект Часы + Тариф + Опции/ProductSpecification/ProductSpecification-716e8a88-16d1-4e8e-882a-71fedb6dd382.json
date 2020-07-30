@@ -1,0 +1,44 @@
+{
+    "id": "716e8a88-16d1-4e8e-882a-71fedb6dd382",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/productSpecification/716e8a88-16d1-4e8e-882a-71fedb6dd382",
+    "name": "Интернет опции",
+    "code": "PS4",
+    "description": "Интернет опции",
+    "isBundle": false,
+    "lifecycleStatus": "Active",
+    "version": "1.0",
+    "productSpecCharacteristic": [
+        {
+            "id": "1c857950-23d6-4100-8579-be6441aed2b1",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/1c857950-23d6-4100-8579-be6441aed2b1",
+            "name": "Мобильный интернет"
+        },
+        {
+            "id": "0f2203ff-56ea-43ef-be8c-76de4b0e7a58",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/0f2203ff-56ea-43ef-be8c-76de4b0e7a58",
+            "name": "Устройства, на которых работает опция"
+        },
+        {
+            "id": "462c0559-7d10-47d0-a601-0e898a5ed016",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/462c0559-7d10-47d0-a601-0e898a5ed016",
+            "name": "Период бесплатного дествия"
+        },
+        {
+            "id": "44ab7a95-1584-4b46-b104-d96f43573514",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/44ab7a95-1584-4b46-b104-d96f43573514",
+            "name": "Максимальная скорость"
+        },
+        {
+            "id": "7edcfcd4-87e2-4317-9f03-fb2ec49e8842",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/7edcfcd4-87e2-4317-9f03-fb2ec49e8842",
+            "name": "Срок действия опции"
+        },
+        {
+            "id": "c4544f0d-b7f7-4245-bb7d-12357d85d4b9",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/c4544f0d-b7f7-4245-bb7d-12357d85d4b9",
+            "name": "Территория действия"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductSpecification"
+}

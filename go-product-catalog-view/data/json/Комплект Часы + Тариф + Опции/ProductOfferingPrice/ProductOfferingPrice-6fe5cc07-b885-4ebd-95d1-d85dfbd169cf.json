@@ -1,0 +1,80 @@
+{
+    "id": "6fe5cc07-b885-4ebd-95d1-d85dfbd169cf",
+    "code": "OP45",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/6fe5cc07-b885-4ebd-95d1-d85dfbd169cf",
+    "description": "POP Доставка Санкт-Петербург платно",
+    "isBundle": false,
+    "lifecycleStatus": "Active",
+    "name": "POP Доставка Санкт-Петербург платно",
+    "priceType": "One Time Charge",
+    "version": "1.0",
+    "place": [
+        {
+            "id": "8a4ff9dc-8fb1-47d6-b958-25ce9239ce66",
+            "name": "Санкт-Петербург и Ленинградская область"
+        }
+    ],
+    "price": {
+        "unit": "RUB",
+        "value": 200.0
+    },
+    "specCharValueUse": [
+        {
+            "specificationType": "ProductSpecification",
+            "description": "Зона доставки",
+            "name": "Зона доставки",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Александровская",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "Всеволожск",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "Гатчина",
+                    "valueType": "String"
+                },
+                {
+                    "isDefault": false,
+                    "unitOfMeasure": "NA",
+                    "value": "Горелово",
+                    "valueType": "String"
+                }
+            ],
+            "@baseType": "ProductOffer",
+            "@type": "ProductOffer"
+        }
+    ],
+    "tax": [
+        {
+            "taxCategory": "VAT",
+            "taxRate": 20.0,
+            "taxAmount": {
+                "unit": "%",
+                "value": 20.0
+            }
+        }
+    ],
+    "validFor": {
+        "endDateTime": "9999-12-31T23:59:59.999Z",
+        "startDateTime": "2020-07-20T13:14:47.498Z"
+    },
+    "@baseType": "ProductOfferingPrice",
+    "@type": "ProductOfferingPrice",
+    "createdBy": "eshamani",
+    "productOffering": {
+        "id": "0c8795ad-21b6-4fd8-b5c6-b2f037b009a8",
+        "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/0c8795ad-21b6-4fd8-b5c6-b2f037b009a8",
+        "name": "Доставка Санкт-Петербург",
+        "version": "1.0"
+    }
+}

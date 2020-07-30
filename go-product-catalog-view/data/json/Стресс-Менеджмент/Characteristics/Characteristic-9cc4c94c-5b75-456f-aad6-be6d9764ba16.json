@@ -1,0 +1,20 @@
+{
+    "id": "9cc4c94c-5b75-456f-aad6-be6d9764ba16",
+    "code": "CH51",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/9cc4c94c-5b75-456f-aad6-be6d9764ba16",
+    "isVisible": true,
+    "displayName": "Сертификат",
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Сертификат",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Сертификат",
+    "valueType": "String",
+    "specCharacteristicValue": [],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": ""
+}

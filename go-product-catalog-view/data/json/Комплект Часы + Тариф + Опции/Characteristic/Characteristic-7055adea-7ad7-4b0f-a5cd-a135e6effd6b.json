@@ -1,0 +1,46 @@
+{
+    "id": "7055adea-7ad7-4b0f-a5cd-a135e6effd6b",
+    "code": "CH33",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/7055adea-7ad7-4b0f-a5cd-a135e6effd6b",
+    "isVisible": true,
+    "displayName": "Диагональ дисплея",
+    "displaySequence": 24,
+    "characteristicType": "Master",
+    "configurable": true,
+    "description": "Диагональ дисплея",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "Диагональ дисплея",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": " '",
+            "valueType": "String",
+            "value": "1.44",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": " '",
+            "valueType": "String",
+            "value": "1.45",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": " '",
+            "valueType": "String",
+            "value": "1.3",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": "969"
+}

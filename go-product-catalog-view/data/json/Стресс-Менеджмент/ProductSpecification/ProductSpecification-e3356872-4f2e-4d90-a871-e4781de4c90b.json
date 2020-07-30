@@ -1,0 +1,49 @@
+{
+    "id": "e3356872-4f2e-4d90-a871-e4781de4c90b",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/productSpecification/e3356872-4f2e-4d90-a871-e4781de4c90b",
+    "name": "Полезное",
+    "code": "PS7",
+    "description": "Полезное",
+    "isBundle": false,
+    "lifecycleStatus": "Active",
+    "version": "1.0",
+    "productSpecCharacteristic": [
+        {
+            "id": "de868e51-3009-42ae-b791-fc2a70929fd6",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/de868e51-3009-42ae-b791-fc2a70929fd6",
+            "name": "Преподаватели"
+        },
+        {
+            "id": "9cc4c94c-5b75-456f-aad6-be6d9764ba16",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/9cc4c94c-5b75-456f-aad6-be6d9764ba16",
+            "name": "Сертификат"
+        },
+        {
+            "id": "db19fc9f-3c0f-452e-813c-8c3349e9e117",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/db19fc9f-3c0f-452e-813c-8c3349e9e117",
+            "name": "Преимущества"
+        },
+        {
+            "id": "a79de901-c193-4d19-a374-75c8fb68c52f",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/a79de901-c193-4d19-a374-75c8fb68c52f",
+            "name": "Короткое описание"
+        },
+        {
+            "id": "9b071214-6642-40cb-ab1d-fa7056027d84",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/9b071214-6642-40cb-ab1d-fa7056027d84",
+            "name": "Полное описание"
+        },
+        {
+            "id": "5ecdd99c-4ecd-4c31-a20e-cf254e61d227",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/5ecdd99c-4ecd-4c31-a20e-cf254e61d227",
+            "name": "Период покупки"
+        },
+        {
+            "id": "2f8d1863-2269-450a-9423-64887cecab6b",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/2f8d1863-2269-450a-9423-64887cecab6b",
+            "name": "Service Code"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductSpecification"
+}

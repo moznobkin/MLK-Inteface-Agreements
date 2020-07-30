@@ -22,7 +22,9 @@ import (
 
 const fileTmpl = "./data/json/%s.json"
 
-func GetProductOffers(w http.ResponseWriter, r *http.Request) {
+var ProductOfferings map[string]*ProductOffering = make(map[string]*ProductOffering)
+
+func GetProductOffersOld(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	files, err := ioutil.ReadDir("./data/json/")
 	if err != nil {
@@ -44,6 +46,20 @@ func GetProductOffers(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, "]")
 	w.WriteHeader(http.StatusOK)
 }
+func GetProductOffers(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+
+	values := make([]*ProductOffering, 0, len(ProductOfferings))
+
+	for _, v := range ProductOfferings {
+		values = append(values, v)
+	}
+	err := json.NewEncoder(w).Encode(values)
+	if err != nil {
+		panic(err)
+	}
+	w.WriteHeader(http.StatusOK)
+}
 
 func GetProductOfferById(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
@@ -53,19 +69,31 @@ func GetProductOfferById(w http.ResponseWriter, r *http.Request) {
 
 	filename := fmt.Sprintf(fileTmpl, id)
 	fi, err := os.Open(filename)
-	if err != nil {
-		fmt.Fprintf(w, "Product with id %s not found", id)
-		return
-	}
 	// close fi on exit and check for its returned error
-	defer func() {
-		if err := fi.Close(); err != nil {
-			panic(err)
-		}
-	}()
 
-	io.Copy(w, fi)
-	w.WriteHeader(http.StatusOK)
+	if err != nil {
+
+		fromCache := ProductOfferings[id]
+		if fromCache != nil {
+			err = json.NewEncoder(w).Encode(fromCache)
+			if err != nil {
+				panic(err)
+			}
+		} else {
+			fmt.Fprintf(w, "Product with id %s not found", id)
+			return
+		}
+
+	} else {
+		defer func() {
+			if err := fi.Close(); err != nil {
+				panic(err)
+			}
+		}()
+		io.Copy(w, fi)
+
+	}
+
 }
 
 /* CreateProductOffer
@@ -120,8 +148,8 @@ func CreateProductOffer(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 }
 
-func checkProductOfferJson(r io.Reader) (*GetProductOfferResponse, error) {
-	var p GetProductOfferResponse
+func checkProductOfferJson(r io.Reader) (*ProductOffering, error) {
+	var p ProductOffering
 	// Try to decode the request body into the struct. If there is an error,
 	// respond to the client with the error message and a 400 status code.
 	err := json.NewDecoder(r).Decode(&p)

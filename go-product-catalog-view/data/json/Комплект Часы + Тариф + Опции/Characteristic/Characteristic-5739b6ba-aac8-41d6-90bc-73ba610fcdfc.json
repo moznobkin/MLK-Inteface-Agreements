@@ -1,0 +1,85 @@
+{
+    "id": "5739b6ba-aac8-41d6-90bc-73ba610fcdfc",
+    "createdBy": "eshamani",
+    "code": "CH65",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/product-projection/v1/characteristic/5739b6ba-aac8-41d6-90bc-73ba610fcdfc",
+    "isVisible": true,
+    "displayName": "SMS на все номера России",
+    "characteristicType": "Master",
+    "description": "SMS на все номера России",
+    "extensible": true,
+    "isUnique": true,
+    "maxCardinality": 1,
+    "minCardinality": 1,
+    "name": "SMS на все номера России",
+    "valueType": "List",
+    "specCharacteristicValue": [
+        {
+            "isDefault": true,
+            "unitOfMeasure": "Шт./мес",
+            "valueType": "String",
+            "value": "Безлимитно",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "Шт./мес",
+            "valueType": "Integer",
+            "value": "10",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "Шт./мес",
+            "valueType": "Integer",
+            "value": "20",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "Шт./мес",
+            "valueType": "Integer",
+            "value": "30",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "Шт./мес",
+            "valueType": "Integer",
+            "value": "100",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "Шт./мес",
+            "valueType": "Integer",
+            "value": "200",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "Шт./мес",
+            "valueType": "Integer",
+            "value": "300",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        },
+        {
+            "isDefault": false,
+            "unitOfMeasure": "Шт./мес",
+            "valueType": "Integer",
+            "value": "500",
+            "@type": "ProductSpecification",
+            "@baseType": "ProductSpecification"
+        }
+    ],
+    "@baseType": "ProductOffer",
+    "@type": "ProductOffer",
+    "externalID": ""
+}

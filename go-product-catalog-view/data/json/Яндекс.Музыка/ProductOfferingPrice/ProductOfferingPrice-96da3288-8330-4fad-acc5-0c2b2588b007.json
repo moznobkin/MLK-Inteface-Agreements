@@ -1,0 +1,153 @@
+{
+    "id": "96da3288-8330-4fad-acc5-0c2b2588b007",
+    "code": "OP38",
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOfferingPrice/96da3288-8330-4fad-acc5-0c2b2588b007",
+    "externalID": "",
+    "description": "МФ Музыка yandex.ios_d",
+    "isBundle": false,
+    "lifecycleStatus": "Active",
+    "name": "МФ Музыка yandex.ios_d",
+    "priceType": "Recurring Charge",
+    "recurringChargePeriodType": "Day",
+    "recurringChargePeriodLength": 1,
+    "version": "1.0",
+    "price": {
+        "unit": "RUB",
+        "value": 8.0
+    },
+    "specCharValueUse": [
+        {
+            "referenceId": "2f8d1863-2269-450a-9423-64887cecab6b",
+            "specificationType": "ProductSpecification",
+            "description": "Service Code",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Service Code",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "yandex.ios_d",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "0bcfb41f-e3d1-49fe-b6e2-94bc20c4b4ff",
+                "name": "МФ Музыка",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "462c0559-7d10-47d0-a601-0e898a5ed016",
+            "specificationType": "ProductSpecification",
+            "description": "Период бесплатного действия",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Период бесплатного действия",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "дней",
+                    "value": "0",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "0bcfb41f-e3d1-49fe-b6e2-94bc20c4b4ff",
+                "name": "МФ Музыка",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "5ecdd99c-4ecd-4c31-a20e-cf254e61d227",
+            "specificationType": "ProductSpecification",
+            "description": "Период покупки",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Период покупки",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "день",
+                    "value": "1",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "0bcfb41f-e3d1-49fe-b6e2-94bc20c4b4ff",
+                "name": "МФ Музыка",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "0f2203ff-56ea-43ef-be8c-76de4b0e7a58",
+            "specificationType": "ProductSpecification",
+            "description": "Устройства на которых работает опция",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Устройства на которых работает опция",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "Смартфон",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "0bcfb41f-e3d1-49fe-b6e2-94bc20c4b4ff",
+                "name": "МФ Музыка",
+                "version": "1.0"
+            }
+        },
+        {
+            "referenceId": "0d7e7c32-8ba3-4332-9011-f41e98320bdc",
+            "specificationType": "ProductSpecification",
+            "description": "Операционная система",
+            "maxCardinality": 1,
+            "minCardinality": 1,
+            "name": "Операционная система",
+            "valueType": "List",
+            "specCharacteristicValue": [
+                {
+                    "isDefault": true,
+                    "unitOfMeasure": "NA",
+                    "value": "iOS",
+                    "valueType": "String"
+                }
+            ],
+            "specification": {
+                "id": "0bcfb41f-e3d1-49fe-b6e2-94bc20c4b4ff",
+                "name": "МФ Музыка",
+                "version": "1.0"
+            }
+        }
+    ],
+    "tax": [
+        {
+            "taxCategory": "VAT",
+            "taxRate": 20.0,
+            "taxAmount": {
+                "unit": "%",
+                "value": 20.0
+            }
+        }
+    ],
+    "validFor": {
+        "endDateTime": "9999-12-31T23:59:59.999Z",
+        "startDateTime": "2020-07-20T13:04:56.727Z"
+    },
+    "@baseType": "ProductOfferingPrice",
+    "@type": "ProductOfferingPrice",
+    "createdBy": "eshamani",
+    "productOffering": {
+        "id": "5f5a037e-091f-4b03-9483-3c490317dfed",
+        "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/5f5a037e-091f-4b03-9483-3c490317dfed",
+        "name": "Яндекс.Музыка",
+        "version": "1.0"
+    }
+}

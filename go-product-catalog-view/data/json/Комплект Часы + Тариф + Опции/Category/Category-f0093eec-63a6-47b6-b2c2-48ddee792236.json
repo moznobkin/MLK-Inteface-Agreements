@@ -1,0 +1,38 @@
+{
+    "id": "f0093eec-63a6-47b6-b2c2-48ddee792236",
+    "code": "CAT83",
+    "name": "Tariff",
+    "description": "ProductOffer category for Mobile Tariff",
+    "@type": "productoffercategory",
+    "@baseType": "category",
+    "parentId": "8cd8e4c6-ccad-4704-a178-b7da2e8cf76e",
+    "lifecycleStatus": "Active",
+    "validFor": {
+        "startDateTime": "2020-07-20T11:10:36.799Z",
+        "endDateTime": "9999-12-31T23:59:59.999Z"
+    },
+    "lastUpdate": "2020-07-20T11:10:36.837Z",
+    "isRoot": false,
+    "version": "1.0",
+    "productOffers": [
+        {
+            "id": "82596b6a-a234-4f58-b098-f81c601f5e6e",
+            "name": "Тариф 'Умные вещи на год'",
+            "@type": "ProductOffer",
+            "@baseType": "ProductOffer"
+        },
+        {
+            "id": "79fd29d4-1ae4-4703-af40-f79a08f6549f",
+            "href": "http://vlg-dyna-fpc1d.megafon.ru/v1/productOffering/79fd29d4-1ae4-4703-af40-f79a08f6549f",
+            "name": "Тариф 'Умные часы'",
+            "@type": "ProductOffer",
+            "@baseType": "ProductOffer"
+        }
+    ],
+    "isOfferContainer": false,
+    "isAnchor": false,
+    "href": "http://vlg-dyna-fpc1d.megafon.ru/api/category-projection/v1/category/f0093eec-63a6-47b6-b2c2-48ddee792236",
+    "nodeCardinality": "0-10",
+    "createdBy": "eshamani",
+    "createdOn": "2020-07-20T08:04:03.835Z"
+}
